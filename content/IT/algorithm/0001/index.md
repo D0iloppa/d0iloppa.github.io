@@ -90,7 +90,11 @@ Hello World 찍으려고 알아보다 보니
 
 변수 선언, 반복문, 배열, print를 간단하게 익혔다.
 
-stuff = ["Hello, World!", "My name is Doil", "bbomi" , 920201] for i in stuff:    print(i)
+```python
+stuff = ["Hello, World!", "My name is Doil", "bbomi" , 920201] 
+for i in stuff:    
+    print(i)
+```
 
 
 
@@ -99,8 +103,10 @@ stuff = ["Hello, World!", "My name is Doil", "bbomi" , 920201] for i in stuff:  
 위의 반복문의 형태는 자바의 for-each 형태(enhanced loop)와 비슷하게 느껴졌다.
 
 또한, 배열이 한 타입의 변수만 담을 수 있는 것이 아니라 String형이던 int형이던 가리지 않고 받는다는 점이 대단했다.
-
-result = stuff[3] + 19 print(result)
+```python
+result = stuff[3] + 19
+    print(result)
+```
 
 stuff[3]은 920201로 숫자다. 만약 수가 아니라 문자열이라면 result는 92020119 라고 찍힐 것이다.
 
@@ -146,8 +152,6 @@ A와 B를 입력받고 A+B를 출력해 주는 매우 매우 간단한 알고리
 
 변수의 선언, 연산, 입출력을 한 번에 문법적으로 익히기 위함이다.
 
-
-
 *) 먼저 입출력
 
 
@@ -171,9 +175,10 @@ A와 B를 입력받고 A+B를 출력해 주는 매우 매우 간단한 알고리
 변수 선언이 매우 간단하다.
 
 
-
-number = input("숫자입력 : ") print(number)
-
+```python
+number = input("숫자입력 : ")
+print(number)
+```
 ![img](https://postfiles.pstatic.net/MjAyMTAzMTZfMTg3/MDAxNjE1ODkxNDEzOTAw.y2A_h6xhOjzIC-icqX0SsXiye2Dl4XCZi6GzxZ2J5Zgg.2McRDd1t6dHM7VvEpt3pTJXLofVE6wLA25LPWMvuARkg.PNG.kdi3939/image.png?type=w966)
 
 input()이라는 함수만 쓰면 되고,
@@ -227,12 +232,27 @@ c.f)파이썬에서는 주석이 // 이 아니라 #으로 해야 한다.
 ![img](https://postfiles.pstatic.net/MjAyMTAzMTZfMjQ1/MDAxNjE1ODkyNTc0MDQ3.0kaZJAhOTORxDJSxtSTzHA6wmSVORNeUSIbcyt0KAw4g.xE5FX5LvXgAPQP_gWXWq_yYLTE4tDGgePGzS_7XXpo0g.PNG.kdi3939/image.png?type=w966)
 
 
-
-A,B = input().split() A = int(A) B = int(B) print(A+B)
-
+```python
+A,B = input().split()
+A = int(A)
+B = int(B)
+print(A+B)
+```
 이렇게 간단한 코드를 자바로 이를 표현하려면 꽤 길었을 것 같다.
-
-package test; import java.util.Scanner; public class A_Plus_B { public static void main(String[] args) { 	int a,b; 	Scanner sc = new Scanner(System.in); 	a = sc.nextInt(); 	b = sc.nextInt(); 	System.out.println(a+b);		 } }
+```java
+package test;
+import java.util.Scanner;
+public class A_Plus_B 
+{ 
+    public static void main(String[] args) { 	
+        int a,b;
+        Scanner sc = new Scanner(System.in);
+        a = sc.nextInt();
+        b = sc.nextInt();
+        System.out.println(a+b);		 
+    } 
+}
+```
 
 입력하려면 Scanner 클래스도 임포트 해주어야 하고,
 

@@ -8,7 +8,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import AndroidIcon from '@material-ui/icons/Android';
 import AppleIcon from '@material-ui/icons/Apple';
 import InstagramIcon from '@material-ui/icons/Instagram';
-import NaverIcon from '@material-ui/icons/Naver';
+import NaverIcon from '@material-ui/icons/Language';
 
 import './style.scss';
 

@@ -40,7 +40,7 @@ export const pageQuery = graphql`
           }
           social {
             github
-            naver-blog
+            naver_blog
             linkedIn
             instagram
             email      

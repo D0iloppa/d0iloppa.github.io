@@ -19,7 +19,7 @@ module.exports = {
     },
     social: {
       github: `https://github.com/d0iloppa`, // `https://github.com/zoomKoding`,
-      naver-blog: 'https://blog.naver.com/kdi3939',
+      naver_blog: 'https://blog.naver.com/kdi3939',
       linkedIn: ``, // `https://www.linkedin.com/in/jinhyeok-jeong-800871192`,
       instagram: 'https://www.instagram.com/d01l_man/',
       email: `kdi3939@gmail.com`, // `zoomkoding@gmail.com`,

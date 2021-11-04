@@ -1,11 +1,13 @@
 ---
-emoji: 🗻
-title: 모악산 정복기
+emoji: 🎨
+title: 전북도립미술관 정복기
 date: '2021-01-26 09:55:00'
 author: 도일
-tags: 모악산 모악베레스트 엄홍길 순두부추천안함 짹짹이
+tags: 전북도립미술관 예술과에너지
 categories: Doyclopedia location
 ---
+[![./img/priv.png](./img/priv.png)](https://d0iloppa.github.io/doyclopedia/location/%EB%AA%A8%EC%95%85%EC%82%B0%20%EC%A0%95%EB%B3%B5%EA%B8%B0/)
+
 모악산에서 내려오고
 
 시간이 좀 남아서 도립미술관에 들렀다.

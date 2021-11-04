@@ -387,3 +387,4 @@ categories: Doyclopedia location
 그냥 가기 아쉬워서
 
 바로앞에 있는 도립미술관에 들렀다.
+[![./img/next.png](./img/next.png)](https://d0iloppa.github.io/doyclopedia/location/%EC%A0%84%EB%B6%81%EB%8F%84%EB%A6%BD%EB%AF%B8%EC%88%A0%EA%B4%80%20%EC%A0%95%EB%B3%B5%EA%B8%B0/)

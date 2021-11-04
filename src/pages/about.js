@@ -5,17 +5,21 @@ import SEO from '../components/seo';
 import Bio from '../components/bio';
 import TimeStampsSection from '../components/timestamps-section';
 import ProjectsSection from '../components/projects-section';
+import CertificatesSection from '../components/certificates-section';
+import TMISection from '../components/tmi-section';
 
 export default ({ data }) => {
   const metaData = data.site.siteMetadata;
   const { author, about, language } = metaData;
-  const { timestamps, projects } = about;
+  const { timestamps, projects, certificates } = about;
   return (
     <Layout>
       <SEO title="About" />
       <Bio author={author} language={language} />
       <TimeStampsSection timestamps={timestamps} />
+      <CertificatesSection certificates={certificates} />
       <ProjectsSection projects={projects} />
+      <TMISection />      
     </Layout>
   );
 };
@@ -36,8 +40,10 @@ export const pageQuery = graphql`
           }
           social {
             github
+            naver
             linkedIn
-            email
+            instagram
+            email      
           }
         }
 
@@ -66,6 +72,13 @@ export const pageQuery = graphql`
               googlePlay
               appStore
             }
+          }
+
+          certificates {
+            date
+            title
+            description    
+            issuer        
           }
         }
       }

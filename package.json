@@ -1,9 +1,9 @@
 {
-  "name": "zoomkoding.com",
+  "name": "d0iloppa-Blog",
   "private": false,
   "description": "A neat blog theme for developers",
   "version": "1.1.0",
-  "author": "zoomkoding <zoomkoding@gmail.com>",
+  "author": "d0iloppa <kdi3939@gmail.com>",
   "dependencies": {
     "@fontsource/montserrat": "^4.2.2",
     "@material-ui/core": "^4.11.3",

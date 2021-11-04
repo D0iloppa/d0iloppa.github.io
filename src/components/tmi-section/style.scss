@@ -1,0 +1,67 @@
+@use '../../styles/variables'as *;
+@use '../../styles/mixins'as *;
+
+.tmi-section-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  @include content-horizontal-padding;
+
+  .tmi-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include content-max-width;
+
+      .body {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23px;
+        
+        .front{
+          margin-top: 20px;
+        }
+
+        .bbomi{
+          margin-top: 20px;
+
+          h1{
+            font-size: 20px;
+            margin-bottom: 10px;
+          }
+
+
+          p{
+            font-size: 10px;
+            color:rgb(196, 190, 190);
+
+          }
+        }
+
+        .back{
+          margin-top: 20px;
+          margin-bottom: 20px;
+
+        }
+
+        .thumbnail {
+          width: auto;
+          height: auto;
+          max-width: 90%;
+          max-height: 600px;
+          margin-bottom: 10px;
+
+          img {
+            object-fit: contain !important;
+          }
+        }
+
+      
+      }
+    }
+
+}

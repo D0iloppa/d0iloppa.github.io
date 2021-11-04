@@ -34,15 +34,13 @@ categories: IT algorithm
 
 
 
-![img](https://postfiles.pstatic.net/MjAyMTAzMTdfMjE2/MDAxNjE1OTY3NDgyOTE3.dzTojRA_L8SyS7gF9l3qH14U1KIivZ_J3fU5jDp2LEUg.JkItDFdXRHP8qeAFy5UbefNa4dDkzApqsFLNvBsJaR4g.PNG.kdi3939/image.png?type=w966)
+![img](img\image-163600117955915.png)
 
-![img](https://postfiles.pstatic.net/MjAyMTAzMTZfMjc4/MDAxNjE1ODg5Mzc5NzYz.uTPb2rpNOE_enEqIiAVh2QdOZvc4JHqCrj1KCq3fBoAg.6XPg_3weJxx56YaiX6yRcvGDvWfOXAfAnq1c6KniRAYg.PNG.kdi3939/image.png?type=w966)
-
-
+![img](img\image-163600117956017.png)
 
 개발에 적합한 IDE를 찾아야 했는데
 
-![img](https://postfiles.pstatic.net/MjAyMTAzMTZfOSAg/MDAxNjE1ODg5NTM4MjYx.Y9YW4sJlkk2oqwxf5cs64qxfxANX70cg4w65-rckmMgg.JpKpxPwAXjhrPtV8J5rLJnP99sgtQwc0CYkof9B7q94g.PNG.kdi3939/image.png?type=w966)
+![img](img\image-163600117956019.png)
 
 주피터가 압도적으로 점유율이 높았다.
 
@@ -58,7 +56,7 @@ categories: IT algorithm
 
 
 
-[![img](https://dthumb-phinf.pstatic.net/?src=%22https%3A%2F%2Fresources.jetbrains.com%2Fstorage%2Fproducts%2Fpycharm%2Fimg%2Fmeta%2Fpreview.png%22&type=ff500_300)](https://www.jetbrains.com/ko-kr/pycharm/)[**PyCharm: JetBrains가 만든 전문 개발자용 Python IDE**지능적인 코드 완성, 즉각적인 오류 검사, 빠른 수정 등 다양한 기능을 갖춘 Python 및 Django IDE입니다.www.jetbrains.com](https://www.jetbrains.com/ko-kr/pycharm/)
+[![img](img\src=https%3A%2F%2Fresources.jetbrains.com%2Fstorage%2Fproducts%2Fpycharm%2Fimg%2Fmeta%2Fpreview-163600117956021.png&type=ff500_300)](https://www.jetbrains.com/ko-kr/pycharm/)[**PyCharm: JetBrains가 만든 전문 개발자용 Python IDE**지능적인 코드 완성, 즉각적인 오류 검사, 빠른 수정 등 다양한 기능을 갖춘 Python 및 Django IDE입니다.www.jetbrains.com](https://www.jetbrains.com/ko-kr/pycharm/)
 
 
 
@@ -110,7 +108,7 @@ result = stuff[3] + 19
 
 stuff[3]은 920201로 숫자다. 만약 수가 아니라 문자열이라면 result는 92020119 라고 찍힐 것이다.
 
-![img](https://postfiles.pstatic.net/MjAyMTAzMTZfMjA5/MDAxNjE1ODkzOTYwNTQw.BINO-PW5ZyHev4Gyq9bnFKJSAEkyNiJdcKBFeakluOkg.ZcVmV0UTRLA-BmX6CWuwtoLBc7BZ6cwUOM6AhcqFdqgg.PNG.kdi3939/image.png?type=w966)
+![img](img\image-163600117956023.png)
 
 그런데 문장이 끝나고 ;을 찍지 않으니 왠지 모르게 불편해졌다.
 
@@ -120,7 +118,7 @@ stuff[3]은 920201로 숫자다. 만약 수가 아니라 문자열이라면 resu
 
 다시 돌아와서 반복문을 잠깐 살펴보자.
 
-![img](https://postfiles.pstatic.net/MjAyMTAzMTZfMTAy/MDAxNjE1ODkwNzk2ODEz.PXCEbRdoPSvFe-qV-j3aCSakSrrTty2fkbLGrbuOlxwg.SbyAAiD6hdVa832Ny3gTl3H7LscWsVLqxDz6i5Ko5c0g.PNG.kdi3939/image.png?type=w966)
+![img](img\image-163600117956025.png)
 
 
 
@@ -128,8 +126,16 @@ stuff[3]은 920201로 숫자다. 만약 수가 아니라 문자열이라면 resu
 
 (물론, stuff는 여러 타입을 담을 수 없다는 점도 차이가 있긴 하지만...)
 
-String[] stuff = ["Hello, World!", "My name is Doil", "bbomi"]; for(int i=0;i<stuff.length;i++)  System.out.println(stuff[i]); /*  int stuff_int = 920201; System.out.println(stuff_int); */ System.out.println(920201);
-
+```java
+String[] stuff = ["Hello, World!", "My name is Doil", "bbomi"];
+for(int i=0;i<stuff.length;i++)
+System.out.println(stuff[i]); 
+/*  
+int stuff_int = 920201;
+System.out.println(stuff_int);
+*/
+System.out.println(920201);
+```
 이제 Hello World를 했으니
 
 
@@ -144,7 +150,7 @@ String[] stuff = ["Hello, World!", "My name is Doil", "bbomi"]; for(int i=0;i<st
 
 첫 문제로 적합한 것은
 
-![img](https://postfiles.pstatic.net/MjAyMTAzMTZfMjQg/MDAxNjE1ODkwOTgwMTcw.dkKo6DWxuyu1mTMj-h9yOgm2B6ZHeLIqP60k8dYVcQEg.UbE7YWdXBdIQEzQXFrTf2kar8b5lukemEQ3ASccEl9sg.PNG.kdi3939/image.png?type=w966)
+![img](img\image-163600117956027.png)
 
 이 문제로 정했다.
 
@@ -158,7 +164,7 @@ A와 B를 입력받고 A+B를 출력해 주는 매우 매우 간단한 알고리
 
 **출력**은 매우 간단했다.
 
-![img](https://postfiles.pstatic.net/MjAyMTAzMTZfMjcx/MDAxNjE1ODkxMTk0MjUx.v1zzDlJ42r_OjNcZ0-eyr-XXoSzJdAxD-9AcFGEzxnkg.iGUXYSJNFgkTWKAo9Cp7gp62_jgiFSj9x3KhQkiQtygg.PNG.kdi3939/image.png?type=w966)
+![img](img\image-163600117956029.png)
 
 여기 안에 출력할 인자를 넣으면 된다.
 
@@ -179,7 +185,7 @@ A와 B를 입력받고 A+B를 출력해 주는 매우 매우 간단한 알고리
 number = input("숫자입력 : ")
 print(number)
 ```
-![img](https://postfiles.pstatic.net/MjAyMTAzMTZfMTg3/MDAxNjE1ODkxNDEzOTAw.y2A_h6xhOjzIC-icqX0SsXiye2Dl4XCZi6GzxZ2J5Zgg.2McRDd1t6dHM7VvEpt3pTJXLofVE6wLA25LPWMvuARkg.PNG.kdi3939/image.png?type=w966)
+![img](img\image-163600117956031.png)
 
 input()이라는 함수만 쓰면 되고,
 
@@ -189,9 +195,9 @@ input()이라는 함수만 쓰면 되고,
 
 변수 선언, 입출력을 배웠으니 이제 문제로 돌아가서 위 문제를 풀어보자
 
-![img](https://postfiles.pstatic.net/MjAyMTAzMTZfMjU4/MDAxNjE1ODk0NTExNDEw.7pjXbPEo9iahr2QyzBClwOF0xr3QAu6BhHoZHEEhu0sg.KdNMvshnoY0PoRZx4NsZrhKi3zt5nzFXI243v3yeZx0g.PNG.kdi3939/image.png?type=w966)
+![img](img\image-163600117956033.png)
 
-[![img](https://storep-phinf.pstatic.net/linesoft_01/original_16.gif?type=pa50_50)](https://blog.naver.com/PostView.naver?blogId=kdi3939&logNo=222277651546&parentCategoryNo=&categoryNo=84&viewDate=&isShowPopularPosts=false&from=postList#)
+![img](img\original_16-163600117956035.gif)
 
 이렇게 풀면 쉽게 나오겠지? 싶은데 전혀 의도한 바대로 작동하지 않는다.
 
@@ -217,8 +223,7 @@ input()이라는 함수만 쓰면 되고,
 
 그리고 A와 B를 더한 값을 C에 담아주고, print로 출력해 주면 끝
 
-![img](https://postfiles.pstatic.net/MjAyMTAzMTZfOTQg/MDAxNjE1ODk0MzUxNTQ0.GtHzEy1caWGrqBcpUm-n6hFwX0W6ye0JJDHayN7uuvEg.qtAJI00VY6c0nX5wImma3k-DgrgbPNz9kBCEJMxOtJwg.PNG.kdi3939/image.png?type=w966)
-
+![img](img\image-163600117956037.png)
 다만, 문제에서는 C라는 변수를 선언하지 않았고, 입력받은 값을 합산해서 바로 출력해 주기 때문에
 
 print(A+B)라고 입력하는 것이 더 문제에 적합하다.
@@ -229,7 +234,7 @@ c.f)파이썬에서는 주석이 // 이 아니라 #으로 해야 한다.
 
 결과는 성공적
 
-![img](https://postfiles.pstatic.net/MjAyMTAzMTZfMjQ1/MDAxNjE1ODkyNTc0MDQ3.0kaZJAhOTORxDJSxtSTzHA6wmSVORNeUSIbcyt0KAw4g.xE5FX5LvXgAPQP_gWXWq_yYLTE4tDGgePGzS_7XXpo0g.PNG.kdi3939/image.png?type=w966)
+![img](img\image-163600117956039.png)
 
 
 ```python
@@ -272,4 +277,4 @@ public class A_Plus_B
 
 앞으로 잘 부탁한다
 
-![img](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/768px-Python-logo-notext.svg.png)
+![img](img\768px-Python-logo-notext.svg-163600117956041.png)

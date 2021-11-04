@@ -323,7 +323,6 @@ WinSCP
 
 https://winscp.net/eng/download.php
 
-[![img](./img/src=https%3A%2F%2Fwinscp-static-746341.c.cdn77.org%2Fassets%2Fimages%2Fstore_get_from%2FEnglish.png%3Fv%3D6987&type=ff500_300)](https://winscp.net/eng/download.php)
 
 
 
@@ -359,12 +358,21 @@ pem 파일로 인증서를 만들 때, PEM_read_bio:bad end line 와 같은 에�
 
 인증서의 구분선이 한줄로 되어서 에러가 발생하는  것이다.
 ```
------BEGIN CERTIFICATE----- (Base64) -----END CERTIFICATE----------BEGIN CERTIFICATE----- (Base64) -----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+        (Base64) 
+-----END CERTIFICATE----------BEGIN CERTIFICATE----- 
+        (Base64) 
+-----END CERTIFICATE-----
 ```
 vi로 해당 pem을 확인하면 위와 같이  end와 begin부분이 한줄로 되어있을 수 있다.
 
 ```
------BEGIN CERTIFICATE----- (Base64) -----END CERTIFICATE----- -----BEGIN CERTIFICATE----- (Base64) -----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+        (Base64)
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+        (Base64)
+-----END CERTIFICATE-----
 ```
 
 이렇게 선을 구분해주면 정상적으로 인식가능.

@@ -32,7 +32,7 @@ const IconButtonBar = ({ links = {} }) => {
         return <LinkedInIcon {...props} />;
       case 'instagram':
         return <InstagramIcon {...props} />;
-      case 'naver':
+      case 'naver-blog':
         return <NaverIcon {...props} />;
       default:
         return <></>;

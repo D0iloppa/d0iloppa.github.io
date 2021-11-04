@@ -1,8 +1,6 @@
 ---
 emoji: 🧐
-title: 
-IT
-포토샵 CS6 언어 한글로 바꾸기
+title: 포토샵 CS6 언어 한글로 바꾸기
 date: '2021-02-19 14:05:00'
 author: 도일
 tags: 포토샵 한글패치

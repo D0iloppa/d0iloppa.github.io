@@ -174,7 +174,7 @@ A와 B를 입력받고 A+B를 출력해 주는 매우 매우 간단한 알고리
 
 number = input("숫자입력 : ") print(number)
 
-![https://postfiles.pstatic.net/MjAyMTAzMTZfMTg3/MDAxNjE1ODkxNDEzOTAw.y2A_h6xhOjzIC-icqX0SsXiye2Dl4XCZi6GzxZ2J5Zgg.2McRDd1t6dHM7VvEpt3pTJXLofVE6wLA25LPWMvuARkg.PNG.kdi3939/image.png?type=w966](https://postfiles.pstatic.net/MjAyMTAzMTZfMTg3/MDAxNjE1ODkxNDEzOTAw.y2A_h6xhOjzIC-icqX0SsXiye2Dl4XCZi6GzxZ2J5Zgg.2McRDd1t6dHM7VvEpt3pTJXLofVE6wLA25LPWMvuARkg.PNG.kdi3939/image.png?type=w966)
+![img](https://postfiles.pstatic.net/MjAyMTAzMTZfMTg3/MDAxNjE1ODkxNDEzOTAw.y2A_h6xhOjzIC-icqX0SsXiye2Dl4XCZi6GzxZ2J5Zgg.2McRDd1t6dHM7VvEpt3pTJXLofVE6wLA25LPWMvuARkg.PNG.kdi3939/image.png?type=w966)
 
 input()이라는 함수만 쓰면 되고,
 

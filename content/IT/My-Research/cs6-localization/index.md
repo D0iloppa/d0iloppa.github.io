@@ -1,9 +1,11 @@
 ---
 emoji: 🧐
-title: 가상화폐가 도대체 뭐야? (Feat. 비트코인)
-date: '2021-03-03 20:41:00'
+title: 
+IT
+포토샵 CS6 언어 한글로 바꾸기
+date: '2021-02-19 14:05:00'
 author: 도일
-tags: 비트코인 가상화폐 블록체인
+tags: 포토샵 한글패치
 categories: IT 탐구생활
 ---
 ![img](./img/포토샵_한글패치.png)

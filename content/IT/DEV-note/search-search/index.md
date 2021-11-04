@@ -1,6 +1,6 @@
 ---
 emoji: 💉
-title: "Search Search | m.nearbyme.io" 와의 사투, 해결일지
+title: Search Search | m.nearbyme.io 와의 사투, 해결일지
 date: '2021-10-08 09:42:00'
 author: 도일
 tags: searchsearch nearbyme 크롬악성확장프로그램

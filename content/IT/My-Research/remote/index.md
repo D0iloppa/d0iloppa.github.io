@@ -306,11 +306,7 @@ DNS를 이용하실 경우 "doiloppa.chickenkiller.com"과 같은 도메인 주�
 
 크롬 브라우저를 실행시킨 후,
 
-주소창에 https://remotedesktop.google.com/access/ 을 입력합니다.
-
-아래 링크로 이동하셔도 좋습니다.
-
-[![img](./img/src=https%3A%2F%2Fssl.gstatic.com%2Faccounts%2Fui%2Favatar_2x.png&type=ff120)](https://remotedesktop.google.com/access/)[ **Sign in - Google Accounts**One account. All of Google. Sign in with your Google Account Find my account Create account One Google Account for everything Googleremotedesktop.google.com](https://remotedesktop.google.com/access/)
+주소창에 [https://remotedesktop.google.com/access/](https://remotedesktop.google.com/access/) 을 입력합니다.
 
 들어왔을 때, 로그인 되어 있지 않다면
 
@@ -474,7 +470,7 @@ PIN 번호 입력해 주시면 원격접속이 됩니다.
 
 > \3. 팀뷰어
 
-[![img](./img/src=https%3A%2F%2Fstatic.teamviewer.com%2Fresources%2F2018%2F12%2FFacebook_v1.png&type=ff500_300)](https://www.teamviewer.com/ko/)[**TeamViewer – 원격지원, 원격접속, 서비스 데스크, 온라인 협업과 회의**TeamViewer의 원격 데스크탑 접속 솔루션: 원격 컴퓨터에 연결하고 원격 지원 및 온라인 협업을 제공할 수 있습니다 ➤ 개인용은 무료입니다!www.teamviewer.com](https://www.teamviewer.com/ko/)
+[TeamViewer](https://www.teamviewer.com/ko/)
 
 세 번째 방법은
 

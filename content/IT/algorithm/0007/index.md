@@ -6,7 +6,7 @@ author: 도일
 tags: python algorithm
 categories: IT algorithm
 ---
-![img](C:\Users\wellconn\Desktop\doil\github_blog\d0iloppa.github.io\content\img\image.png)
+![img](./img/image.png)
 
 백준 알고리즘에서 말하길 함수를 쓰면 코드가 깔끔해진다고 한다.
 
@@ -48,13 +48,13 @@ x,y = test(1,2,3)
 
 함수를 구성할 때 이를 고려할 필요가 있다.
 
-![img](C:\Users\wellconn\Desktop\doil\github_blog\d0iloppa.github.io\content\img\image-163600823572085.png)
+![img](./img/image-163600823572085.png)
 
 또한, 함수의 선언은 함수의 사용하는 시점보다 앞서야 한다.
 
 무슨말이냐 하면 아래 사진처럼
 
-![img](C:\Users\wellconn\Desktop\doil\github_blog\d0iloppa.github.io\content\img\image-163600823572086.png)
+![img](./img/image-163600823572086.png)
 
 함수를 쓰고나서 그 후에 이 함수가 무엇인지 정의해줘도
 
@@ -72,7 +72,7 @@ x,y = test(1,2,3)
 
 > 파이썬 함수선언
 
-![img](C:\Users\wellconn\Desktop\doil\github_blog\d0iloppa.github.io\content\img\image-163600823572087.png)
+![img](./img/image-163600823572087.png)
 
 백준 알고리즘 [15596#](https://www.acmicpc.net/problem/15596)
 
@@ -82,11 +82,11 @@ x,y = test(1,2,3)
 
 
 
-![img](C:\Users\wellconn\Desktop\doil\github_blog\d0iloppa.github.io\content\img\image-163600823572088.png)
+![img](./img/image-163600823572088.png)
 
 이렇게 solve라는 함수를 만들어주고 제출하면 끝
 
-![img](C:\Users\wellconn\Desktop\doil\github_blog\d0iloppa.github.io\content\img\image-163600823572089.png)
+![img](./img/image-163600823572089.png)
 
 
 
@@ -94,7 +94,7 @@ x,y = test(1,2,3)
 
 > 셀프 넘버
 
-![img](C:\Users\wellconn\Desktop\doil\github_blog\d0iloppa.github.io\content\img\image-163600823572090.png)
+![img](./img/image-163600823572090.png)
 
 백준 알고리즘 [4673#](https://www.acmicpc.net/problem/4673)
 
@@ -104,7 +104,7 @@ x,y = test(1,2,3)
 
 d(n)은 n과 n의 각 자리수를 더하는 함수 => 이부분을 함수로 우선 구현해보자
 
-![img](C:\Users\wellconn\Desktop\doil\github_blog\d0iloppa.github.io\content\img\image-163600823572091.png)
+![img](./img/image-163600823572091.png)
 
 각 자리의 수를 분리하기 위해 n은 우선 문자열로 입력을 받는다.
 
@@ -148,7 +148,7 @@ result는 입력받은 수와, 각 자리의 수를 더한값이다.
 
 이제 해당 값이 배열에 들어있는지 확인하는 함수를 만들 필요가 있겠다.
 
-![img](C:\Users\wellconn\Desktop\doil\github_blog\d0iloppa.github.io\content\img\image-163600823572092.png)
+![img](./img/image-163600823572092.png)
 
 
 
@@ -156,7 +156,7 @@ result는 입력받은 수와, 각 자리의 수를 더한값이다.
 
 1부터 10000까지 수열을 만들면서 확인해주면 된다.
 
-![img](C:\Users\wellconn\Desktop\doil\github_blog\d0iloppa.github.io\content\img\image-163600823572093.png)
+![img](./img/image-163600823572093.png)
 
 d(n) 함수는 문자열로 입력받는 것으로 정의하였기 때문에
 
@@ -174,17 +174,17 @@ d(n) 함수는 문자열로 입력받는 것으로 정의하였기 때문에
 
 
 
-![img](C:\Users\wellconn\Desktop\doil\github_blog\d0iloppa.github.io\content\img\question1.gif)
+![img](./img/question1.gif)
 
 
 
-![img](C:\Users\wellconn\Desktop\doil\github_blog\d0iloppa.github.io\content\img\image-163600823572095.png)
+![img](./img/image-163600823572095.png)
 
 
 
 > 한수
 
-![img](C:\Users\wellconn\Desktop\doil\github_blog\d0iloppa.github.io\content\img\image-163600823572096.png)
+![img](./img/image-163600823572096.png)
 
 백준 알고리즘 [1065#](https://www.acmicpc.net/problem/1065)
 
@@ -214,7 +214,7 @@ d(n) 함수는 문자열로 입력받는 것으로 정의하였기 때문에
 
 \1) 등차수열인지 확인하는 함수
 
-![img](C:\Users\wellconn\Desktop\doil\github_blog\d0iloppa.github.io\content\img\image-163600823572097.png)
+![img](./img/image-163600823572097.png)
 
 둘째항과 첫째항의 차를 등차인 d라고 하고
 
@@ -232,7 +232,7 @@ d(n) 함수는 문자열로 입력받는 것으로 정의하였기 때문에
 
 비교할 값이 적어도 3개는 되어야 등차인지 아닌지 확인해볼 수 있다.
 
-![img](C:\Users\wellconn\Desktop\doil\github_blog\d0iloppa.github.io\content\img\image-163600823572098.png)
+![img](./img/image-163600823572098.png)
 
 
 
@@ -248,8 +248,8 @@ d(n) 함수는 문자열로 입력받는 것으로 정의하였기 때문에
 
 조건에 해당될때마다 +1 해주면 된다.
 
-![img](C:\Users\wellconn\Desktop\doil\github_blog\d0iloppa.github.io\content\img\image-163600823572199.png)
+![img](./img/image-163600823572199.png)
 
 
 
-![img](C:\Users\wellconn\Desktop\doil\github_blog\d0iloppa.github.io\content\img\image-1636008235721100.png)
+![img](./img/image-1636008235721100.png)

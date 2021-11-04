@@ -158,7 +158,7 @@ RAM카드라고 불리우는 녀석입니다.
 
 ![img](./img/image-1636010594700473.png)
 
-[ **Cheat Engine**Cheat Engine Download Cheat Engine Download Cheat Engine 7.2 for Mac Read before download: Cheat engine is for private and educational purposes only. Before you attach Cheat Engine to a process, please make sure that you are not violating the EULA/TOS of the specific game/application. cheatengine.or...www.cheatengine.org](https://www.cheatengine.org/)
+[Cheat Engine](https://www.cheatengine.org/)
 
 데이터의 수치를 검색하여
 

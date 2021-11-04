@@ -6,7 +6,7 @@ author: 도일
 tags: 컴퓨터 청소
 categories: IT 탐구생활
 ---
-![img](C:\Users\wellconn\Desktop\doil\github_blog\d0iloppa.github.io\content\img\컴퓨터_청소.png)
+![img](./img/컴퓨터_청소.png)
 
 
 
@@ -26,7 +26,7 @@ categories: IT 탐구생활
 
 
 
-![img](C:\Users\wellconn\Desktop\doil\github_blog\d0iloppa.github.io\content\img\image-1636010686824498.png)
+![img](./img/image-1636010686824498.png)
 
 저의 SSD 용량은 110GB입니다.
 
@@ -52,17 +52,17 @@ Windows Update Clean Tool.7z
 
 
 
-![img](C:\Users\wellconn\Desktop\doil\github_blog\d0iloppa.github.io\content\img\01.압축파일.png)
+![img](./img/01.압축파일.png)
 
 제가 올려드린 파일을 다운받으면 위와 같은 압축파일이 하나 있습니다.
 
 압축을 풀어주세요
 
-![img](C:\Users\wellconn\Desktop\doil\github_blog\d0iloppa.github.io\content\img\02.압축풀음.png)
+![img](./img/02.압축풀음.png)
 
 **"Windows Update Clean Tool.exe"** 파일을 실행시켜주세요
 
-![img](C:\Users\wellconn\Desktop\doil\github_blog\d0iloppa.github.io\content\img\03.첫실행.png)
+![img](./img/03.첫실행.png)
 
 윈도우가 설치되어져 있는 파티션이 뜹니다.
 
@@ -70,7 +70,7 @@ Windows Update Clean Tool.7z
 
 
 
-![img](C:\Users\wellconn\Desktop\doil\github_blog\d0iloppa.github.io\content\img\04.스캔_시작.png)
+![img](./img/04.스캔_시작.png)
 
 처음 스캔을 진행하고 오른쪽 화면과 같이 정리할 목록이 뜹니다.
 
@@ -82,13 +82,13 @@ Windows Update Clean Tool.7z
 
 
 
-![img](C:\Users\wellconn\Desktop\doil\github_blog\d0iloppa.github.io\content\img\05.경고.png)
+![img](./img/05.경고.png)
 
 청소버튼을 누르면 경고창이 뜨게됩니다.
 
 
 
-![img](C:\Users\wellconn\Desktop\doil\github_blog\d0iloppa.github.io\content\img\image.png)
+![img](./img/image.png)
 
 아니 컴퓨터 청소하는데 갑자기 이렇게 협박을 하는거 같죠?? 무서워요 ㅠㅠ
 
@@ -114,11 +114,11 @@ Windows Update Clean Tool.7z
 
 그때는 잘 알지 못하면 체크하지 않는 것을 추천드립니다.
 
-![img](C:\Users\wellconn\Desktop\doil\github_blog\d0iloppa.github.io\content\img\06.청소.png)
+![img](./img/06.청소.png)
 
 확인 눌러주시면 아래에 진행바가 가면서 청소가 진행되고
 
-![img](C:\Users\wellconn\Desktop\doil\github_blog\d0iloppa.github.io\content\img\07.청소_끝.png)
+![img](./img/07.청소_끝.png)
 
 완료되면 총 얼마만큼의 용량을 확보했는지 알려줍니다.
 
@@ -132,7 +132,7 @@ Windows Update Clean Tool.7z
 
 
 
-![img](C:\Users\wellconn\Desktop\doil\github_blog\d0iloppa.github.io\content\img\rodns.jpg)
+![img](./img/rodns.jpg)
 
 
 
@@ -144,7 +144,7 @@ Windows Update Clean Tool.7z
 
 
 
-![img](C:\Users\wellconn\Desktop\doil\github_blog\d0iloppa.github.io\content\img\08.종료할때.png)
+![img](./img/08.종료할때.png)
 
 간혹 프로그램 종료를 어려워 하시는 분들이 계셔서
 
@@ -154,7 +154,7 @@ Windows Update Clean Tool.7z
 
 그럼 바로 종료되는 것이 아니라
 
-![img](C:\Users\wellconn\Desktop\doil\github_blog\d0iloppa.github.io\content\img\09.나가기.png)
+![img](./img/09.나가기.png)
 
 이러한 창이 한번 뜨게 됩니다.
 
@@ -172,4 +172,4 @@ Windows Update Clean Tool.7z
 
 여기까지 입니다~!
 
-[![img](C:\Users\wellconn\Desktop\doil\github_blog\d0iloppa.github.io\content\img\original_17.gif)](https://blog.naver.com/PostView.naver?blogId=kdi3939&logNo=222219064587&parentCategoryNo=&categoryNo=80&viewDate=&isShowPopularPosts=false&from=postList#)
+[![img](./img/original_17.gif)](https://blog.naver.com/PostView.naver?blogId=kdi3939&logNo=222219064587&parentCategoryNo=&categoryNo=80&viewDate=&isShowPopularPosts=false&from=postList#)

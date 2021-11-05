@@ -6,6 +6,7 @@ import Bio from '../components/bio';
 import PostCardsColumn from '../components/post-cards-column';
 import Post from '../models/post';
 import Tabs from '../components/tabs';
+import MusicPlayer from '../components/musicplayer';
 
 import { getSortedCategoriesByCount } from '../utils/helpers';
 
@@ -33,6 +34,7 @@ export default ({ data }) => {
         moreUrl={`posts/${tabIndex === 0 ? '' : categories[tabIndex]}`}
         showMoreButton={categoryPosts.length > 4}
       />
+      <MusicPlayer/>
     </Layout>
   );
 };

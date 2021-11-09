@@ -37,7 +37,7 @@ function1()이 종료되고, function2()가 종료되어야만 c의 값이 결�
 요청을 보낸 후 응답을 받아야만 다음 태스크가 수행되는,**동기식 처리**라고 한다.
 이러한 처리가 왜 문제가 될까?
 
-![img](C:\Users\wellconn\Desktop\doil\github_blog\d0iloppa.github.io\content\img\peEYroKPwh0mVF_esUp99hi2wiQt_A9_9REY5puGGni887ND9gMslAL6ZjBaLQpKAHRKeWDwTuhbWPljh0md-ywwDS_auN0aXGMCtut8p8T3JxfoQPuel-AN.png)
+![img](./img/peEYroKPwh0mVF_esUp99hi2wiQt_A9_9REY5puGGni887ND9gMslAL6ZjBaLQpKAHRKeWDwTuhbWPljh0md-ywwDS_auN0aXGMCtut8p8T3JxfoQPuel-AN.png)
 
 가끔 마트에서 급하게 물건 **하나**를 살 일이 있어서 들렀을 때가 생각난다.
 나는 진짜 딱 한개의 물건만 계산하면 되지만, 

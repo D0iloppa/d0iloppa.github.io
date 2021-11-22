@@ -1,0 +1,857 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.e73d3783c36299ca50b3.css" id="gatsby-global-css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:url(/static/montserrat-cyrillic-ext-400-normal-225293d9cb4ab66bd8a76938051945f2.woff2) format("woff2"),url(/static/montserrat-all-400-normal-f559455a2bb877b795730a2d1167f125.woff) format("woff");unicode-range:U+0460-052f,U+1c80-1c88,U+20b4,U+2de0-2dff,U+a640-a69f,U+fe2e-fe2f}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:url(/static/montserrat-cyrillic-400-normal-298b48e6dfdf7ec4ef8907ff8a7182b1.woff2) format("woff2"),url(/static/montserrat-all-400-normal-f559455a2bb877b795730a2d1167f125.woff) format("woff");unicode-range:U+0400-045f,U+0490-0491,U+04b0-04b1,U+2116}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:url(data:font/woff2;base64,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) format("woff2"),url(/static/montserrat-all-400-normal-f559455a2bb877b795730a2d1167f125.woff) format("woff");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01a0-01a1,U+01af-01b0,U+1ea0-1ef9,U+20ab}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:url(/static/montserrat-latin-ext-400-normal-0eda11d2dde5c2256cdc991dc5d70c0c.woff2) format("woff2"),url(/static/montserrat-all-400-normal-f559455a2bb877b795730a2d1167f125.woff) format("woff");unicode-range:U+0100-024f,U+0259,U+1e??,U+2020,U+20a0-20ab,U+20ad-20cf,U+2113,U+2c60-2c7f,U+a720-a7ff}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:url(/static/montserrat-latin-400-normal-8037e9fc6d8fca40a9eb783c7510b12e.woff2) format("woff2"),url(/static/montserrat-all-400-normal-f559455a2bb877b795730a2d1167f125.woff) format("woff");unicode-range:U+00??,U+0131,U+0152-0153,U+02bb-02bc,U+02c6,U+02da,U+02dc,U+2000-206f,U+2074,U+20ac,U+2122,U+2191,U+2193,U+2212,U+2215,U+feff,U+fffd}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}a{text-decoration:none;outline:none}body{--background-color:#fff;--primary-text-color:#000;--secondary-text-color:#9e9e9e;--content-text-color:#37352f;--button-background-color:#f3f3f4;--tab-text-color:#6e6d7a;--tab-hover-text-color:#0d0c22;--tab-selected-background-color:rgba(13,12,34,0.05);--bio-link-icon-color:rgba(0,0,0,0.54);--chip-background-color:#f3f3f4;--link-text-color:rgb(55 53 47/70%);--post-card-border-color:rgba(0,0,0,0.12);--markdown-table-even-cell-background-color:#f6f8fa;--markdown-table-border-color:#dfe2e5;--markdown-blockquote-border-color:#dfe2e5;--markdown-border-color:#e1e4e8}body,body.dark{--button-text-color:#363f47;--about-link-icon-color:#a8a8a8}body.dark{--background-color:#232326;--primary-text-color:#e6e6e6;--secondary-text-color:#768390;--content-text-color:#e6e6e6;--button-background-color:#444c56;--tab-text-color:#768390;--tab-hover-text-color:#acbac7;--tab-selected-background-color:#373e47;--chip-background-color:#323a42;--bio-link-icon-color:#e6e6e6;--link-text-color:#90b0ec;--post-card-border-color:#363f47;--markdown-table-even-cell-background-color:#2d333b;--markdown-table-border-color:#444c56;--markdown-blockquote-border-color:#4f5864;--markdown-border-color:#e1e4e8}*{box-sizing:border-box;-webkit-appearance:none;appearance:none}html{width:100%;height:100%;overflow-y:scroll;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:14px;background:var(--background-color)}html.transition,html.transition *,html.transition :after,html.transition :before{transition:.42s cubic-bezier(.68,-.55,.27,1.55)!important;transition-delay:0!important}body{width:100%;height:100%;margin:0;background-color:var(--background-color);color:var(--primary-text-color);word-break:keep-all;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}ul{-webkit-margin-before:0;margin-block-start:0;-webkit-margin-after:0;margin-block-end:0;-webkit-margin-start:0;margin-inline-start:0;-webkit-margin-end:0;margin-inline-end:0;-webkit-padding-start:0;padding-inline-start:0}a{color:var(--link-text-color)}.markdown .octicon{display:inline-block;fill:currentColor;vertical-align:text-bottom}.markdown .anchor{float:left;line-height:1;margin-left:-20px;padding-right:4px}.markdown .anchor:focus{outline:none}.markdown h1 .octicon-link,.markdown h2 .octicon-link,.markdown h3 .octicon-link,.markdown h4 .octicon-link,.markdown h5 .octicon-link,.markdown h6 .octicon-link{color:#1b1f23;vertical-align:middle;visibility:hidden}.markdown h1:hover .anchor,.markdown h2:hover .anchor,.markdown h3:hover .anchor,.markdown h4:hover .anchor,.markdown h5:hover .anchor,.markdown h6:hover .anchor{text-decoration:none}.markdown h1:hover .anchor .octicon-link,.markdown h2:hover .anchor .octicon-link,.markdown h3:hover .anchor .octicon-link,.markdown h4:hover .anchor .octicon-link,.markdown h5:hover .anchor .octicon-link,.markdown h6:hover .anchor .octicon-link{visibility:visible}.markdown h1:hover .anchor .octicon-link:before,.markdown h2:hover .anchor .octicon-link:before,.markdown h3:hover .anchor .octicon-link:before,.markdown h4:hover .anchor .octicon-link:before,.markdown h5:hover .anchor .octicon-link:before,.markdown h6:hover .anchor .octicon-link:before{width:16px;height:16px;content:" ";display:inline-block;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'/%3E%3C/svg%3E")}.markdown{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:var(--content-text-color);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:16px;font-weight:500;line-height:1.5;word-wrap:break-word}.markdown details{display:block}.markdown summary{display:list-item}.markdown a{background-color:initial}.markdown a:active,.markdown a:hover{outline-width:0}.markdown strong{font-weight:inherit;font-weight:bolder}.markdown h1{margin:.67em 0}.markdown img{border-style:none}.markdown code,.markdown kbd,.markdown pre{font-family:monospace,monospace;font-size:1em}.markdown hr{box-sizing:initial;overflow:visible}.markdown input{font:inherit;margin:0;overflow:visible}.markdown [type=checkbox]{box-sizing:border-box;padding:0}.markdown *{box-sizing:border-box}.markdown input{font-family:inherit;font-size:inherit;line-height:inherit}.markdown a{color:var(--link-text-color);text-decoration:none;border-left-color:var(--link-text-color);border-bottom:.05em solid;border-bottom-color:var(--link-text-color);border-right-color:var(--link-text-color);border-top-color:var(--link-text-color)}.markdown a.anchor{border-bottom:none}.markdown strong{font-weight:700}.markdown hr{height:0;margin:15px 0;overflow:hidden;background:transparent;border-bottom:1px solid var(--markdown-blockquote-border-color)}.markdown hr:after,.markdown hr:before{display:table;content:""}.markdown hr:after{clear:both}.markdown table{border-spacing:0;border-collapse:collapse}.markdown td,.markdown th{padding:0}.markdown details summary{cursor:pointer}.markdown h1,.markdown h2,.markdown h3,.markdown h4,.markdown h5,.markdown h6{margin-top:0;margin-bottom:0}.markdown h1{font-size:32px}.markdown h1,.markdown h2{font-weight:600}.markdown h2{font-size:24px}.markdown h3{font-size:20px}.markdown h3,.markdown h4{font-weight:600}.markdown h4{font-size:16px}.markdown h5{font-size:14px}.markdown h5,.markdown h6{font-weight:600}.markdown h6{font-size:12px}.markdown p{margin-top:0;margin-bottom:10px}.markdown blockquote{margin:0}.markdown ol,.markdown ul{padding-left:0;margin-top:0;margin-bottom:0}.markdown ol ol,.markdown ul ol{list-style-type:lower-roman}.markdown ol ol ol,.markdown ol ul ol,.markdown ul ol ol,.markdown ul ul ol{list-style-type:lower-alpha}.markdown dd{margin-left:0}.markdown code,.markdown pre{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px}.markdown code.language-text{border-radius:3px;font-size:85%;padding:.2em .4em}.markdown :not(pre)>code.language-text{background:rgba(135,131,120,.15);color:#eb5757;overflow-wrap:break-word}.markdown pre{margin-top:0;margin-bottom:0}.markdown input::-webkit-inner-spin-button,.markdown input::-webkit-outer-spin-button{margin:0;-webkit-appearance:none;appearance:none}.markdown :checked+.radio-label{position:relative;z-index:1;border-color:#0366d6}.markdown .border{border:1px solid var(--markdown-border-color)!important}.markdown .border-0{border:0!important}.markdown .border-bottom{border-bottom:1px solid var(--markdown-border-color)!important}.markdown .rounded-1{border-radius:3px!important}.markdown .bg-white{background-color:transparent!important}.markdown .bg-gray-light{background-color:#fafbfc!important}.markdown .text-gray-light{color:#6a737d!important}.markdown .pl-3,.markdown .px-3{padding-left:16px!important}.markdown .px-3{padding-right:16px!important}.markdown .f6{font-size:12px!important}.markdown .lh-condensed{line-height:1.25!important}.markdown .text-bold{font-weight:600!important}.markdown .pl-c{color:#6a737d}.markdown .pl-c1,.markdown .pl-s .pl-v{color:#005cc5}.markdown .pl-e,.markdown .pl-en{color:#6f42c1}.markdown .pl-s .pl-s1,.markdown .pl-smi{color:#24292e}.markdown .pl-ent{color:#22863a}.markdown .pl-k{color:#d73a49}.markdown .pl-pds,.markdown .pl-s,.markdown .pl-s .pl-pse .pl-s1,.markdown .pl-sr,.markdown .pl-sr .pl-cce,.markdown .pl-sr .pl-sra,.markdown .pl-sr .pl-sre{color:#032f62}.markdown .pl-smw,.markdown .pl-v{color:#e36209}.markdown .pl-bu{color:#b31d28}.markdown .pl-ii{color:#fafbfc;background-color:#b31d28}.markdown .pl-c2{color:#fafbfc;background-color:#d73a49}.markdown .pl-c2:before{content:"^M"}.markdown .pl-sr .pl-cce{font-weight:700;color:#22863a}.markdown .pl-ml{color:#735c0f}.markdown .pl-mh,.markdown .pl-mh .pl-en,.markdown .pl-ms{font-weight:700;color:#005cc5}.markdown .pl-mi{font-style:italic;color:#24292e}.markdown .pl-mb{font-weight:700;color:#24292e}.markdown .pl-md{color:#b31d28;background-color:#ffeef0}.markdown .pl-mi1{color:#22863a;background-color:#f0fff4}.markdown .pl-mc{color:#e36209;background-color:#ffebda}.markdown .pl-mi2{color:#f6f8fa;background-color:#005cc5}.markdown .pl-mdr{font-weight:700;color:#6f42c1}.markdown .pl-ba{color:#586069}.markdown .pl-sg{color:#959da5}.markdown .pl-corl{text-decoration:underline;color:#032f62}.markdown .mb-0{margin-bottom:0!important}.markdown .my-2{margin-bottom:8px!important;margin-top:8px!important}.markdown .pl-0{padding-left:0!important}.markdown .py-0{padding-top:0!important;padding-bottom:0!important}.markdown .pl-1{padding-left:4px!important}.markdown .pl-2{padding-left:8px!important}.markdown .py-2{padding-top:8px!important;padding-bottom:8px!important}.markdown .pl-3{padding-left:16px!important}.markdown .pl-4{padding-left:24px!important}.markdown .pl-5{padding-left:32px!important}.markdown .pl-6{padding-left:40px!important}.markdown .pl-7{padding-left:48px!important}.markdown .pl-8{padding-left:64px!important}.markdown .pl-9{padding-left:80px!important}.markdown .pl-10{padding-left:96px!important}.markdown .pl-11{padding-left:112px!important}.markdown .pl-12{padding-left:128px!important}.markdown hr{border-bottom-color:#eee}.markdown kbd{display:inline-block;padding:3px 5px;font:11px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;line-height:10px;color:#444d56;vertical-align:middle;background-color:#fafbfc;border:1px solid #d1d5da;border-radius:3px;box-shadow:inset 0 -1px 0 #d1d5da}.markdown:after,.markdown:before{display:table;content:""}.markdown:after{clear:both}.markdown>:first-child{margin-top:0!important}.markdown>:last-child{margin-bottom:0!important}.markdown a:not([href]){color:inherit;text-decoration:none}.markdown blockquote,.markdown details,.markdown dl,.markdown ol,.markdown p,.markdown pre,.markdown table,.markdown ul{margin-top:0;margin-bottom:16px}.markdown hr{height:.25em;padding:0;margin:24px 0;background-color:var(--markdown-border-color);border:0}.markdown blockquote{padding:0 1em;color:#6a737d;border-left:.25em solid var(--markdown-blockquote-border-color)}.markdown blockquote>:first-child{margin-top:0}.markdown blockquote>:last-child{margin-bottom:0}.markdown h1,.markdown h2,.markdown h3,.markdown h4,.markdown h5,.markdown h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown h1{font-size:2em}.markdown h2{font-size:1.5em}.markdown h3{font-size:1.25em}.markdown h4{font-size:1em}.markdown h5{font-size:.875em}.markdown h6{font-size:.85em;color:#6a737d}.markdown ol,.markdown ul{padding-left:2em}.markdown ol ol,.markdown ol ul,.markdown ul ol,.markdown ul ul{margin-top:0;margin-bottom:0}.markdown ol{list-style-type:decimal}.markdown ul{list-style-type:disc}.markdown li{display:list-item;word-wrap:break-all;text-align:-webkit-match-parent}.markdown li>p{margin-top:16px}.markdown li+li{margin-top:.25em}.markdown dl{padding:0}.markdown dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:600}.markdown dl dd{padding:0 16px;margin-bottom:16px}.markdown table{display:block;width:100%;overflow:auto}.markdown table th{font-weight:600}.markdown table td,.markdown table th{padding:6px 13px;border:1px solid var(--markdown-table-border-color)}.markdown table tr{border-top:1px solid var(--markdown-table-border-color)}.markdown table tr:nth-child(2n){background-color:var(--markdown-table-even-cell-background-color)}.markdown img{display:block;margin:0 auto;max-width:100%;box-sizing:initial;background-color:transparent}.markdown img[align=right]{padding-left:20px}.markdown img[align=left]{padding-right:20px}.markdown code{padding:.2em .4em;margin:0;font-size:85%;background-color:rgba(27,31,35,.05);border-radius:3px}.markdown pre{word-wrap:normal}.markdown pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown .highlight{margin-bottom:16px}.markdown .highlight pre{margin-bottom:0;word-break:normal}.markdown .highlight pre,.markdown pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f6f8fa;border-radius:3px}.markdown pre code{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:initial;border:0}.markdown .commit-tease-sha{display:inline-block;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:90%;color:#444d56}.markdown .full-commit .btn-outline:not(:disabled):hover{color:#005cc5;border-color:#005cc5}.markdown .blob-wrapper{overflow-x:auto;overflow-y:hidden}.markdown .blob-wrapper-embedded{max-height:240px;overflow-y:auto}.markdown .blob-num{width:1%;min-width:50px;padding-right:10px;padding-left:10px;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px;line-height:20px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;vertical-align:top;cursor:pointer;-webkit-user-select:none;-ms-user-select:none;user-select:none}.markdown .blob-num:hover{color:rgba(27,31,35,.6)}.markdown .blob-num:before{content:attr(data-line-number)}.markdown .blob-code{position:relative;padding-right:10px;padding-left:10px;line-height:20px;vertical-align:top}.markdown .blob-code-inner{overflow:visible;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px;color:#24292e;word-wrap:normal;white-space:pre}.markdown .pl-token.active,.markdown .pl-token:hover{cursor:pointer;background:#ffea7f}.markdown .tab-size[data-tab-size="1"]{-moz-tab-size:1;-o-tab-size:1;tab-size:1}.markdown .tab-size[data-tab-size="2"]{-moz-tab-size:2;-o-tab-size:2;tab-size:2}.markdown .tab-size[data-tab-size="3"]{-moz-tab-size:3;-o-tab-size:3;tab-size:3}.markdown .tab-size[data-tab-size="4"]{-moz-tab-size:4;-o-tab-size:4;tab-size:4}.markdown .tab-size[data-tab-size="5"]{-moz-tab-size:5;-o-tab-size:5;tab-size:5}.markdown .tab-size[data-tab-size="6"]{-moz-tab-size:6;-o-tab-size:6;tab-size:6}.markdown .tab-size[data-tab-size="7"]{-moz-tab-size:7;-o-tab-size:7;tab-size:7}.markdown .tab-size[data-tab-size="8"]{-moz-tab-size:8;-o-tab-size:8;tab-size:8}.markdown .tab-size[data-tab-size="9"]{-moz-tab-size:9;-o-tab-size:9;tab-size:9}.markdown .tab-size[data-tab-size="10"]{-moz-tab-size:10;-o-tab-size:10;tab-size:10}.markdown .tab-size[data-tab-size="11"]{-moz-tab-size:11;-o-tab-size:11;tab-size:11}.markdown .tab-size[data-tab-size="12"]{-moz-tab-size:12;-o-tab-size:12;tab-size:12}.markdown .task-list-item{list-style-type:none}.markdown .task-list-item+.task-list-item{margin-top:3px}.markdown .task-list-item input{margin:0 .2em .25em -1.6em;vertical-align:middle}.markdown .table-of-contents{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;width:340px;position:fixed;top:75px;right:0}@media(max-width:1300px){.markdown .table-of-contents{display:none}}.markdown .table-of-contents ul{cursor:pointer;list-style-type:none}.markdown .table-of-contents ul li a{width:100%;height:30px;padding:6px 2px;color:var(--secondary-text-color);font-size:14px;border-bottom:none}.markdown .table-of-contents ul p{margin:0}.markdown .gatsby-resp-image-wrapper{display:flex!important;justify-content:center!important;width:100%!important;max-height:560px!important}.markdown .gatsby-resp-image-wrapper img{max-width:100%!important;max-height:560px!important;width:auto!important;height:auto!important;position:relative!important}code[class*=language-],pre[class*=language-]{color:#ccc;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}.mjx-chtml{display:inline-block;line-height:0;text-indent:0;text-align:left;text-transform:none;font-style:normal;font-weight:400;font-size:100%;font-size-adjust:none;letter-spacing:normal;word-wrap:normal;word-spacing:normal;white-space:nowrap;float:none;direction:ltr;max-width:none;max-height:none;min-width:0;min-height:0;border:0;margin:0;padding:1px 0}.MJXc-display{display:block;text-align:center;margin:1em 0;padding:0}.mjx-chtml[tabindex]:focus,body :focus .mjx-chtml[tabindex]{display:inline-table}.mjx-full-width{text-align:center;display:table-cell!important;width:10000em}.mjx-math{display:inline-block;border-collapse:separate;border-spacing:0}.mjx-math *{display:inline-block;box-sizing:content-box!important;text-align:left}.mjx-denominator,.mjx-numerator{display:block;text-align:center}.MJXc-stacked{height:0;position:relative}.MJXc-stacked>*{position:absolute}.mjx-stack,.MJXc-bevelled>*{display:inline-block}.mjx-op{display:block}.mjx-under{display:table-cell}.mjx-over{display:block}.mjx-over>*,.mjx-under>*{padding-left:0!important;padding-right:0!important}.mjx-prestack>.mjx-presub,.mjx-prestack>.mjx-presup,.mjx-stack>.mjx-sub,.mjx-stack>.mjx-sup{display:block}.mjx-delim-h>.mjx-char{display:inline-block}.mjx-surd{vertical-align:top}.mjx-surd+.mjx-box{display:inline-flex}.mjx-mphantom *{visibility:hidden}.mjx-merror{background-color:#ff8;color:#c00;border:1px solid #c00;padding:2px 3px;font-style:normal;font-size:90%}.mjx-annotation-xml{line-height:normal}.mjx-menclose>svg{fill:none;stroke:currentColor;overflow:visible}.mjx-mlabeledtr,.mjx-mtr{display:table-row}.mjx-mtd{display:table-cell;text-align:center}.mjx-label{display:table-row}.mjx-box{display:inline-block}.mjx-block{display:block}.mjx-span{display:inline}.mjx-char{display:block;white-space:pre}.mjx-itable{display:inline-table;width:auto}.mjx-row{display:table-row}.mjx-cell{display:table-cell}.mjx-table{display:table;width:100%}.mjx-line{display:block;height:0}.mjx-strut{width:0;padding-top:1em}.mjx-vsize{width:0}.MJXc-space1{margin-left:.167em}.MJXc-space2{margin-left:.222em}.MJXc-space3{margin-left:.278em}.mjx-test.mjx-test-display{display:table!important}.mjx-test.mjx-test-inline{display:inline!important;margin-right:-1px}.mjx-test.mjx-test-default{display:block!important;clear:both}.mjx-ex-box{display:inline-block!important;position:absolute;overflow:hidden;min-height:0;max-height:none;padding:0;border:0;margin:0;width:1px;height:60ex}.mjx-test-inline .mjx-left-box{display:inline-block;width:0;float:left}.mjx-test-inline .mjx-right-box{display:inline-block;width:0;float:right}.mjx-test-display .mjx-right-box{display:table-cell!important;width:10000em!important;min-width:0;max-width:none;padding:0;border:0;margin:0}.MJXc-TeX-unknown-R{font-family:monospace;font-style:normal;font-weight:400}.MJXc-TeX-unknown-I{font-family:monospace;font-style:italic;font-weight:400}.MJXc-TeX-unknown-B{font-family:monospace;font-style:normal;font-weight:700}.MJXc-TeX-unknown-BI{font-family:monospace;font-style:italic;font-weight:700}.MJXc-TeX-ams-R{font-family:MJXc-TeX-ams-R,MJXc-TeX-ams-Rw}.MJXc-TeX-cal-B{font-family:MJXc-TeX-cal-B,MJXc-TeX-cal-Bx,MJXc-TeX-cal-Bw}.MJXc-TeX-frak-R{font-family:MJXc-TeX-frak-R,MJXc-TeX-frak-Rw}.MJXc-TeX-frak-B{font-family:MJXc-TeX-frak-B,MJXc-TeX-frak-Bx,MJXc-TeX-frak-Bw}.MJXc-TeX-math-BI{font-family:MJXc-TeX-math-BI,MJXc-TeX-math-BIx,MJXc-TeX-math-BIw}.MJXc-TeX-sans-R{font-family:MJXc-TeX-sans-R,MJXc-TeX-sans-Rw}.MJXc-TeX-sans-B{font-family:MJXc-TeX-sans-B,MJXc-TeX-sans-Bx,MJXc-TeX-sans-Bw}.MJXc-TeX-sans-I{font-family:MJXc-TeX-sans-I,MJXc-TeX-sans-Ix,MJXc-TeX-sans-Iw}.MJXc-TeX-script-R{font-family:MJXc-TeX-script-R,MJXc-TeX-script-Rw}.MJXc-TeX-type-R{font-family:MJXc-TeX-type-R,MJXc-TeX-type-Rw}.MJXc-TeX-cal-R{font-family:MJXc-TeX-cal-R,MJXc-TeX-cal-Rw}.MJXc-TeX-main-B{font-family:MJXc-TeX-main-B,MJXc-TeX-main-Bx,MJXc-TeX-main-Bw}.MJXc-TeX-main-I{font-family:MJXc-TeX-main-I,MJXc-TeX-main-Ix,MJXc-TeX-main-Iw}.MJXc-TeX-main-R{font-family:MJXc-TeX-main-R,MJXc-TeX-main-Rw}.MJXc-TeX-math-I{font-family:MJXc-TeX-math-I,MJXc-TeX-math-Ix,MJXc-TeX-math-Iw}.MJXc-TeX-size1-R{font-family:MJXc-TeX-size1-R,MJXc-TeX-size1-Rw}.MJXc-TeX-size2-R{font-family:MJXc-TeX-size2-R,MJXc-TeX-size2-Rw}.MJXc-TeX-size3-R{font-family:MJXc-TeX-size3-R,MJXc-TeX-size3-Rw}.MJXc-TeX-size4-R{font-family:MJXc-TeX-size4-R,MJXc-TeX-size4-Rw}.MJXc-TeX-vec-R{font-family:MJXc-TeX-vec-R,MJXc-TeX-vec-Rw}.MJXc-TeX-vec-B{font-family:MJXc-TeX-vec-B,MJXc-TeX-vec-Bx,MJXc-TeX-vec-Bw}@font-face{font-family:MJXc-TeX-ams-R;src:local("MathJax_AMS"),local("MathJax_AMS-Regular")}@font-face{font-family:MJXc-TeX-ams-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_AMS-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_AMS-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_AMS-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-cal-B;src:local("MathJax_Caligraphic Bold"),local("MathJax_Caligraphic-Bold")}@font-face{font-family:MJXc-TeX-cal-Bx;src:local("MathJax_Caligraphic");font-weight:700}@font-face{font-family:MJXc-TeX-cal-Bw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Caligraphic-Bold.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Bold.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Bold.otf) format("opentype")}@font-face{font-family:MJXc-TeX-frak-R;src:local("MathJax_Fraktur"),local("MathJax_Fraktur-Regular")}@font-face{font-family:MJXc-TeX-frak-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Fraktur-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Fraktur-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Fraktur-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-frak-B;src:local("MathJax_Fraktur Bold"),local("MathJax_Fraktur-Bold")}@font-face{font-family:MJXc-TeX-frak-Bx;src:local("MathJax_Fraktur");font-weight:700}@font-face{font-family:MJXc-TeX-frak-Bw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Fraktur-Bold.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Fraktur-Bold.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Fraktur-Bold.otf) format("opentype")}@font-face{font-family:MJXc-TeX-math-BI;src:local("MathJax_Math BoldItalic"),local("MathJax_Math-BoldItalic")}@font-face{font-family:MJXc-TeX-math-BIx;src:local("MathJax_Math");font-weight:700;font-style:italic}@font-face{font-family:MJXc-TeX-math-BIw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Math-BoldItalic.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Math-BoldItalic.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Math-BoldItalic.otf) format("opentype")}@font-face{font-family:MJXc-TeX-sans-R;src:local("MathJax_SansSerif"),local("MathJax_SansSerif-Regular")}@font-face{font-family:MJXc-TeX-sans-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-sans-B;src:local("MathJax_SansSerif Bold"),local("MathJax_SansSerif-Bold")}@font-face{font-family:MJXc-TeX-sans-Bx;src:local("MathJax_SansSerif");font-weight:700}@font-face{font-family:MJXc-TeX-sans-Bw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Bold.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Bold.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Bold.otf) format("opentype")}@font-face{font-family:MJXc-TeX-sans-I;src:local("MathJax_SansSerif Italic"),local("MathJax_SansSerif-Italic")}@font-face{font-family:MJXc-TeX-sans-Ix;src:local("MathJax_SansSerif");font-style:italic}@font-face{font-family:MJXc-TeX-sans-Iw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Italic.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Italic.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Italic.otf) format("opentype")}@font-face{font-family:MJXc-TeX-script-R;src:local("MathJax_Script"),local("MathJax_Script-Regular")}@font-face{font-family:MJXc-TeX-script-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Script-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Script-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Script-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-type-R;src:local("MathJax_Typewriter"),local("MathJax_Typewriter-Regular")}@font-face{font-family:MJXc-TeX-type-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Typewriter-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Typewriter-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Typewriter-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-cal-R;src:local("MathJax_Caligraphic"),local("MathJax_Caligraphic-Regular")}@font-face{font-family:MJXc-TeX-cal-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Caligraphic-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-main-B;src:local("MathJax_Main Bold"),local("MathJax_Main-Bold")}@font-face{font-family:MJXc-TeX-main-Bx;src:local("MathJax_Main");font-weight:700}@font-face{font-family:MJXc-TeX-main-Bw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Main-Bold.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Main-Bold.otf) format("opentype")}@font-face{font-family:MJXc-TeX-main-I;src:local("MathJax_Main Italic"),local("MathJax_Main-Italic")}@font-face{font-family:MJXc-TeX-main-Ix;src:local("MathJax_Main");font-style:italic}@font-face{font-family:MJXc-TeX-main-Iw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Main-Italic.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Main-Italic.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Main-Italic.otf) format("opentype")}@font-face{font-family:MJXc-TeX-main-R;src:local("MathJax_Main"),local("MathJax_Main-Regular")}@font-face{font-family:MJXc-TeX-main-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Main-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Main-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-math-I;src:local("MathJax_Math Italic"),local("MathJax_Math-Italic")}@font-face{font-family:MJXc-TeX-math-Ix;src:local("MathJax_Math");font-style:italic}@font-face{font-family:MJXc-TeX-math-Iw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Math-Italic.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Math-Italic.otf) format("opentype")}@font-face{font-family:MJXc-TeX-size1-R;src:local("MathJax_Size1"),local("MathJax_Size1-Regular")}@font-face{font-family:MJXc-TeX-size1-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Size1-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Size1-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-size2-R;src:local("MathJax_Size2"),local("MathJax_Size2-Regular")}@font-face{font-family:MJXc-TeX-size2-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Size2-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Size2-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-size3-R;src:local("MathJax_Size3"),local("MathJax_Size3-Regular")}@font-face{font-family:MJXc-TeX-size3-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Size3-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Size3-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Size3-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-size4-R;src:local("MathJax_Size4"),local("MathJax_Size4-Regular")}@font-face{font-family:MJXc-TeX-size4-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Size4-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-vec-R;src:local("MathJax_Vector"),local("MathJax_Vector-Regular")}@font-face{font-family:MJXc-TeX-vec-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Vector-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Vector-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Vector-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-vec-B;src:local("MathJax_Vector Bold"),local("MathJax_Vector-Bold")}@font-face{font-family:MJXc-TeX-vec-Bx;src:local("MathJax_Vector");font-weight:700}@font-face{font-family:MJXc-TeX-vec-Bw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Vector-Bold.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Vector-Bold.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Vector-Bold.otf) format("opentype")}.page-header-wrapper{display:flex;justify-content:center;width:100%;height:62px;padding-left:15px;padding-right:15px}.page-header-wrapper .page-header{display:flex;align-items:center;justify-content:space-between;width:100%;max-width:720px}.page-header-wrapper .page-header .link{font-weight:700;font-size:17px;color:var(--primary-text-color)}@media(min-width:768px){.page-header-wrapper .page-header .link{font-weight:700;font-size:20px}}.page-header-wrapper .page-header .trailing-section{display:flex;align-items:center}.page-header-wrapper .page-header .trailing-section .link{margin-left:10px}@media(min-width:768px){.page-header-wrapper .page-header .trailing-section .link{margin-left:20px}}.page-header-wrapper .page-header .trailing-section .dark-mode-switch{margin-left:3px}@media(min-width:768px){.page-header-wrapper .page-header .trailing-section .dark-mode-switch{margin-left:13px}}.page-footer-wrapper{display:flex;justify-content:center;align-items:center;width:100%;height:62px;margin-top:auto;padding-left:15px;padding-right:15px}.page-footer-wrapper .page-footer{width:100%;max-width:720px;text-align:center}.page-footer-wrapper .page-footer .link{font-weight:700;font-size:20px;color:var(--primary-text-color);margin-right:20px}.page-footer-wrapper .page-footer a{color:#3a95ff}.icon{font-size:20px;color:var(--about-link-icon-color)}.social-links .icon{font-size:30px;color:var(--bio-link-icon-color)}@keyframes blinking-cursor{0%{opacity:0}50%{opacity:1}to{opacity:0}}strong{font-weight:600}.bio-wrapper{align-items:center;margin-top:120px;margin-bottom:120px;color:var(--primary-text-color);padding-left:15px;padding-right:15px}.bio-wrapper,.bio-wrapper .bio{display:flex;flex-direction:column;width:100%}.bio-wrapper .bio{justify-content:space-between;max-width:720px}@media(min-width:768px){.bio-wrapper .bio{flex-direction:row;align-items:center}}.bio-wrapper .bio .introduction{display:flex;flex-direction:column;word-break:keep-all}.bio-wrapper .bio .introduction .react-rotating-text-cursor{animation:blinking-cursor .8s cubic-bezier(.68,.01,.01,.99) 0s infinite}.bio-wrapper .bio .introduction strong{display:inline-block;font-weight:600}.bio-wrapper .bio .introduction.korean{font-weight:100;font-size:32px;line-height:1.2}.bio-wrapper .bio .introduction.korean .title .react-rotating-text-cursor{font-size:35px;line-height:35px}@media(min-width:768px){.bio-wrapper .bio .introduction.korean{font-size:40px}.bio-wrapper .bio .introduction.korean .title .react-rotating-text-cursor{font-size:45px;line-height:45px}}.bio-wrapper .bio .introduction.english{font-family:montserrat;font-size:25px;line-height:1.2}@media(min-width:768px){.bio-wrapper .bio .introduction.english{font-size:45px}}.bio-wrapper .bio .introduction.english .name{font-size:35px;font-weight:600}.bio-wrapper .bio .introduction.english .job{font-size:35px}.bio-wrapper .bio .introduction.english .description{font-weight:200;margin-top:8px;font-size:20px}.bio-wrapper .bio .introduction.english .social-links{margin-top:20px;display:flex}.bio-wrapper .bio .thumbnail{display:none;width:250px}@media(min-width:768px){.bio-wrapper .bio .thumbnail{display:block}}.section-header-wrapper{display:flex;justify-content:center;width:100%;margin-bottom:32px}.section-header-wrapper .section-header{padding-bottom:5px;border-bottom:4px solid var(--primary-text-color);font-weight:700;font-size:30px;color:var(--primary-text-color)}.timestamps-section-wrapper{display:flex;justify-content:center;width:100%;padding-left:15px;padding-right:15px}.timestamps-section-wrapper .timestamps-section{display:flex;flex-direction:column;align-items:center;width:100%;max-width:720px;margin-bottom:50px;word-break:keep-all}.timestamps-section-wrapper .timestamps-section .body{width:100%;padding:0 10px}.timestamps-section-wrapper .timestamps-section .body .timestamp{display:flex;justify-items:center;width:100%;margin-left:5px;padding:10px 0;border-left:2px solid #bdbdbd;font-size:18px;font-weight:400}.timestamps-section-wrapper .timestamps-section .body .timestamp:first-child{padding-top:7px}.timestamps-section-wrapper .timestamps-section .body .timestamp:last-child{padding-bottom:7px}.timestamps-section-wrapper .timestamps-section .body .timestamp:before{position:relative;left:-1px;content:"";align-self:center;width:10px;height:10px;background-color:var(--background-color);border-radius:10px;transform:translatex(-50%);border:2px solid #828282}.timestamps-section-wrapper .timestamps-section .body .timestamp .date{margin-left:5px;margin-right:5px;width:115px;min-width:115px;color:#828282;align-self:center}@media(min-width:768px){.timestamps-section-wrapper .timestamps-section .body .timestamp .date{width:200px;min-width:200px}}.timestamps-section-wrapper .timestamps-section .body .timestamp .activity{line-height:23px;width:100%}.projects-section-wrapper{display:flex;justify-content:center;width:100%;padding-left:15px;padding-right:15px}.projects-section-wrapper .projects-section{display:flex;flex-direction:column;align-items:center;width:100%;max-width:720px}.projects-section-wrapper .projects-section .project{width:100%;padding:15px;display:flex;flex-direction:column;margin-bottom:30px}.projects-section-wrapper .projects-section .project .head{margin-bottom:10px;line-height:30px;font-size:20px;font-weight:700}.projects-section-wrapper .projects-section .project .body{display:flex;flex-direction:column}.projects-section-wrapper .projects-section .project .body .thumbnail{width:auto;height:auto;max-width:100%;max-height:600px;margin-bottom:10px}.projects-section-wrapper .projects-section .project .body .thumbnail img{-o-object-fit:contain!important;object-fit:contain!important}.projects-section-wrapper .projects-section .project .body .tech-stack{display:flex;margin-bottom:10px}.projects-section-wrapper .projects-section .project .body .tech-stack .tech{background-color:var(--chip-background-color);border-radius:10px;font-size:15px;font-weight:500;margin-right:5px;padding:5px 7px}.projects-section-wrapper .projects-section .project .body .description{font-size:16px;font-weight:400;line-height:1.4}@media(min-width:768px){.projects-section-wrapper .projects-section .project .body{flex-direction:column}.projects-section-wrapper .projects-section .project .body .content{margin-top:0}}.certificates-section-wrapper{display:flex;justify-content:center;width:100%;padding-left:15px;padding-right:15px}.certificates-section-wrapper .certificates-section{display:flex;flex-direction:column;align-items:center;width:100%;max-width:720px;margin-bottom:50px;word-break:keep-all}.certificates-section-wrapper .certificates-section .body{width:100%;padding:0 10px}.certificates-section-wrapper .certificates-section .body .certificate{display:flex;justify-items:center;width:100%;margin-left:5px;padding:10px 0;border-left:2px solid #bdbdbd;font-size:18px;font-weight:400}.certificates-section-wrapper .certificates-section .body .certificate:first-child{padding-top:7px}.certificates-section-wrapper .certificates-section .body .certificate:last-child{padding-bottom:7px}.certificates-section-wrapper .certificates-section .body .certificate:before{position:relative;left:-1px;content:"";align-self:center;width:10px;height:10px;background-color:var(--background-color);border-radius:10px;transform:translatex(-50%);border:2px solid #828282}.certificates-section-wrapper .certificates-section .body .certificate .date{margin-left:5px;margin-right:5px;width:20%;min-width:115px;font-size:14px;color:#828282;align-self:center}@media(min-width:768px){.certificates-section-wrapper .certificates-section .body .certificate .date{width:200px;min-width:200px}}.certificates-section-wrapper .certificates-section .body .certificate .title{line-height:23px;width:50%}.certificates-section-wrapper .certificates-section .body .certificate .issuer{font-size:14px;width:30%}.tmi-section-wrapper{display:flex;justify-content:center;width:100%;padding-left:15px;padding-right:15px}.tmi-section-wrapper .tmi-section{display:flex;flex-direction:column;align-items:center;width:100%;max-width:720px}.tmi-section-wrapper .tmi-section .body{width:100%;display:flex;flex-direction:column;font-size:16px;font-weight:400;line-height:23px}.tmi-section-wrapper .tmi-section .body .bbomi,.tmi-section-wrapper .tmi-section .body .front{margin-top:20px}.tmi-section-wrapper .tmi-section .body .bbomi h1{font-size:20px;margin-bottom:10px}.tmi-section-wrapper .tmi-section .body .bbomi p{font-size:10px;color:#c4bebe}.tmi-section-wrapper .tmi-section .body .back{margin-top:20px;margin-bottom:20px}.tmi-section-wrapper .tmi-section .body .thumbnail{width:auto;height:auto;max-width:90%;max-height:600px;margin-bottom:10px}.tmi-section-wrapper .tmi-section .body .thumbnail img{-o-object-fit:contain!important;object-fit:contain!important}.post-card-wrapper{min-height:150px;width:100%;display:flex;justify-content:center}.post-card-wrapper .post-card{display:flex;flex-direction:column;height:100%;width:100%;max-width:720px;border:1px solid var(--post-card-border-color);border-radius:6px;padding:15px;margin-bottom:15px;color:var(--primary-text-color);cursor:pointer;transition:transform .2s}.post-card-wrapper .post-card:hover .title{text-decoration:underline}@media(min-width:768px){.post-card-wrapper .post-card{margin-bottom:0}}.post-card-wrapper .post-card .title{font-size:18px;font-weight:600;margin-bottom:7px;line-height:1.4}.post-card-wrapper .post-card .description{font-size:13px;margin-bottom:10px;line-height:20px;color:var(--primary-text-color);overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical}.post-card-wrapper .post-card .info{display:flex;justify-content:space-between;margin-top:auto;font-size:14px;color:var(--about-link-icon-color)}.post-card-wrapper .post-card .info .categories{display:flex}.post-card-wrapper .post-card .info .categories .category{margin-left:4px}.post-card-wrapper .post-card .info .categories .category:hover{text-decoration:underline}.post-cards-column-wrapper{display:flex;justify-content:center;width:100%;padding-left:15px;padding-right:15px}.post-cards-column-wrapper .post-cards-column{display:flex;flex-direction:column;align-items:center;width:100%;max-width:720px}.post-cards-column-wrapper .post-cards-column .post-card-wrapper{margin-bottom:10px}.post-cards-column-wrapper .post-cards-column .more-post-cards-button{height:40px;font-weight:500;font-size:15px;background-color:var(--button-background-color)}.tabs-wrapper{top:0;align-self:flex-start;margin-bottom:12px;padding-left:15px;padding-right:15px}.tabs-wrapper,.tabs-wrapper .tabs{display:flex;justify-content:center;width:100%}.tabs-wrapper .tabs{height:40px;max-width:760px}.tabs-wrapper .tabs .mui-tabs .MuiTab-root{height:40px;min-height:auto;min-width:auto;padding:10px 12px;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;color:var(--tab-text-color);font-weight:500;font-size:17px;transition:all .2s ease}.tabs-wrapper .tabs .mui-tabs .Mui-selected,.tabs-wrapper .tabs .mui-tabs .MuiTab-root :hover{color:var(--tab-hover-text-color);transition:all .2s ease}.tabs-wrapper .tabs .mui-tabs .Mui-selected{background-color:var(--tab-selected-background-color);border-radius:8px;font-weight:600}.tabs-wrapper .tabs .mui-tabs .MuiTabScrollButton-root{height:40px;width:20px}.tabs-wrapper .tabs .mui-tabs .MuiTabs-scrollable{height:40px}.tabs-wrapper .tabs .mui-tabs .MuiTabs-indicator{display:none}.post-header-wrapper{display:flex;justify-content:center;width:100%;padding-left:15px;padding-right:15px;margin-top:20px;margin-bottom:40px;word-break:keep-all}.post-header-wrapper .post-header{display:flex;flex-direction:column;width:100%;max-width:720px;padding-bottom:15px;border-bottom:1px solid var(--post-card-border-color)}.post-header-wrapper .post-header .emoji{font-size:78px;margin-bottom:20px}.post-header-wrapper .post-header .categories{margin-bottom:5px}.post-header-wrapper .post-header .categories .category{margin-right:4px;font-weight:600;color:var(--primary-text-color)}.post-header-wrapper .post-header .categories .category:hover{text-decoration:underline}.post-header-wrapper .post-header .title{font-weight:600;font-size:32px;color:var(--primary-text-color);margin-bottom:6px;line-height:1.3}.post-header-wrapper .post-header .info{display:flex;font-size:16px;font-weight:500;color:var(--secondary-text-color)}.post-header-wrapper .post-header .info strong{margin:0 4px;color:var(--primary-text-color);font-weight:600}.post-cards-adjacent-wrapper{display:flex;justify-content:center;width:100%;margin-bottom:20px;padding-left:15px;padding-right:15px}.post-cards-adjacent-wrapper .post-cards-adjacent{display:grid;grid-template-columns:49.3% 49.3%;column-gap:1.4%;width:100%;max-width:720px}.post-cards-adjacent-wrapper .post-cards-adjacent .post-card{display:flex;flex-direction:column;width:100%;border:1px solid var(--post-card-border-color);border-radius:6px;padding:15px;color:var(--primary-text-color);cursor:pointer;transition:transform .2s}.post-cards-adjacent-wrapper .post-cards-adjacent .post-card:hover .title{text-decoration:underline}.post-cards-adjacent-wrapper .post-cards-adjacent .post-card.prev{margin-right:auto}.post-cards-adjacent-wrapper .post-cards-adjacent .post-card.next{margin-left:auto}.post-cards-adjacent-wrapper .post-cards-adjacent .post-card .direction{font-size:14px;font-weight:500;color:grey;margin-bottom:5px}.post-cards-adjacent-wrapper .post-cards-adjacent .post-card .title{font-size:16px;font-weight:600;margin-bottom:7px;line-height:1.4}.post-content-wrapper{display:flex;justify-content:center;width:100%;padding-left:15px;padding-right:15px;margin-bottom:20px}.post-content-wrapper .post-content{display:flex;flex-direction:column;width:100%;max-width:720px}.posts-page-body-wrapper{margin-top:30px;display:flex;width:100%;justify-content:center}.posts-page-body-wrapper .posts-page-body{display:flex;flex-direction:column;width:100%}.posts-page-body-wrapper .posts-page-body .tabs-wrapper{display:flex}.posts-page-header-wrapper{display:flex;flex-direction:column;align-items:center;justify-content:center;margin-top:30px;padding-left:15px;padding-right:15px;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif}.posts-page-header-wrapper .posts-page-title{width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;padding-bottom:7px;margin-bottom:15px;font-size:40px;font-weight:700;text-align:center;border-bottom:3px solid var(--primary-text-color)}.posts-page-header-wrapper .posts-page-sub-title{padding-bottom:10px;font-size:20px;font-weight:500;text-align:center}</style><meta name="generator" content="Gatsby 2.32.13"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><title data-react-helmet="true">어떤 게임이든 통하는 나만의 치트키 쓰는법 (Feat.치트엔진)</title><meta data-react-helmet="true" name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"/><meta data-react-helmet="true" property="og:title" content="어떤 게임이든 통하는 나만의 치트키 쓰는법 (Feat.치트엔진)"/><meta data-react-helmet="true" property="og:site_title" content="어떤 게임이든 통하는 나만의 치트키 쓰는법 (Feat.치트엔진)"/><meta data-react-helmet="true" name="description" content="전국의 겜돌이 겜순이 여러분 안녕하세요 저는 가끔 게임을 하다가 이런 생각이 들곤 합니다. 일명 노가다(?)가 필요한 구간들에서 말이죠. 게임은 재밌을려고 하는건데 왜 나는 이 짓을 하고 있는거지??? 이 과정 자체가 재밌으신 분들에게는  해당이 없는 이야기 일수도 있겠습니다. 하지만 저는 게임 자체의 Narrative, 서사를 즐기는 라이트유저 게이머이기 때문에 종종 이런 노가다에 막힐때마다 숨이 턱 막히곤 한답니다. img 그래서 제가 종종 쓰고 있는 방법인데 다른 분들에게도 도움이 될 수 있을 내용인 것 같아서 정리해 보았습니다.!! \1. 왜 가능한가? 치트키 쓰는 방법만 궁금하신 분들은 이 파트는 생략하시고 넘어가셔도 됩니다. 궁금하신 분들을 위해 개념적인 설명만 간단히 해보겠습니다. 게임,프로그램이 어떻게 돌아갈가요? 메모리상에 데이터를 올려 놓고 cpu가 그 값들을 이용하는 것입니다.  이렇게 생긴 녀석을 본적이 있으신가요? RAM카드라고 불리우는 녀석입니다. 메인메모…"/><meta data-react-helmet="true" property="og:description" content="전국의 겜돌이 겜순이 여러분 안녕하세요 저는 가끔 게임을 하다가 이런 생각이 들곤 합니다. 일명 노가다(?)가 필요한 구간들에서 말이죠. 게임은 재밌을려고 하는건데 왜 나는 이 짓을 하고 있는거지??? 이 과정 자체가 재밌으신 분들에게는  해당이 없는 이야기 일수도 있겠습니다. 하지만 저는 게임 자체의 Narrative, 서사를 즐기는 라이트유저 게이머이기 때문에 종종 이런 노가다에 막힐때마다 숨이 턱 막히곤 한답니다. img 그래서 제가 종종 쓰고 있는 방법인데 다른 분들에게도 도움이 될 수 있을 내용인 것 같아서 정리해 보았습니다.!! \1. 왜 가능한가? 치트키 쓰는 방법만 궁금하신 분들은 이 파트는 생략하시고 넘어가셔도 됩니다. 궁금하신 분들을 위해 개념적인 설명만 간단히 해보겠습니다. 게임,프로그램이 어떻게 돌아갈가요? 메모리상에 데이터를 올려 놓고 cpu가 그 값들을 이용하는 것입니다.  이렇게 생긴 녀석을 본적이 있으신가요? RAM카드라고 불리우는 녀석입니다. 메인메모…"/><meta data-react-helmet="true" property="og:author" content="권도일"/><meta data-react-helmet="true" property="og:image" content="/og-image.png"/><meta data-react-helmet="true" property="og:type" content="website"/><style id="jss-server-side">html{box-sizing:border-box;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}*,::after,::before{box-sizing:inherit}b,strong{font-weight:700}body{color:rgba(0,0,0,.87);margin:0;font-size:.875rem;font-family:Roboto,Helvetica,Arial,sans-serif;font-weight:400;line-height:1.43;letter-spacing:.01071em;background-color:#fafafa}@media print{body{background-color:#fff}}body::-webkit-backdrop{background-color:#fafafa}body::backdrop{background-color:#fafafa}</style><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxK.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc4.woff2"/><style>@font-face{font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2");font-display:swap}@font-face{font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2");font-display:swap}@font-face{font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2");font-display:swap}@font-face{font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format("woff");font-display:swap}@font-face{font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxM.woff) format("woff");font-display:swap}@font-face{font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format("woff");font-display:swap}</style><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><script>
+  
+  function gaOptout(){document.cookie=disableStr+'=true; expires=Thu, 31 Dec 2099 23:59:59 UTC;path=/',window[disableStr]=!0}var gaProperty='G-Z0BTXCLGCZ',disableStr='ga-disable-'+gaProperty;document.cookie.indexOf(disableStr+'=true')>-1&&(window[disableStr]=!0);
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'G-Z0BTXCLGCZ', 'auto', {});
+      ga('set', 'anonymizeIp', true);
+      
+      
+      
+      
+      }</script><link rel="icon" href="/favicon-32x32.png?v=bc9aff1f80280a774d48f76c2221fd24" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=bc9aff1f80280a774d48f76c2221fd24"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=bc9aff1f80280a774d48f76c2221fd24"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=bc9aff1f80280a774d48f76c2221fd24"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=bc9aff1f80280a774d48f76c2221fd24"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=bc9aff1f80280a774d48f76c2221fd24"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=bc9aff1f80280a774d48f76c2221fd24"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=bc9aff1f80280a774d48f76c2221fd24"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=bc9aff1f80280a774d48f76c2221fd24"/><style type="text/css">
+    .anchor.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .anchor.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .anchor svg,
+    h2 .anchor svg,
+    h3 .anchor svg,
+    h4 .anchor svg,
+    h5 .anchor svg,
+    h6 .anchor svg {
+      visibility: hidden;
+    }
+    h1:hover .anchor svg,
+    h2:hover .anchor svg,
+    h3:hover .anchor svg,
+    h4:hover .anchor svg,
+    h5:hover .anchor svg,
+    h6:hover .anchor svg,
+    h1 .anchor:focus svg,
+    h2 .anchor:focus svg,
+    h3 .anchor:focus svg,
+    h4 .anchor:focus svg,
+    h5 .anchor:focus svg,
+    h6 .anchor:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><link as="script" rel="preload" href="/webpack-runtime-9d73f6130ac819a0f784.js"/><link as="script" rel="preload" href="/framework-cd3e1e804d552fa282ef.js"/><link as="script" rel="preload" href="/app-7120720e1b7987843be2.js"/><link as="script" rel="preload" href="/styles-407fe62976dc5310c43e.js"/><link as="script" rel="preload" href="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-ad5201be576df14cf64e.js"/><link as="script" rel="preload" href="/component---src-templates-blog-template-js-825333aa83b70c9de647.js"/><link as="fetch" rel="preload" href="/page-data/IT/My-Research/cheat/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1073350324.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2938748437.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><script>
+void function() {
+  window.__onThemeChange = function() {}
+
+  var preferredTheme
+  try {
+    preferredTheme = localStorage.getItem('theme')
+  } catch (err) { }
+
+  function setTheme(newTheme) {
+    if (preferredTheme && document.body.classList.contains(preferredTheme)) {
+      document.body.classList.replace(preferredTheme, newTheme)
+    } else {
+      document.body.classList.add(newTheme)
+    }
+
+    window.__theme = newTheme
+    preferredTheme = newTheme
+    window.__onThemeChange(newTheme)
+  }
+
+  window.__setPreferredTheme = function(newTheme) {
+    setTheme(newTheme)
+    try {
+      localStorage.setItem('theme', newTheme)
+    } catch (err) {}
+  }
+
+  var darkQuery = window.matchMedia('(prefers-color-scheme: dark)')
+  darkQuery.addListener(function(e) {
+    window.__setPreferredTheme(e.matches ? 'dark' : 'light')
+  })
+
+  setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'))
+}()
+    </script><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="display:flex;flex-direction:column;min-height:100vh"><main><header class="post-header-wrapper"><div class="post-header"><div class="emoji">🧐</div><div class="info"><div class="categories"><a class="category" href="/posts/IT">IT</a><a class="category" href="/posts/탐구생활">탐구생활</a></div></div><h1 class="title">어떤 게임이든 통하는 나만의 치트키 쓰는법 (Feat.치트엔진)</h1><div class="info">posted by <strong>도일</strong> · <!-- -->January 18, 2021</div></div></header><div class="post-content-wrapper"><div class="post-content"><div class="markdown"><p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAFdElEQVQ4yyWUWVCTVxiGf7C1dkCkqIgEYkQIIYGyyxYgEGFCwIKKFhdQERCBKhQMQogsgokWRmUbMVq3QpXWBQU1ogJWQRDrUisdO+1Fr3rTzvSmt0+P9eKdM2fOnGfe9/u+cyS5Khl19Fo+TcglTLeV2Ixi0jZVs26nhfzyw5TXdVLTfAqL7RzWzkFMzV3oDetIWZONcW0eOwr3kpGzjRRjLnZ7F5IyNA3/UAOauPVsKbVQXG3DcuQ0XWev0XvxJt/fesTgjXEc47M02XrYkFdE8Z79fFHZQL35MGkZ6/ELXk3ToVaePL6D5B+iRxOdhbm1m9G7D7l7Z4KxsSkmH0wx/WCSpxPTPHv+C5NPX3N/4jGVNWYUAWGoBESpjiQ6MZ31efmM3R3kiK0ZSa7UUmVqxSEu3jl1gfs9X+P4bpgnx3qZ7ejmRc9pHFeHuXp9hB8mZ7l01cHOskZyC2oIi9OTnGbE0ljLs8lhNKExSL7+8azdWMLlK7e4dXuc++NPGHs0y4RwNyVcPhwd48q16/Rfukzx7lLSk7ToVkeSEBGO0WBkb2UFP/84Su2Xe5Bp9CKyJplVah3B0UYKdtfR0NZNXUsXJ8+LGl64LJpSR/G+CgpKdrHJqONUzXbO1hdxvCyH0ow4duTncrh1PzJ5AOsKReRV6kT8gpJQCK0MWYMyMotw3RaU0WuQhUZiLNhJjelLSgs3YDeX8OdID/8+GhDrCbp3G2hv3EdyajweihgabP0CGKTFT5XIKo1ONMdIROJGonTZBK2ORROrZVdZGef72rlxzsq1oyYcJ1p5M3iCG+1mvq3fTrepEC9fJYY8E61fDYjI7xyqtCJ2MqrwDAIjjQTEZKPWbiDMsJU12fkU7i6n19bE79/18sfIeX77voNfBHRuwMrxgnR8g3RUWexY2s6+BypUIq4mBaUmlsAQLZnxetJ1WexPiCbTkEe8sYj0zG0MtB3grxE7s30tzF2w8aC9inCVirTcaiyHznCg6bTosqhdVmgEuZ+uJFa+iI3y+QwqPmR/iCdHQxaRrdWiScqjctcOBnptTPa1MXiggnuHq9mSFMUCWRRl1SeoruvC1GhH8hHONqmDaFS6sEHpgyFgKQmei4hasgD/hc64znfGx1vGaLeFF98cx2GpYaqngXttJWxOiyE1p4Iyy0nK6nowWfqQFKp4ZCtCse6t4HyHldb6eqxNByktKqbT2kxaiqhP4Wb+uXOSH6qKGFqm4W7x5zjaS3l6SDhVJnIxLJO6kmYqGkVkuX8EHr7RWFuPMHP7KtfP9PJ2bAi77RC/jg9hra1ixFTL345ebhr1DEvLeeMaxJww8tJdzXOxn5OW8mBxMAfKrUgLXRfi4urOZ7o4zhxtpLN+H8fMNdTv2cOm3GwulZYzV1XJtL2BgUU+TDvJ+VlS8FryFjAvZp1lzMyTMyV5YBPxpcXL5bi4uSNJEq4L5rPM3QVXFxfc3Dxw81rB9dUGfj/ZwvDerQwJJ6+d/HjlJIBOK3jh5M2Mk4xHYp2QFtOcU/auhnF4+0XiuTIcN08FH7l78bHbUqQPP8JfHsxQRg5vh45xdq2eewL4k7OCl5KMV0IzwuG0tIybzkvFmQeWz0rfv5SV7+ZQnYqfGG55YByywCgUkali0GPpb6ngVX8LHfFROATwuZOPiOrNC1G7h5InjwXwtLM7/ZIr5iwBDAhOIiBY9//TU0dlslyuYUVIDMuUEYRExXK7o4Zb1hLsYeHismjIPG/eCMhroRkR84nQgJMbA9J86sVvLykC41GF6lFHGvDXaPlkiRdBCZm4+QayRLGKi511vB3tozZTT8oH7hRqUjGnbMWcuoWG9O3/a5+hUGgH+dsO8h+wvlhgYhAsZAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/879598a3ea6e41d8f1132086e1e59a9b/37523/%EC%B9%98%ED%8A%B8%EC%97%94%EC%A7%84.png"
+        srcset="/static/879598a3ea6e41d8f1132086e1e59a9b/e9ff0/%EC%B9%98%ED%8A%B8%EC%97%94%EC%A7%84.png 180w,
+/static/879598a3ea6e41d8f1132086e1e59a9b/f21e7/%EC%B9%98%ED%8A%B8%EC%97%94%EC%A7%84.png 360w,
+/static/879598a3ea6e41d8f1132086e1e59a9b/37523/%EC%B9%98%ED%8A%B8%EC%97%94%EC%A7%84.png 720w,
+/static/879598a3ea6e41d8f1132086e1e59a9b/bbb77/%EC%B9%98%ED%8A%B8%EC%97%94%EC%A7%84.png 765w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>전국의 겜돌이 겜순이 여러분 안녕하세요</p>
+<p>저는 가끔 게임을 하다가</p>
+<p>이런 생각이 들곤 합니다.</p>
+<p>일명 노가다(?)가 필요한 구간들에서 말이죠.</p>
+<p>게임은 재밌을려고 하는건데</p>
+<p>왜 나는 이 짓을 하고 있는거지???</p>
+<p>이 과정 자체가 재밌으신 분들에게는 </p>
+<p>해당이 없는 이야기 일수도 있겠습니다.</p>
+<p>하지만 저는 게임 자체의 Narrative, 서사를</p>
+<p>즐기는 라이트유저 게이머이기 때문에</p>
+<p>종종 이런 노가다에 막힐때마다</p>
+<p>숨이 턱 막히곤 한답니다.</p>
+<p><a href="https://blog.naver.com/PostView.naver?blogId=kdi3939&#x26;logNo=222211495629&#x26;parentCategoryNo=&#x26;categoryNo=80&#x26;viewDate=&#x26;isShowPopularPosts=false&#x26;from=postList#"><img src="/017ea75c6bcaf3d178582b50568e496c/original_24.gif" alt="img"></a></p>
+<p>그래서 제가 종종 쓰고 있는 방법인데</p>
+<p>다른 분들에게도 도움이 될 수 있을 내용인 것 같아서</p>
+<p>정리해 보았습니다.!!</p>
+<blockquote>
+<p>\1. 왜 가능한가?</p>
+</blockquote>
+<p>치트키 쓰는 방법만 궁금하신 분들은 이 파트는 생략하시고 넘어가셔도 됩니다.</p>
+<p>궁금하신 분들을 위해 개념적인 설명만 간단히 해보겠습니다.</p>
+<p>게임,프로그램이 어떻게 돌아갈가요?</p>
+<p>메모리상에 데이터를 올려 놓고</p>
+<p>cpu가 그 값들을 이용하는 것입니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 400px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 33.888888888888886%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsTAAALEwEAmpwYAAABvklEQVQoz63M3UtTcRjA8fPfGES4zdl2ZuY2PXM2mWuznOxCsDQVHUQTbW7BnNJZ0UXQZXhRYGJWFN1IGWil+TLC3sSXFNoQMrWp246ri2+/QOgf6IEPX3h4eCT+80hzK/OspjZIb23y7XuK1Faar+l1Flc+sbSxzLvlBUamnzA294yHs8KMMP3P6NunPBa7kdePWNtcR+p/cJ3nL8aZXUjy/uMHFr98ZmJqkqH793g5/oqbo3coumLGGLKj77ahC4v22TH0VaK7aqe0R8EZ8WK+XMXw5Jh4OKRidSvU+OtwnHOj1NdS5T2Dq9mH91YTDtWHJVSDqc5JebSWsmA1Jtdp5LM2ZJ+dCo+Cw+3ifFuAN0szSLG7CY6XlHKy0oqxohxdmQW9bOGEU0bf76C4W+FYvY0iuxVDUMHQbKPYYBI3MgazBaPlFCWi1Y0e5leTSLeHVSJqB9dudBFNdBIebKc31srFuJ8LCT+NnV4aWjwEggGaQg10qAF6461EB9oIxy8RibcTU7voGWxhKjmBpGX30HI7wi757M6RbfL7opltDrO75PZ/kD/I8Fvbo5D9SSEvaH9l+HWkkBMONf4AaNuP/qN6PYgAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/28ee48ff1c160d1726663209f26d903c/e17e5/image.png"
+        srcset="/static/28ee48ff1c160d1726663209f26d903c/e9ff0/image.png 180w,
+/static/28ee48ff1c160d1726663209f26d903c/f21e7/image.png 360w,
+/static/28ee48ff1c160d1726663209f26d903c/e17e5/image.png 400w"
+        sizes="(max-width: 400px) 100vw, 400px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>이렇게 생긴 녀석을 본적이 있으신가요?</p>
+<p>RAM카드라고 불리우는 녀석입니다.</p>
+<p>메인메모리라고도 하며, 이 곳에 데이터의 값들이 올라가게 됩니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 642px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 64.99999999999999%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsTAAALEwEAmpwYAAABYElEQVQ4y3WTi46CQAxF+f8P8weMxBghoiIPxTf4AOnuaVIyO7KTNMx02tt72yGQ39X3vYytz+fz567rOmnbdjiP5QXmbJpG8jyX1+sl+/1efXyfz+cQ/Hg8ZLPZyHa71TgDdS2wYIImk4mEYSiz2WwAtERb5/NZoihSAmMrQAaV7/e7pGkq6/Va4jhWaRS5Xq8K+n6/5Xg8atHFYqE+2JtxVoZsyrLU4KIo5HA4qHT2sEUi91iSJDKdTvWbZZnGYMSTp4C3202TTqeT7HY7WS6XslqtlC1MGYwvGdD5fD4uGYagI4lkWuD21YZiw6Mw7bCzvYRhKHVdCyyrqlLZMIMxMpBlQ6EQfb5cLiqZe8D95xPADiZIoU+AAIhcwN0pA0YMU6Y95HwB+j2ArQWQ7Eu2hf/fh41Z82HMM2IxQRfQjB5S2PV/AZoTMPu9fIZuDO91FNB32rT9vRvDl7sxwB+qfO/4RbYGlgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/f074f52fe8657826cbe55c90e835348c/1bba8/image-1636010594700470.png"
+        srcset="/static/f074f52fe8657826cbe55c90e835348c/e9ff0/image-1636010594700470.png 180w,
+/static/f074f52fe8657826cbe55c90e835348c/f21e7/image-1636010594700470.png 360w,
+/static/f074f52fe8657826cbe55c90e835348c/1bba8/image-1636010594700470.png 642w"
+        sizes="(max-width: 642px) 100vw, 642px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>메모리 상에</p>
+<p>데이터들을 올려놓고 그 값들을 프로그램은 참고하는 것입니다.</p>
+<p>예를 들어 볼게요</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 450px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 85.55555555555556%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAACXBIWXMAAAsTAAALEwEAmpwYAAADwUlEQVQ4y1WUWVOiVxCGv/+QP5FUJVX5KbnOVSp3uczc5GYq0VRujGVKncK4AQrECeuMiBSColODEcFtBlBQFBQ04IbKvvnMOUedSU5VV3/fWbrf7re7tXKlwuXlJc1mU0iLbDbL+vo6yWSS8/NzyuUypVKJarVKvV6nVqtRF9JoyO8qtWrlYe/xTLsQxkwmE4XCv5yd5nHPurHb7Cz4Fgj4A0TWIzgdThKJBJ1ORz2Scnd7JwB0aHeg1Woq49KoVigW6en9FeOfffz2y4/0OwcwRafRr04yGXoQ3bKOkakRuu0utXqN8u0tb15NcXVxxLuwh2Q8SaeLQFtFK93c0NPTw9bmJun0AbHdGO933xPbi32UeDKO3WFXKbgHsgf7vLF/y9z450QXewiHZshnN2m2umg1AVPmSYZ+fX3N9dUnKV2XPkqxUOTu7oaOsLi1NIFv/DMipi8I6r9n0fkNhfyuMNhBqwiYjUbjkZQm9/ddut2uypfcbzQbSrdaLZEjQUazTXZ/i9TK16y9/pKZn7/Cax1VjlTI0qBiSbB2e3NL9J9NspksqURK7T2R8CRtQYAMez+xxKzpO9KpqECGcqZYfjIoEZzlzwjOhYi83cI86lJMSnQPxh7u5XJ5UVoZEX6N61JVRCWIqlVUWX0yWK2pELc332EYcjFv2Ubf7xbe04K9jrosHcrl8XhYXl4mHF5j3jPH/LyH09NTdSbvPOSw3qAqCvwvwyv6nxswDngx6V4LVouP+Wvzt0lH708/MOx6gWXbwkhQlNLyiCirCawxK896nxEJR9DuyhX16DSXwzbh5UWvFaNuhuxRlla7SUU4kuivLs+xmKfpH+jnpe0l4UiYOe8cg8ODuF476fu9j+npabTmYyhvg6tYjR4Gn5uxm+fZCG/gdSwqovb390mlUuTyeXZ3d0nuJTk5OSFzlCERT5A7yaHT6fAH/Ghra2HMZjOT43r0kwaG/xhGPyHCNhiZGDUQDAYZHBxkaGhI7BmYmjKi1+sZGxtTWqKSemBgAIfDgeZwutjb2+Pw6FB0SppM9oj0YZqDgwOOT7K4XC41KOLxONvb24KMsPrPZDJsiu5aXV1VfV4oFLDZbGiBxSWVo273/rGgHwpbilwrKys4nU41QGZnZ/F6vWo6ybWxsaEQPrEcCoXQfAt+KqL1ZA3J8vivSLICgYBCI/MYiUSIRqNcXFyos+PjY2KxmBp5sm19Ph/agt///1kn9NO3bEVpUPa6DM/tdmOxWCiKCSWj2tnZwW63Y7ValZZnHwBP9JyQLgZuXgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/779287cd54755b6d6446d2aaddfc8156/fc2a6/image-1636010594700471.png"
+        srcset="/static/779287cd54755b6d6446d2aaddfc8156/e9ff0/image-1636010594700471.png 180w,
+/static/779287cd54755b6d6446d2aaddfc8156/f21e7/image-1636010594700471.png 360w,
+/static/779287cd54755b6d6446d2aaddfc8156/fc2a6/image-1636010594700471.png 450w"
+        sizes="(max-width: 450px) 100vw, 450px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>제 캐릭터가 상대의 캐릭터를 공격한다고 가정해보겠습니다.</p>
+<p>공격 메커니즘을 이렇게 구현해볼까요?</p>
+<p>공격력 값을 가져와서 상대방의 방어력과 비교해서 실제 데미지를 계산</p>
+<p>[실제 데미지 = 나의 공격력 - 상대 방어력 (음수값 제외)]</p>
+<p>공격함수 실행  => 실제 데미지를 고려하여 HP를 감소시킨다.</p>
+<p>아주 간략하게 표현해 보았습니다.</p>
+<p>(물론 실제 게임들은 다 각각 다른 함수를 가지고 있겠죠.)</p>
+<p>우리가 주목해야 할 점은</p>
+<p>프로그래머는 함수를 구현해놓기만 하고</p>
+<p>실제 데이터는 메모리상에서 가져온다는 점입니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 46.111111111111114%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAACQklEQVQozx2SSVMacRTE+STGJXEBh0UcQXHYHRyYATIbIGRYht24YJBoTFLhkGMOyS3HfNJf/uWhD+91VVe/7hcoOxr5WoLhwsWwC+haimlXp2Wk0AoRRo0MFUcmZkVJmAdE9RAnDRnZDCOX3hKvhch0JGoDBe+zT8A0S9h1laar0vFsvPd5lFOZbEXmvP6OE22fmBYkoQcJX24TLexyXNojWpWQ1B0iFcE5EmlzH72bIHA9cJn3HRZTgXmHh2GDftNALZ8TM4KcODFS1QPipW2k3Cbh3AaR/BuOdElglyN1l5h+SORyh1h5m8DL/Zj16prn2xFPHwc83Q1ZL2dMJ00hkuS4FiHblcjre3y1TrkwZZLGIfGLLY7KO8RV4VrMMcFHy7sELm0FtZqiqCdR6woVK0vZStOeN1gue7TdBBk7iKqFWZsK/3yHp9sJVStDQt0iqm4gGaFXwcjlHoFsO0JRINMKkW6ILGxBaiKbaoiFV+RvP49fy5B3FBwtx++HHtdLD9vN03VyuGKfECdHK3vCrXCYbUk0F2luflj0Hit4yxLTLzbjZxe3fYGvHfNnaHLWOMP3W6zufLxhiYZ1gj+wmc7aFMWph6XN19YDSdGQ96nH889fWPMW1vCC1Xef1XpOe6ojGzFenq/IiSw7wtV4aNPpVxi0C6xmZb4tWvR6FTL6AceaKOXDzGA0N7m58Si6CllXpjvL0L0/w5qIPAcFRsL13Z3F46RO7ypNoh4l11QwhOi4VxUf4jHo6EynDf4DJLhVeRuUmnQAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/cb4a0ae86da87a5a6908d354cd134165/37523/image-1636010594700472.png"
+        srcset="/static/cb4a0ae86da87a5a6908d354cd134165/e9ff0/image-1636010594700472.png 180w,
+/static/cb4a0ae86da87a5a6908d354cd134165/f21e7/image-1636010594700472.png 360w,
+/static/cb4a0ae86da87a5a6908d354cd134165/37523/image-1636010594700472.png 720w,
+/static/cb4a0ae86da87a5a6908d354cd134165/5bf79/image-1636010594700472.png 966w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>게임내의 자원,데이터들이</p>
+<p>어디 다른 세상에 존재하는 것이 아니라</p>
+<p>메.모.리. 안에 존재한다는 것이죠</p>
+<p>프로그램 자체적으로 각각의 값들을 아는 것이 아니라는 이야기 입니다.</p>
+<p>얘네는 이 데이터를 몰라요. 그냥 보고 읽을 뿐이죠</p>
+<p>그렇다면, 이 메모리를 조작할 수 있다면</p>
+<p>게임 내의 결과도 조작할 수 있다는 이야기가 되겠죠???</p>
+<p>우리들은 메모리상에 이 데이터들이</p>
+<p>어디에 저장되어져 있는지만 찾을 수 있다면</p>
+<p>데이터 조작이 가능합니다.</p>
+<p>“난 돈을 늘려주고 싶어”</p>
+<p>그렇다면 돈의 메모리 위치를 찾아가서 수치를 조작해주면 됩니다.</p>
+<p>저는 메모리를 찾는 방법을 소개할 것이고,</p>
+<p>왜 메모리를 찾는지 설명할 필요가 있어서 이렇게</p>
+<p>미리 간단한 개념설명을 하였습니다.</p>
+<blockquote>
+<p>2.어떻게 하는가?</p>
+</blockquote>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 225px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAED0lEQVQ4y3VVf2wTZRj+sG4JwRhHIBijEM2W6IyiyQZ/aIgw1zKLYyOyrqXd1nWh7TaCyJo4SSYi3dZ23RZa6qYSDImEbOAwglOCJsBkzg11ODNMdLDFBbTbYCrrrnfXx/fu+uuIXnO5+77v3ud73+d5n68M/3HFYrG0d1F+fnj8JDZb7Nh7wIdFblFaSY+AEBMg0o+lA0jPxPvoTz9Db3bg1Ofn5HFZQwvYc0Ys19XQSJRB9WY7jhzvhSDwMpgEypIgdAuCks1MOIzVBQawfDNy9JUw1OzGiiI7MuuPYuk2F7QmG7badoO9aAF7qhA9p/vlOE6IKoD3lild9aFesAo/NNubwDY6wMr2gxlbwcoPghXWg+nqwGyH8JizE9O3wnIML/JKybwgyBOf9p+Do6EJZ/q/xOqiCjCLD2yHF6y6HdmuD5C//xieaTyKh2oPg5m98p1rasCd2TigVLIoKpnNzc7gEd0OsOfLwNbqwba/Qxl5oG05gYHxKUQ4Pk4/cP3P2zjwySVorO148GUrro6NpTIURYW3G5OTeMEVgGZnCJk1QTCDB9auz1I60sYCT0rGeZauL65O4smdHly4PCSPo3LJxF0iS46P4mEzcWbyIL/pI8pGmRdENb88gS5Go+o5UdI5pnDIcRwGvh2G/3A3MopJvfJWON0h+moBC5G74KlF/vn7L3x98TJVMqXu2SQYbUwDGfBmeBYrNkjcbcV9Fi+WVPqRmV+CNRtLkbO5HDlaA54ooPVndViWV4R1pVVocLfjm6EriAqiDCRIbReLZ/j73Dyyaok3sx9LrH6wqnZoLG1YY/chu86P7No2PO7wy6ovq/JiXV0L9rYGMDA0ogDiHsBIlMel8RvwnR2EppoCDc2wBvvkMu6SEBzZb55oOT82gYnwHVXJAhWdKpkAJQ4SSvM8h1U2al6TD3l1bpJtUVFPiKq8K1DfRmgDtSgxGTTZNlPTN7GpzIr7X30DGbVdYFvehHOfJwVCu3NUXlRMtc1XFwaRpzdi8MpoUulkY8/OzGCVsRGs1E0ZkguqOslydpTYdmH4h1HKUkgCTd/6A57OIDLz9HiAuuL7sfEUoFKCsmvPd9dgfe8M+kZ+waOvd5PlDpFvnchYW4intUZsMjmxvtSKleuL6eAg1Q1u5FY2Yv72XNx6sf8/HKqbu+UAVhOgg6EZrPgtsKI9YHoXVUG2rKB5awArtRX4beJ6KsN0wESmU2TDLG01WMm7yHUdQXngNLJ2hciWQSy1B1HQ2oNtHX1ETQfYBge6jvXEj6/081B1wIq4eG0SLx38GP0//iqvvdZxCuyVt7HcsA8xUliy5RZvL9rODss2TLaNykMJUNXfgSLG++dHoPOdxJ7QCUQiC+qgOJgE+i/Q0e62NDBtbAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/36e0acb83792553ac81da099cc0f303a/3684f/image-1636010594700473.png"
+        srcset="/static/36e0acb83792553ac81da099cc0f303a/e9ff0/image-1636010594700473.png 180w,
+/static/36e0acb83792553ac81da099cc0f303a/3684f/image-1636010594700473.png 225w"
+        sizes="(max-width: 225px) 100vw, 225px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p><a href="https://www.cheatengine.org/">Cheat Engine</a></p>
+<p>데이터의 수치를 검색하여</p>
+<p>메모리상에서 </p>
+<p>그 데이터의 위치를 찾아주고 수치 변경이 가능한 프로그램이 있습니다.</p>
+<p>대표적으로 “치트엔진”이라는 프로그램 입니다.</p>
+<p>위 사이트에 들어가서 다운받으실 수 있습니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 36.66666666666667%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsTAAALEwEAmpwYAAABgElEQVQoz12QTW8SURSG+X3uNMZ2bZMuXPhn3Jq4050bDUIdLQMk5WMu4CgUOsN8FOp8MTOF0IWrxzPXQNTFk3tzk/u87zk1o9GkZbbwlkuWgus6JHFKkq3o2h9o2R9pX9dpTz9hfm/QntXllD/2e6beFWVRkuf5kZrRGGKaSiQJDw97trst+90vrv0WZ91HnDRecGqc8/TijCf1c559fc6pvD3+fMKr4Ut22Za8+CMrioJa82JMv6eknSvtXN3S930CL2DSMxn1DMaqw3DQFTpYww4/vnWZypt/syBJEuI4EmKiKBJhc0S/r7TogOM4LD2PMLwl9ELuXJ9YAtJwRSaUSc5uu6e8vz82O458eakYDBSeCIIgkHZ3rNeRsGa1XmluhZ9JTF4WbIqKnE2++UdWnXpk48uIq96I+XzOZDLBtm19PwSEYSj7jdlkGWmaag6f/5dp4fzNO25ev8URkRqPUZbCsiwtXywWzGYzHVDtt5JXIdXeKnEmIX+PW91/AzHi7JT0y8B+AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/06e0919a32ac807e5dc7ef18b5256570/37523/image-1636010594700474.png"
+        srcset="/static/06e0919a32ac807e5dc7ef18b5256570/e9ff0/image-1636010594700474.png 180w,
+/static/06e0919a32ac807e5dc7ef18b5256570/f21e7/image-1636010594700474.png 360w,
+/static/06e0919a32ac807e5dc7ef18b5256570/37523/image-1636010594700474.png 720w,
+/static/06e0919a32ac807e5dc7ef18b5256570/5bf79/image-1636010594700474.png 966w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>사이트에 들어오면 상단에</p>
+<p>Download Cheat Engine이라 크게 적혀있네요</p>
+<p>이 버튼을 클릭하시면 바로 설치파일이 다운로드가 됩니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 140px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 117.85714285714286%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAYCAYAAAD6S912AAAACXBIWXMAAAsTAAALEwEAmpwYAAADE0lEQVQ4y5VVbU8TQRDuv/G/+B/UD36HxKRKNH5BY2M0NSqNURNJ8QUFY2zTUGNSAqEBkgLVUs4SqbT0Fei1vWvver29u8fdvbsWtKUwyWR3Z7PPzjMzO+vBCdG6BJZlYZicteeKR1FVqKqCVltDSqigXJWxtJpFqSpxm7B7iOqRDGKYPdCz1FOv1yGKNTRlDauJHIrlJp6+jmMzVaRALWT2jpAr1KGoXZimAV3XQQiB7ij5Rz2uqwb1QFV1esAAocqEzU1qZ6E4r1BAC3XVxHGboKEaEBXCtdYmvbm91rnN1WO6FlVG83QYuIeiYkDTCd80TctWujDoyGLH1DBtZXZq5vRE1eRz5pSbLw7YoBs6Mdxcuikdlmo+mAZl1LEGAzLKXQfQdZ2JLMsQhBx2dg+w9/sA+/v7vSsNMgKw76FNm4mwmcH1t1u4UtRwjY7hT/MwHQYjAV0PTRYrGrNUOoVnD6dw9f02Ln05xOXJH1j6FoXpVsVIQJ045WNgbW0NN71eeMfHcee2Hze8z+F/FEQgMMWTgYtSLlUqCPgfY+zJS7z4/gCfP/gwee8+AlNT6Ha7Fwc8rtXg9/ngm5vH3XdvEPoYxPT0TM87lrTzATpWQRBwa2IC88EgZiKvMBaZw872z15ILuChbS0UCviVyUCWJMS3FvE1uekc6pfUObJMeofOal+ujgCkXeREe2K0WPnYZUSbBV0zu2vrv5QhT6+pWVA6Gup1sXeAJUCilPvFboMpigLW8nSabXZuAKAFWQdy+QMsLsYQjUaxsLCAcDiMUCjE57Ozs9jY2EAkEkEsFkMikUC73UKLRslwXtVpQFpaDUlGhdZfNptFPB5HOp1GuVxGPp/nl4iiiGQyiVKphGKxiFZL5o7Yz3QA5UGpYOWzvr7OgQYlayjlhkZjZtpB533PqTUGtrS8jJWVFd7ueY+kyXO9YudM6z/KtE11LTQpbVo9nIbUtceO+xvCtjXppG3Ye6xkJK3fInuALhX2Cf3JiWhKKjSN8B+P/SXCbpXbmPeEFn/lUIYkd04145PR+AtNqSb4OdH70wAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/3e2c1f010c72f510e5553b63cc421126/0d3e1/image-1636010594700475.png"
+        srcset="/static/3e2c1f010c72f510e5553b63cc421126/0d3e1/image-1636010594700475.png 140w"
+        sizes="(max-width: 140px) 100vw, 140px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>다운로드가 완료되면 실행해서 설치 해주시면 됩니다.</p>
+<p>-설치과정</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 497px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 78.33333333333333%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsTAAALEwEAmpwYAAAChElEQVQ4y41TyW4TQRCdP8xXkF/gG3LOIcrJERKCQOILiCSASMIJgmS8zXjscbyN92Vsj3c79qNe2R0FCaS09Ka6p7tfVb2qtuz7AlqtFkajkdpGo4F2u43JZAKOzWbzX6xWK6zXaz23XC51bfX7ASqVCprNJqrVKnzfx2w2w3MGCThyuSIikTMcHBzDInM+n0c2m4XjOLKZQ61WQ7fbVSedTkcjNuj1evqf98y4vv6B/f2X2Nt7AWs+n2t64/FYwdQHg8EjhsOhgvN+v6+WpDw7nU41Ss8rSnRHODw8gRUEgUaWTCYRj8eRSCTUplIptUQsFkMmk5GLnmZDy0wIzikbsMbDwxIWvXMjnU7Ddd1HmMMk4Jpzpk8pGKEBA6LlHq3FNFgIEti2/dflpzr9q+KmwgyKhaW1yEpS6sHqLhYLhdHnOYP32G5KyJDZfywOiVgggodMkWjDMNQ5HXGfc7NmJgyMBdOUy6USHEmXOrIlmuIt2OnCNduF2hmdDPifjkjI/S2hfEpVH0XRICsFaMlGTUgU9brqy74kcV3W5hFwzodAYmpJZ0o4kB8VtkQ8gWo2h7K0UCXjoijRluRZ+nKpXC7rZZIVCgV1UhcnvqwZJVOnky3h7zhyR8fIn0XhvTnF/dt3cE/foxF5hantIFwuMBKxjYYE50PRMQxHWgjWwTS9FYj3yrcb2JdXcC4ukfzwEalPF0idR+He3aEjhwMDascXJI0cyr1hIB3Cl7R7USS1evLpideO2LYi0HlLbPNpI9OSVFLLf/2O1OdbuFe3aJZ9+LUqSsWipm0NGKpgqBhsvRns3rCC5yTVUIphvz7Hl5tf+HkSFb09KaaHpDxZFu8Ptiijru5+0GgAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/f97d2fd62fc5382160a5c8eb64957163/15d25/image-1636010594700476.png"
+        srcset="/static/f97d2fd62fc5382160a5c8eb64957163/e9ff0/image-1636010594700476.png 180w,
+/static/f97d2fd62fc5382160a5c8eb64957163/f21e7/image-1636010594700476.png 360w,
+/static/f97d2fd62fc5382160a5c8eb64957163/15d25/image-1636010594700476.png 497w"
+        sizes="(max-width: 497px) 100vw, 497px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>“I accept the agreement” - 동의</p>
+<p>해주시고요 Next > 눌러주세요</p>
+<p>일반적인 프로그램 설치과정과 같습니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 497px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 78.88888888888889%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsTAAALEwEAmpwYAAACYElEQVQ4y41Uy27TQBT17/UjWPYbkPoHUATd0VVViS4RC9agFiEWbdIAiUMSv+04aRzH9th5Oo17uHfyaBoK1NLRvXNn5j7PWFF1A7brIo5jdDodeJ4H3/cxGo0wn88lhMhor4d+P0Ke5xv7ZDKR69vbW/BXFAsow9EQQRAgiiKEYUiX+lJPkgR3d3f411cUy33X7eL09D0ODg6hFEWBVquJSuUa5XJZolKpoFQqyUxdyj7LMnlxN8DaYalUxf7+c+ztPYMynU6RzwvM8oVMfbFYSgbvcVnyDJW2xmw2k/bxeEyl5xS0g6OjExwfn0GJkyHSvoo0+AHPD2RGlmXBcVzqZxu246DNmVJvHdJ5n/ucJAKJELI1aZpSgLEMoCSCHIYGhmETXZ+GYptwLAO+56DbJueGBpsD2DZMw4Ch6xTQpD4PMBgM5DDZKYN1JUsFzHaAbz8NXKoGrlQT5V8WvmseruoWLqsaNNOGbtkwLAct3ZSySbLRbKLRaEh2rJ0qk6HAeWuAF+cBXl0EOCT5+stSviS8ubhBNx4hGeeIhjNEoxwxoZ/l8Do3uKYhqqqKXq9H9BJQhKBUqR/xpicrfbVmPYwThNEO4mWJa3B20iFfZKf/h9jBnzZZ8lp5GsQOHu6vMnws+uN4StBNhtv9+BseOF5JkdzbNhnaxLF6vQ6dOMaSqcCSp6dpmpR8hp+gJHKWIiMepoId35crebg9ocfKX9v4B8Lk5lej1XXUvpaglWtoe134HV++IqaOsntxW27rTN5arUaktlD5+Bmf3p6h/O4DTN2FSS+nWq3KM78BczekfFz6hYgAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/5f9a1e4b22dabdbb6b53dbe94ccdbe78/15d25/image-1636010594700477.png"
+        srcset="/static/5f9a1e4b22dabdbb6b53dbe94ccdbe78/e9ff0/image-1636010594700477.png 180w,
+/static/5f9a1e4b22dabdbb6b53dbe94ccdbe78/f21e7/image-1636010594700477.png 360w,
+/static/5f9a1e4b22dabdbb6b53dbe94ccdbe78/15d25/image-1636010594700477.png 497w"
+        sizes="(max-width: 497px) 100vw, 497px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 497px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 78.33333333333333%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsTAAALEwEAmpwYAAACWUlEQVQ4y41Ty27aUBD1/+Ujoi7yBV31KyJ120r9hyrZVO2iabpoQARh8zI2GNvEPIxtjA3UkJzOucjkIVLF0tE873jm3Lla13EQjMdI0xSz2QyTyUTJzWaDY9/Dw8NBFkWh5Ha7k3MhxuMptCxbotfrod/vw7IshXa7jTAM1cHdbvcMLFCCNr9Go4Pz8884O/sAjY6xdOi6LobDoYIjXY9GI9VtEASYTqdKz7LsWbf39/tuK5UGTk/f4+TkHbTlcol8lWO9XqkDJegnDSVovwT9eZ7LT8e4uPgu+AEtTReoGV00Wj3YMnbX7KHb7SpwfErbtmGa5kGWceqdTkcoM4XPjVBQ7DtsGi3cVquIJz5mdy48z5WRfXhCQ1+KULruEC4pcQZCyUDpnufB933FdxTFmM/nUnCRoOnOcFlz8fXGxmXFhj304N0Jr34AayCceiM47ggD14ftyE8k3he7Z9nQdV3xz2JJkkBbpQl+mhE+Xof49CfCl5sQQbJGmBWYLQvM863SH7HFXDBJC/jBBIahq7F5sapgHMfIpWiR7fFXkIgvjqP/IiGkAC9msVgonbU0KpEoc+GAMlLFJJi8ASr3EarD5EjgWOLBfpn/xD6MTIVtH8OrP3zFr/EQ3y5fBF8DQYIJ+rgSTwuT34R2JBwu073+tMNIAtwlvmcucrnAtHl7jDGHa7FgUbmESNYkrjcQtdqIpJlyQua9aWQm8m0bhiE76uD2qorrXxVUax1Yv6uw+raKMUfjSATHPoYyrqaQ7r27ETq6ifq3Kxg3Oob1JjyJcSrS9A+pHaXyPqxWdAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/6128a277b26c80c47df0ff637a01325a/15d25/image-1636010594700478.png"
+        srcset="/static/6128a277b26c80c47df0ff637a01325a/e9ff0/image-1636010594700478.png 180w,
+/static/6128a277b26c80c47df0ff637a01325a/f21e7/image-1636010594700478.png 360w,
+/static/6128a277b26c80c47df0ff637a01325a/15d25/image-1636010594700478.png 497w"
+        sizes="(max-width: 497px) 100vw, 497px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 486px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 78.33333333333333%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsTAAALEwEAmpwYAAABxklEQVQ4y5VU207CQBDdH+UPTHzlzScTf8DvER+gL1o0QKUFSsul0HJpgSggl2PP4BJFUdjkZGZ2u3M5M1tVbTbR7/cxnU4RRZHolPP5HIdru91+k6vVSvTNZoMwHKJScaDe3l5RLpdTowLTNOE4jtgMwAvL5VKwXq/3zjT0en9f4fr6FtnsDRQ3xuMxgiBAu91Gr9cTMFOdbRiGWCwW+GtdXFwhk7mEmkwmSJJkjziORTII9cFggOFwiNFoJJLgHsFgRJLEeHws4e7OgGJpxWIRhUIBhmEgl8shn8/Dtm00Gg1YliU6QTpqtZro1WpVzig7nU5awTylZrHLsNVqycee56Hb7Upms9lMeNTyENzXoA9WRIhD3/clGhvDiK7rSlQ61qX/B02XosLL7CzBxjBLcsNMGPArvvL8G/YOS6WSOGTZpIBZkkOCdNTrdZHsOB0fc6p0R3X39HATvExom+C3f2WpDg8OSzy75FMIPwfqWKTfsO/mpx7HP88UX8Ap0NwJLenLmJIC2vFurHSj1KnO2BB23Ev/Ti9egAfLxZPtw2mH6KRjxgngdJxcMh1y6Ovp03tuBLg3bRhlF5YfpbO7GzuO3AdfjKxBmMqEOwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/e87abe82c6b0564e5da121479ff72577/4ee7f/image-1636010594700479.png"
+        srcset="/static/e87abe82c6b0564e5da121479ff72577/e9ff0/image-1636010594700479.png 180w,
+/static/e87abe82c6b0564e5da121479ff72577/f21e7/image-1636010594700479.png 360w,
+/static/e87abe82c6b0564e5da121479ff72577/4ee7f/image-1636010594700479.png 486w"
+        sizes="(max-width: 486px) 100vw, 486px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>계속 Next를 눌러주시면 체크사항이 나오는데요</p>
+<p>첫번째 체크사항은 바탕화면에 바로가기 만들것인지 물어보는 겁니다.</p>
+<p>두번째 체크사항은 치트엔진 프로그램을 실행시켰을 때 새 버전이 나왔는지 체크할지 여부입니다.</p>
+<p>저는 둘다 체크하지 않았는데</p>
+<p>원하시는 항목들 선택하시고 넥스트 눌러주시면 됩니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 497px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 78.88888888888889%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsTAAALEwEAmpwYAAABl0lEQVQ4y7WSW07CQBiFZ2fswiWwAh7cgSsgvJEYfXMDPpkYTZSSEBQxSi+kUKAt0HYKLddynH90CKIPhuAkX6ZzOpfznxn2YhiIeIz5fI4oihCGoezTNMViscByudyyWq22rNfrrbbZbKAaS8RC1/Pg+/63H39pWfY5v912UC5foVA4A6NNGo0GNE1Dr9eTDAYDOI6Dfr8vx/Q9HA4xHo+l5gkDuxtWqw3k86fI5U7AqDSynWUZZrOZLFX1u5Cm9CRJJNNpImPpdHoolS5QLJ6Dcc5hmQa0ygMeKxU0m00xoYNutyshd7ZtbzXqyaHKm4hjLu6ADkzBJnEM3ergXqvD0HXoglarBdM0YYgLsyxLjgkaE3RIEAQyAmI0GklIY+k0xl3NxOX1s8jJl6fv4rruD40yVnlTpnSAcs2kZR5hImyrEhQ0Ybe0fX0f+sd+W3Ao0uG/bHhM2LHcKY7iMAy/YiOH6i0dShiMMeGhIAKPxDukx3goURjA8UZ40h3U39t4s93DS6YyyZXtBrh9snBTfUXNGOADWIWyWDgJdv8AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/1cda8c0f915773e2ae377f0e86599a77/15d25/image-1636010594700480.png"
+        srcset="/static/1cda8c0f915773e2ae377f0e86599a77/e9ff0/image-1636010594700480.png 180w,
+/static/1cda8c0f915773e2ae377f0e86599a77/f21e7/image-1636010594700480.png 360w,
+/static/1cda8c0f915773e2ae377f0e86599a77/15d25/image-1636010594700480.png 497w"
+        sizes="(max-width: 497px) 100vw, 497px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>설치가 진행되고 Finish를 눌러주시면 설치 끝.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 633px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 91.66666666666667%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAAsTAAALEwEAmpwYAAADAklEQVQ4y51UyW4TQRScr+bMhQsnTkiAOHNAgi9I7JCEOAv2ZOxZ7Nn3zbOPHUuQFK/biUkC8oGRStPdr7umXr3XI8ifvkKTBjjUFMRRjDzLkCYpuq5Dv+rhOA5M00QYhIjCCHVdo+96tG2Lru3o3WGzXmPh+vgyPIZw8u4jri8+Y+joSHMiy1OkywxJlsKcmFDPVcgjGfPLOdQLFdqFBn2sw7q2YFBcoXg0c/Hmw1e8eP0egj4zYU593MQdcieHPbMRaAFiI0GoRgijELPZDKZlYqEvIIoibNtG27WI45jP53MN305HePnqLQR/4qHKS6RBhjzKUcQFYQnryoYzcRAFERzTQeiG6KoOTdE8QVu26Jsey3AJ/XIBwZt6aNct6qZG3W7REHw1gDE2IJ1KEI/FHYyJwVN+ALNDPBHJGg2xlRCh5KHpG1Rlhar6A18JeLqmbUJWZYwuRlCocLZLyj1nB9uxkWYJuhUVqG+3hGywI6wrXkl3RlYUFRaLrW+aqmE6nfKqM+9Y1ZM4gWVZfJ3tYV2yn5DW2AHXdXkso5ZiH9A0jYPFPM+DYZANuo4gCPYTlozQtriqNfVa3/fwfR+KonAwoqZp+DoD6817wqce7giLkqsYj8fUGnPkec7jTDEjY+rY3sfeU5V9tKt2S8QqfQ9P3ir0A58fZulEUcS9kiSJYiVX9JiME7pjBw19pcwKlNSPZV7wsSM6yMl0n1SYRMiUWnQFmYeKLCNJEtRMBIGdr+8huGoIi66ORSnasg82d5UQDr19ugHLoqCruESS0pWkcUbKspI+St5VpHBJhA8oOKE4gXQ0xPVwgPnoDLEiozANLOma5doclWUjPBtxVLaDgqpZ6AZKw4RH6U8ODnE9oPODAdTT7xDCgwEiWYF79QMNbdr4ITbUYxmtxdKU5gHNA+SqipqIWko9ncl8zw2LEW48Hxv6Q/VH9Lf5lWZgzx3+fv61tm/9hkQIt8T8fPPdnvnz9cfxNWUk/CSfbsl0RnxLav8LdPaOWmx1fonf870uO9lDDqkAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/46299ddbdbc81aa9ed2985c17492616d/bce72/image-1636010594700481.png"
+        srcset="/static/46299ddbdbc81aa9ed2985c17492616d/e9ff0/image-1636010594700481.png 180w,
+/static/46299ddbdbc81aa9ed2985c17492616d/f21e7/image-1636010594700481.png 360w,
+/static/46299ddbdbc81aa9ed2985c17492616d/bce72/image-1636010594700481.png 633w"
+        sizes="(max-width: 633px) 100vw, 633px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>치트엔진의 첫 화면입니다.</p>
+<p>제가 빨간 동그라미 표시해놓은 부분은</p>
+<p>내가 메모리스캔할 프로그램을 찾는 아이콘이고,</p>
+<p>오른쪽 보라색 창은 검색할 값을 입력하는 곳 입니다.</p>
+<p>왼쪽 보라색 창은 검색된 메모리들이 뜨는 곳 입니다.</p>
+<p>하단의 빨간 네모 창은</p>
+<p>조작할 메모리들을 올려놓는 곳 입니다.</p>
+<p>그 외의 부분들은 고급편에서 다뤄보도록 할게요 </p>
+<p>하나하나 기능별로 설명하니 복잡하게 느껴지네요</p>
+<p>따라하면서 기능들을 이해하게 된다면</p>
+<p>어떤 게임에도 응용하실 수 있습니다.</p>
+<p>-어쌔신 크리드:오디세이</p>
+<p>라는 게임으로</p>
+<p>메모리 수치 변경하는</p>
+<p>메커니즘을 설명해드리겠습니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 53.888888888888886%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACpklEQVQozx2SyXLbRhCG8QZK2aIoECBA7CuxEgLEVaIoLha1WLGTcpTYjpK4YidluZJTEh998tGHvEQe8stIh65/qnqmp/v7W7LiiH8/37F9MicrKhTbRfUCZDdAuVfHFxrSEdpxIjquOIucbDnYUYgj3hthiCs0LxKkfV3n/a8vWA9LMsvG7pn0XI+ueGT4AbrrYoURqvjIdGPcKHooZNk2B0X4EMMmYThIuV6NkHZabXZ2d3nUUUkHGbJhCU1RewatVovHItfa20VT2sS2Tt13WQ5TttOCaeZwXAeMha4Kjz9/WCN91ZbZ2dtnr6uTlAU92yNMM7wgIAs9yn5A4hnEVpdlkzJJfC7GGbfnY7aRzbPY5N224f31jJfLAumxrLCvdh86ipIU23YEiwzbcTjoe4yykMjQcLsKw9Am7Oxz3Le4mWec+Trf5iY/T2Nuj1O+mYdImqljilEs1yYpBpimQzM6FIxctI7ywNQzTUJdZeQboqBMqbdZ9h3Wuc2bs5KPrza8WZX88jRHMuwejmdSDiJmk5wkMKkzH0dTUNptegJF5lvCsC6LvuhQUYk0jW1VsEhsNoLp3fkJv29GfDeM7gsaJKnPTEA+GqfCrZDLRUPY66LLHXLfZpy4zERsyoCb04ofz2pORIdHocM2CXiaxdxdzni3qpEsp0ck4BZ5SBF71OLCYjhgEPlMi5h1k3FaZbw4KXkipvhpXfDbVcEmFY5rMgvB8ftlzYdnc/7YjpE6qoomRnBM0WngUfVDRnmfeVNxNjvkQsTVpOL5USVWI2Jb+JxGFl+XFn9dxLxdJXy6nfHhsub1tESS7x3WhCn34D2HQqzKWGz8/CBnNT7kfFJzMRpwKeL5UcN5U3B9mPCytvjy6oD//lnz91XF29OCm0nJ/7R+XItro0IxAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/174eb043b41b662eca85ea454c726557/37523/image-1636010594700482.png"
+        srcset="/static/174eb043b41b662eca85ea454c726557/e9ff0/image-1636010594700482.png 180w,
+/static/174eb043b41b662eca85ea454c726557/f21e7/image-1636010594700482.png 360w,
+/static/174eb043b41b662eca85ea454c726557/37523/image-1636010594700482.png 720w,
+/static/174eb043b41b662eca85ea454c726557/5bf79/image-1636010594700482.png 966w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>우리의 주인공 친구…</p>
+<p>갑자기 부자가 되고 싶네요</p>
+<p>치트엔진을 이용해서</p>
+<p>부자가 되어봅시다.</p>
+<p>\1) 처음 값을 입력한다.</p>
+<p>돈이 현재 17075원 있습니다.</p>
+<p>이를 검색하여서 메모리 상에 어디에 있는지 찾아볼 거에요.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 46.111111111111114%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAAByElEQVQoz1WSW0/bQBCF/f//R8sLgicolaDFEJOEkqCE2K7xLb7f47WdRmoi5XRmFQlqabSr3ZnP5xxbWeozaO8znL/f4MK5pvUKX/VLfFld4Ny6QlxnEH0PNwwxdzzw83e/x57qcDjgeDzi86MkSYKeBjoq0XWoigKxacJ/e8OmqbB8muH58gwz20SQpBCiBc/kSYQ4CpFlGZqmQVUWsD0PyjAMaNsWohVohUBJzeFiCev5FyLPhXr3gNefKv5sB/RdjyRNkaUJpisHTkDgvCAHA6I4geuvoXSkioESSsAszzGfzzFSVRiGgevvd5i+zOllLQpSn5BKVnb/YmBh+QiTHH6Ukvocadl8AMUJyENBECAmpRHl9u3mFuPxRPbwXVmW0uZq8YrpZAxd17Fer+GRG48tf1bIVVMeKdlq6hpdJ3D74wGPI01mx8CqqmSGpvkblmXBtm34vi9neJUZyo9yAtcEYnWcVUlB36saNG38H5CLVW42GwlnhbxnlpJTZmwx52ayk0cRSjrLT1//cTQh4JMc4F4uBkbcR/0M5JXvuRSW6rquVMcAVtizUmrabrcwTLblSAjHIag62vMvxgA+Z2W73U7WP9oFk68dMwm1AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/53c41fa29771f775516be0e612464794/37523/image-1636010594700483.png"
+        srcset="/static/53c41fa29771f775516be0e612464794/e9ff0/image-1636010594700483.png 180w,
+/static/53c41fa29771f775516be0e612464794/f21e7/image-1636010594700483.png 360w,
+/static/53c41fa29771f775516be0e612464794/37523/image-1636010594700483.png 720w,
+/static/53c41fa29771f775516be0e612464794/5bf79/image-1636010594700483.png 966w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>17075라는 값으로 검색을 했더니</p>
+<p>92개의 데이터가 검색이 되는군요</p>
+<p>메모리상에 17075를 의미하는 데이터가 92개 있다는 뜻 입니다.</p>
+<p>이 중에서 데이터의 변동값을 추적하면서</p>
+<p>돈이 저장되어 있는 위치를 찾도록 하죠</p>
+<p>\2) 변화된 값을 입력한다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 71.11111111111111%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAADYElEQVQ4yyWT224bVRSGLVDSNOemsWN7xvZ4Dp6DxzMez9HjUxwnqpu0SZsTqEo5pCqgCCFUQaVKCISEuOISiRdB4il4po8dc/Fr7bmYb/9r/XsV7HaLmq5RrCtIqo7ttqloJlrbR9YtFLOF0Q5I+lOiZIJp9xkPXpIlTxmPTji/eIXleLgdm37iU9iuKiheTlWzKUoSxeq9ZIoVibJcY6u4S+iMeTP/kev8jqv4W24nP/Hh9C/+vP2bf/74l89efEpoK3SNBgXJ6nHy9lf8+WsBrCFrLSRdSDWE8xayqmLYAWl+QpQ+xfWmBL0nxPEzJsMrTk9vOZ/PuD7KuDzsUZCbos14jOp0kSp7yLKEojSwWjph12eYRrSDgIOLa5KjOWovppVlVBOPx6bJRqPJLA/5ZJZxPfAoKHWVzBkSmhGxnTPwJtjRmCCbkYZdRmmI34uIDuY46QgtSFH9GFkYqDkBku1z8WTAq2mPdPsRBd8O+XDzO3dX77k7/54fvvyN5OyWw9fvsVwXx7ZFyy7+aIYZ5djpkJoIqWJ2BMyjYnnMUpfnXZNeSQCjrkPu9Qn0Nond5XgsnKUZmhVQb6hYhokqfvSHBwt3ei+j3ulRdwMB7i6A426btC6TaRUKYT/BSvbFDEPc7IAwG2HqTWrVygIYeB00u0NnsE8r7C/adpIh7Wy8uKDccjmMI06TBLtWppCM94mff012/g3Zszf0z96iak103aDe1NAMB9W0qUQ+7SRH80Os/gCj4xHnMbtNk1yM5iyLMMoCeHTUJx4MxOB9DqYD+iLBwDKQKxV2HpeoS1UMx0FPBjjZhJZwZw/3scV3J8sXobQ1haGpkusqhdlkxM3JNZN4SrvT4ng6JItjdkpldvaqrG7vUFJ0rPyQhkhXDbKFdBGQ0k2piVm6zQZZU6avSqLlzpB3lz9zenTDw2KJVMB00eKacLe1VxG1yF5DIRoNkNs9EcL/6cpC97VsuqSOwXW3wRdxk0K1plCr2+wUJVY2N1nZ2GJ5fYMHa0KifrS0LLZG4/jyQqQbId0vgHg2ZQGreyHBdC5eR4t3hwZfjXQKD7a2WVpfX0BWNjYFRJxXhR6usiT08fIy6492qTRbbOyWWNspURU77tsWkecyzhK+O/H5PNX55UXAf9iRsp3tUoURAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/dccf6952c0e733f648592579a88f83fd/37523/image-1636010594700484.png"
+        srcset="/static/dccf6952c0e733f648592579a88f83fd/e9ff0/image-1636010594700484.png 180w,
+/static/dccf6952c0e733f648592579a88f83fd/f21e7/image-1636010594700484.png 360w,
+/static/dccf6952c0e733f648592579a88f83fd/37523/image-1636010594700484.png 720w,
+/static/dccf6952c0e733f648592579a88f83fd/5bf79/image-1636010594700484.png 966w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>무기 하나를 팔아서 돈을 변화시켜볼게요</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 149px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 85.23489932885907%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAACXBIWXMAAAsTAAALEwEAmpwYAAADiElEQVQ4y11UW08bRxTet6pSwOvLrvfi9e7ae8MYfCkYTIKxjW0wtyDApCgpCERCQCFtQkPUtIS0UaVUqvrSFqlp1fdKfar6E/qW/KcvZ4bFafvwaeacOfPNnO+cGSFhZSGmTEi2g6hhI5a2kcy6NA99ZLMYxfH5nMUwW7ZdKBQnZ1wex8ZkxoHAjINPT7By6zYaSzfR295D+cYMzr59hZtbd9Db2UN2tIj1Ozs4fPyE+/ITU0RsQXW8/xAyCHa+wAM/iMt4/OU5frj4BbnxKn769Xc0Flfw9XffY6zWQPF6DUcnT7F//Bl2j45xTU3Rrb2QyOmPgpkbwQkReaUx3H/0BE9fvMREs41qaw6f3DtEd32TJPBwe/+AUnXQWd3A5OwcBjQDUng7yb4aiZDpsUzpLva2sHP4AI+encEvj+P0/Bt8vLuPz8/OkaDAvaOHKNfqnEwPhknrDPdL/wPX8JqSwgCl4BRKqDRa0P0c5td62CT9at0lKpqFLtkb27tY3NyCkcsjZmaoCG4/1T6hQadZw6PQghFELY/S82EEeQr2oLkBwYdJ66zyLOUEpZeidSYV25fOvYdJEGTLRSSVQZAPUK8Vobsene5CzQYEH5oTcCLWNirNJdsn20PcYrp5kEhfmeKSIYRB3Ua7XsbF6Twuni3i+cMl3mMSbdCJJOUNwS8U+E0V2pCmjDQ3B5YZI2A3ZkVTQggKafDquIOfv1jAHz/u483fL9BpV/GhbGB5uY2p2hR6GwuY7dQxcaOKUqWCtbUFNNt1dLpNiFQclQ7TQgis8w/Wynj9fAVv//oK//x5hm6jwAln2zMojI+h1pzG6uocDu/eQnuuSUSzmF9oYboxjYiR4US6yyQhQtHIwvUtnG5X8NvLdRxvz0BNp0gnF/7oKJz8CIbLJaSHcqhcn0SzVcdH1Uk0WjMIiiXETYc3OEuXpS5IFnvD9DbTBvwhE3HD4IKzglxpychZe0TNLCJ6ht60i8FUlorHXgjFOZcF4TeM6mnE6XOI0duMaERIH0Cc5gyJEBL5JNOGTL2X4Ov0QZB2/TjT5n6ZRmEgIWNQSiIqK4grCs1lcJ+scH+ExqiiIppUIRKYPShf+tm6mFT4WizJ9qtEGG66gpy2oJEWYlLjtsgJtT4iISkjHwjHuKpxSJoWEkpK/0TWe5l8ETEKEMND+A2IjOHqYPFfxLKuEy4J3wEb9Acj2cqpPAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/a59044bb587f06bf3ad0cccc29b297c5/d371d/image-1636010594700485.png"
+        srcset="/static/a59044bb587f06bf3ad0cccc29b297c5/d371d/image-1636010594700485.png 149w"
+        sizes="(max-width: 149px) 100vw, 149px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>17075원에서 17422원으로 변했습니다.</p>
+<p>이제 치트엔진에서 17422로 값이 변한 아이들을 추적하면 됩니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 607px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 85%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAACXBIWXMAAAsTAAALEwEAmpwYAAACzUlEQVQ4y61Uy3LaQBDc7/TX5JTKMX/hQyr3vE527BLGxhJI4qEIJASSkBASiEfAuDrTG3C54muomtLuMtPTM9O7qucNEYQeLK+PMIqQzWaYTCbY7XbYbrcYj8fIsgy5WJbnKJdL7Pf7N3YQc0ch1DejjbZ5iUvTwChOMZfAmYDS4jjGcDjUCUIBDoMAU9mnaYpEjN9U/JblAjdWBxcfPkK5jg3/1xC7zRZ1vUZZlqiEBQO4DgSk2+0imU4QfPkK+9NnRN9/YFmVyIWxbdvoug6apoWLd++hyKDX62G5WmG9XmM+n2sgz/P0Ok0SON0+up6PmdtHdGMg63ko6w2KaoVpmmlLswIPZgfKNE00DENnWywWiKS8RECCINRnkZTqhxPYAym1qlFs9pjXO+SyphWrDRarLbKyRv37CEV2BC2KApUw41DYR+5Ho5Fm32q1cP3zBobRkBIddMTaHRtWuw3HdWFabfjDEWYSp0u2LEuzWVYVKhlEJaCFWHoaju/7aDabaD086OSu42Achpo9q5lLLMkspfeqLVlub281YCWA7Fl2AlpJX11h0Gg0cH9/j6urKzgEE6BIJEYVhAJ8d3enMTggNRgMtBNL5DA43UxLJ9MJOByWTZY0Tpz+DOY54zg8GuMUS2FmbggwnU5f9KUTCGMGkS1LoibJkMzIkjE8P38Vs3Y6nRe5sFSWzwTcE5x9JjBVwDP6EozA3L823UOy1FP+hyG1yWCyITOu2TcCnf3fALLphugwPTEgINnFBA7/apHsKAmeE5iMz0NkmWzH2RTvqCU6or7YZA4hFoAkThD3+5rJVHzGvMOcvrBnW3hOAmT82hTFS209Pj5qiZyHkPPaSeBCWMw4AJlsfgIhO/rQl/2njvll+xT7xd7wT9J/enrC4XCQh6LGRBq/kyfsIGdbec7IjE8V/VkefY/HI56fn7VxrfAffwT9A5DT5LRTbr9YAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/2a07167a91a5f46fd56aeab23b1e9070/ef9e5/image-1636010594700486.png"
+        srcset="/static/2a07167a91a5f46fd56aeab23b1e9070/e9ff0/image-1636010594700486.png 180w,
+/static/2a07167a91a5f46fd56aeab23b1e9070/f21e7/image-1636010594700486.png 360w,
+/static/2a07167a91a5f46fd56aeab23b1e9070/ef9e5/image-1636010594700486.png 607w"
+        sizes="(max-width: 607px) 100vw, 607px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>여기서 주의할 점은</p>
+<p>“New Scan”이 아니라 “Next Scan”을 해주어야 합니다.</p>
+<p>“New Scan”은 아예 새로 검색을 시작하겠다는 뜻이고</p>
+<p>“Next Scan”은 현재 검색된 아이들 중에서 다음 검색하겠다는 뜻입니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 214px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 83.88888888888889%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAACXBIWXMAAAsTAAALEwEAmpwYAAACMElEQVQ4y5WT15LiQAxF/f8/RRqKUOSck0kGBzIvO6vto6FdLoaXpUp0S7Su7pWE0+t1ZTKZyHQ6lcGgL6PRSDbrtbSXS6kY661WEoWhHI/H2Hzff9lv38nn85LOZCSVTku5XJb5fC7n81miIJSzAToB9koITCwMo9j3g0B9P+E73uEo2+1WVitXA3vPkyg6yeV6i+36Mt8P5GDe3+8P9XmHf7vdNeZ5B3EAKhQKyg65tVpNHo+HfPpcLhdZu64BuxrvrzyfT0NkpYq+v/9o3IFVALP93lQ7KHUYc5Jwv9+1ACcJxPAxfPs7cRQ48/lCstmspFIp+fr6UsuYnjYaDTmdTqZHoRosXMOO4a3N0CDhmfaMx2ONHw0Z2uXMZnOp12tmwgMFabVaep/NZj/DiSI17rvdTsFQQgwVSManqPZwMplKpVKRXq+vvSyVSgoMKAwtIP3bbDa6BYCGr1WisDI0dwVEMgOx7DqdjlSrVQUE5J0hhlyKAWLl84YWKGC73VaAer0u3W5XT3r1SfLSLDtMYYjkxWKhoNyV4cg0NZfLqSGXoTSbTS1AkpVtJZMMM2L0jgL4cQ9ddy3D4VBB2EEk4/N3BMwCwpDVol8wtQwZCmv2M3UD2Ov3zdpkpFgsau9gCFuA34cCmJ2q7RlD4owBkcBD5MCA6lQkKQnI3S49BkPivCc3BiTxdrupJGuwsQNJyua0v9l4MkcXm68kk6S9M/z0JrkFMeA7m/+1JOA/1svruO9xGrIAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/40115df0aae51343cfa4bf639008ded6/a48b3/image-1636010594700487.png"
+        srcset="/static/40115df0aae51343cfa4bf639008ded6/e9ff0/image-1636010594700487.png 180w,
+/static/40115df0aae51343cfa4bf639008ded6/a48b3/image-1636010594700487.png 214w"
+        sizes="(max-width: 214px) 100vw, 214px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>이제 5개의 값이 나왔네요</p>
+<p>이 중에 돈이 저장된 데이터가 있습니다.</p>
+<p>확실히 하기 위해</p>
+<p>한번더 값의 변화를 주고 검색해보도록 할게요</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 161px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 48.4472049689441%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsTAAALEwEAmpwYAAACJElEQVQoz01SyW7TUBT1GkQT24n9PMV2PCbOUJpQUZKmKa2SqCVCoanaAoVSCTEuUAVikFh1zRYJqYg9SyTEH7Dklw73OSZkcXTeu/e+c6cnFF0fSjmASnBrDbTW+2B+hNtH9/D01Rmaa93UPz0+wcNnLzGcTCHbZaTv3Nk7ZQGCGSWwKzWwoArRicgYwoprKNgewYVdTVCmRFwkb9ooOD5KlQbZ68SEKj//h1CkgLxZxkorwXiwAr8a02MfmhdTFSFVEEIicV4187iP3wNiL02ueBTjcR8vJoKwZLgY3Gzjy9sRvp3v4dOHPVgRiVEiL6nBq9XRXG3BCGMYQQXx8tW0o7DZTAWL1KZGyYwgSlnImy7ePerh8/sd/Lh4gT+/zrE7vIHLrITD/V2sdq7j7uEYk8kInY0O+lsbeHB/guePD+BSQplmqZOYEWaCV6jCUa+Ci4+38Pv7a/z8eoa1doBLzMHWdg/Na210+11Mpzs4Ohhje7CJk+M7eHK6D79Os3UyQYJK7Qt8FgXLwWjdx5vTDoablNWy09m5lSohSdt1aDk+tR81llGKE4QNatn9N8OQZp4JzrbpQ7RcEi4hZzrzZTD+FRa+Bt+wZPm0kABiyaO4YC7IssUIOVVHnukoGCbBgqSbEDVjDn5PfaYFmVjSMmRx3CYbsxjVsmiGBQVLRRU5RUVeYTNWOTOIxBJBZhokgqiyhbjZmdtlTYOia9BMHX8BeUcqVXUPS6MAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/9ad29c5d7a6dc669ad136562e737cf63/a5ccf/image-1636010594700488.png"
+        srcset="/static/9ad29c5d7a6dc669ad136562e737cf63/a5ccf/image-1636010594700488.png 161w"
+        sizes="(max-width: 161px) 100vw, 161px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>물건 하나를 더 팔아서 17638원으로 만들었습니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 531px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 35.55555555555556%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsTAAALEwEAmpwYAAABZUlEQVQoz1WR23KCMBCGefm+TR+gF151bKsgKggKchiOCuEUDlrbm7/JVjvTi51Nwubbb4mSZTnSNMM0Tbh9faHjnNac9+j7Hm3bwnVd6CsNgWMjz1KsVisRGuI4wnCvsW0b6nIJRRZvt1sBTXG5XFBVFRUwxlDXDRqxrisGP0rx/GohyCuwusWprMFajoaPFMX9TNnv99A0DZ7nkdH5fCbo6XQiKBPrLIlgHmM8vSTYhAzD5RPNKGK4opbRX9FON/DrNxSpKoG+72MYBgJKUJ7nBA7DkL7ZlgVnt4aqLmGYO3h+gKOQcI8eHPdI2dxZUKSZtIzjmAzLshSj1iiKgrI8T5KEJnh7/xBAFaZhYL3WsdlsxL+zYIlmcRQhDAIoEjKOI8G6rhOPwf9y0zT0SNI4Ehce0+i6Ttaykaz7FWHC2ociLz/iAfsH7DgMYTSbzchusVhgPp/jcDjAcRxqIifMsoz2P7DH/cP0T+V6AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/f91c986d96b4d00b032106798be87ef0/d4713/image-1636010594700489.png"
+        srcset="/static/f91c986d96b4d00b032106798be87ef0/e9ff0/image-1636010594700489.png 180w,
+/static/f91c986d96b4d00b032106798be87ef0/f21e7/image-1636010594700489.png 360w,
+/static/f91c986d96b4d00b032106798be87ef0/d4713/image-1636010594700489.png 531w"
+        sizes="(max-width: 531px) 100vw, 531px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>다시 검색하였는데도 5개의 메모리가 나오네요</p>
+<p>원래 하나의 값은 하나의 메모리에 기록하는데</p>
+<p>요즘 나오는 게임들은 메모리 변조를 쉽지 않게 하기 위해서</p>
+<p>여러개로 나눠서 기록하네요</p>
+<p>마치 엑조디아처럼요..</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 74.44444444444443%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD5UlEQVQ4yyWT6VOaVxjF33+hH7pME7Owyc7LLogCooi8EllkDyBoXDCJEUUEDIjRmGlqJ23aNJkuaTrdpstMO51MPnSm/9qvt+2H58u9z3Oec849VzqpyjzeivDlcJW/XvR5/aTDbw/3+Xp/g+Oym5cdDydFGweLRj5o2DlfcfLtyTq/n3V4c9HjzeND/njc5mJT4ekdF9LFbpIX/W3+fjbi5/NdTm/l6d9McbpRZLSaZlhxc1CU2UlZ6JcdPNzK8KhZpldK8eFWhV9P9nh93OOXYYdPu1mkZuL/pp8Eq5O1HN1ykuHqMkcrSfr1NJ18gGbaxm5epp3z0K0qHNaWGKxk6JSSHFez/Hi0z7P+KofVSaT9pInzNZmK4hEgOY4F2HA1w/eDPb4b3GZQcXK26uajppcHdYeQleWzVpNBVSytZDiu56kmghzVZJ40nUgvjwL8MJxipyCzkZpjUMvyTW+HPy8GnN7O0sxMcDMWoqH42Up7ebSZ5vX5iC9adxk2CrQLCpsZB5+3fDy960E6yFqohXS0l61Cko29TJjnB5vs3hLSckbWo6Iau+zcGVGdtdFUtLRXFD7dXqWVCtLJyXSyVmozehphPVLarWE9ZuJQeHS25uLfVx813GzeMPG8G+CTpp1kPkco26Cft/JKKLpflzld93FWdzGqCG/TFnpZmXrYhLQxa+Zw2UZrycLHd13Cz0XKswkUv4V02MaLloNCq4qzsc3ztpdNsTgVMhCf9rKWCgtvPQLQSq9g545iRsoH9IxuOtlfstIvOSiHw7z/lszYmI5L75iI6iNEQ0msgQguszi7dIUrVy9z7V0vWXOebt7NoWDXE9IrM4JhzDZBK2nmYd0pcuanLWKjBIO4HCaquVnynjpVb4nKQgirQQxlIijhEOmJFA/K25ytLHJSc7CXMoteL9INeZL1oI1C0MC0T7C8X+NeIUIqHmfUS9FaLNFLZfhqf4mo189pJ0m9VKQZT9NtJ0gvxEnIIqshH2t+N1J10sje7CTXLxtRa/UMjirURGBXFJGz+yVysQj3lud41VVYdEfoifst8ZPK82keDIosRgO897aBhMNNxW9EWnIbydjnieqKTOvnKCxEuDE9i2JPUFmaR7ZrCTr81IMFJgxTQq6fpE/BZ/aTmYnisbgYu34Vk8ZCyhFE0qiMTGijzOuXiY/nmLmWIaYu4lRNcfmSGvW1cewqH5OqBcZVJq6MaXGpQrjVQRxXwwS0MQwaM9fVaqwqP5JT52NOnxSgMwTHYwI4SXg8jkFtQqNVMy5sMGhMOHQTGAULo9b8X5m1MnathyndnJibx6MLYNHI/APBZ1FADdBzDgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/f9f1187021a6d444dd65f230c1d2cd18/37523/image-1636010594700490.png"
+        srcset="/static/f9f1187021a6d444dd65f230c1d2cd18/e9ff0/image-1636010594700490.png 180w,
+/static/f9f1187021a6d444dd65f230c1d2cd18/f21e7/image-1636010594700490.png 360w,
+/static/f9f1187021a6d444dd65f230c1d2cd18/37523/image-1636010594700490.png 720w,
+/static/f9f1187021a6d444dd65f230c1d2cd18/5bf79/image-1636010594700490.png 966w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>이 중 하나만 고친다고 해서</p>
+<p>실제 값이 바뀌진 않을 겁니다.</p>
+<p>(하나만 바뀌면 무결성이 깨지게 되거든요)</p>
+<p>다섯개의 값을 한번에 고쳐주는 방법을 써볼게요</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 552px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 60%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAACbElEQVQoz3VTO2/TUBg1/wExIDGwICQ2FgZ2dgZGJpYKsSFgYGGokBhakBBCiAVBGtqStAwgMTFUqqiiJM7L7ziJHSexnTR+JKStEDp8321aZaDD0ZXte8/9zsNSQ9XR9TwkaYrZ4RGiOCXESJIEURQJaJqGQqEA27bRarWwt7eHarUK3/eR0rnBYIBisYhyuQzp/qcabrxu4ubbNq6stHHtZQtXV2xcWLZw+0MHaRIjDEN0Oh0oioL90UhgPB4Lspgu50t5D0O6+66Ayy8sXFpWID2q4tzjGq6v6rj13sRStgHH60I1DGimiWqjgW6/h4DIur2emIyVsRomZ0h33hRw8bmJ889USA9rkB5UsPLTw0FxF+W1DIqbOci5LRTWN1Db/opSfguVTBa1nR3YjoPpZCIIGTyt9Op7HU9/+HjyzcNSzsW9TQdbso9w9xcqHzPQ8ttQv+QhZ9ZQy66jRGTW5w30VRVdmrDTbsN1XbRpFZJty8TfwwmOpjH+/E6AgxhOEEF1A9TlMgxdh06HFZKr1OsIKYgReegHAQICkwyHQ7Gyr5KqGcKH/XF0jCim9AJ4bhcNCqFBRAb5p1LSHIpOfrK06XSKCcldhPBQ0016SEVSMdeEKxP6CFwHMlWjIsuiDqVSCSYRp/MQzoKkLxAyJlQTxRlC6/ho2RYsyxKVaTabwiuxZz7N/8glw7QWCGPqHRXZi6G5IVpNC00qMxvuUKJM6tFPwN5xqXll384kjOekyXhE5g+EX0yiUzD8lzBYtkHveWq+hAM5qYyozbGHk1PJ/LHfHwh5fJDJmIQDOVmZbDabnUpfnPAfgalStwRPeeIAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/bc535ca373ac37e3c0cc7754d486b66d/08c0b/image-1636010594700491.png"
+        srcset="/static/bc535ca373ac37e3c0cc7754d486b66d/e9ff0/image-1636010594700491.png 180w,
+/static/bc535ca373ac37e3c0cc7754d486b66d/f21e7/image-1636010594700491.png 360w,
+/static/bc535ca373ac37e3c0cc7754d486b66d/08c0b/image-1636010594700491.png 552w"
+        sizes="(max-width: 552px) 100vw, 552px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>다섯개의 값을 한번에 선택해주시고</p>
+<p>마우스 오른쪽 버튼 눌러주시면 위와 같이 메뉴가 뜨는데</p>
+<p>거기서 </p>
+<p> Change value of selected addresses를 눌러주세요</p>
+<p>선택된 주소들의 값들을 변경시킨다는 뜻이죠</p>
+<p>(Ctrl + E)를 눌러주셔도 됩니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 520px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 33.888888888888886%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsTAAALEwEAmpwYAAABtUlEQVQoz23Ry2oTcRTH8XkCF268lNpEqzYLN4pKEWtBF7bSKroTSqFP4QP0FQqiCN4WgitdubC4sY0pbRQv0Wimk+nM/JOZyVyTzKTR+vXvRMVFFx9+hwPn/4dzlPzYBLnCJMOj5ziYO8P+Q6fYN3xS1qfZs7fArcUlnldinqwJHrwR3Hltcb8oMvdWhexbCNHANE0Mw0R5tbxMeX2d1WIJVdWo1w00Tc+oap3Q94Hv8HNb5i52evT726RJgiUfVV6svKNU0TEsQX3LQDesP7XJZl3n26ZG5atKtabh+BF+3CWQwvbA7zqS2e4m2Yyy+Owzd0sebtTFCbvY4SD/cqMEr937x+/0EGGK4SeYQYoTpdms106pmTZKQwh2fvSJO4Nf/teRgijG8XxcL5B87FZA8Yvg5dpHVj5t8aFmslEus/H2vVyXjnJ5Zo6Z6wtMX51nanaOaenKtXlmbyxwaeomDx8/pdOOsW0b13UyZsPGEJJMU67Htps0Gw2q1SpK7vgEQ0fGOZA/y9DhcUaOnSdfuMDRExcZGZtk6fajbOmePE4YhpkoCokzEa2WRxAEWb/ZbPILL8DRaQQaVRMAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/b3899969192c5b8f467be2ee0175382e/69902/image-1636010594701492.png"
+        srcset="/static/b3899969192c5b8f467be2ee0175382e/e9ff0/image-1636010594701492.png 180w,
+/static/b3899969192c5b8f467be2ee0175382e/f21e7/image-1636010594701492.png 360w,
+/static/b3899969192c5b8f467be2ee0175382e/69902/image-1636010594701492.png 520w"
+        sizes="(max-width: 520px) 100vw, 520px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>여기에 변경할 값을 입력하시면 되는데</p>
+<p>원하는 값으로 적절히 조절하시면 됩니다.</p>
+<p>저같은 경우는 999999999 이렇게</p>
+<p>수정해버리면 재미가 없더라구요</p>
+<p>필요한 만큼만 적당히 쓰시면 됩니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 139px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 84.17266187050359%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAARCAYAAADdRIy+AAAACXBIWXMAAAsTAAALEwEAmpwYAAAC1UlEQVQ4y52UWU9TQRTHb2RrAJElghEoAhoIBDW++RnUsHShEAwiS4J+Gr4BD4Q3aOGhDQFDqiGBElq62FakbWxYCqVLpPd2pX/PDG3RBzDpJL/cmblzf3PO6UyFusYe1Df14n59F0plcpTIWlBSJUd5zTPI6npRUdeHstoelFR3Q6jshCDrgFDOaCfkEMqI0laiBcK9ZghMVtPQjc7u11BppokpDCjGMaia4AypJ6HQzGJoZBaK0U/oV02jXzmNd0MfiQm8ZQx+wJuBcY7w8HEfRdWKsfHPALIIhUK4rWXSKfyvkfA5yqueYFA5AY/nEHq9AUtLS9jc3MTCwgLm5uZgt9uxtraGxcVFGI1GzM/P09ZAOp0mMkhnbuARllW2YWRsFldXGUiShEAggHg8DpfLBa/XiwwtZJGHw2EEgxeFLLLZLCffv46w+TpC5fAUnxBFkcRXfAGLgKdKQsbfHyYSCaRSKb4mmUzy9yyIQsrqkRn4fF5otTpYrVaYzWY4nU4aa2Gz2agcHuzu7sLhcMBkMvHI3W43dnZ2sL29jb29Pfj9/huhioTHR36srKxga2sL2uVlXjs21uv1vG8wGLC+vo7V1VW+GVvH3rNNWb19Pl8u5ep2DGsm4QmKMPt/w30m4TCchjMgwRfN8ue+Pwr3eQLOUxEHwSR/snkO9V1ncThOYiRseUHCDi50nl7C4f5JKVp5JBaLhf/iOp0O+1QG1vL1zfJ6AtncccmVNi9sh5qEB+dx/Do6QfAsABPVxmIx49tXI75sbOA71e6fL287h42tJKzpgGZ0iiKMwXoicfEPSs8VyKcuwnF8ycc81Tsg4UtUkFBBVy4uibi4COEiFEYozIjk+hE6g5HC3F0ITXISPuiEkoQSCSORCKJRRrQouFBW+5QLRfGycCOKRXjU9ooL1aMz/PLHYjEOuzHFwIVVDV30F/Se3919q41uCmGzF8Ufh3Ax3azLXwUAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/bb8bd01e8b32376fe78702eb2caa8f0d/c2610/image-1636010594701493.png"
+        srcset="/static/bb8bd01e8b32376fe78702eb2caa8f0d/c2610/image-1636010594701493.png 139w"
+        sizes="(max-width: 139px) 100vw, 139px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>저는 소박(?)하게 딱 10배의 값만 입력해보았습니다.</p>
+<p>다시 게임으로 돌아와볼게요</p>
+<p>과연 값이 바뀌었는지</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 686px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 77.22222222222223%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAAAsTAAALEwEAmpwYAAADkklEQVQ4yyWTy28bZRTFvUPi0cZ2xp6xPR7PjOfledpjezyxY+edOI82apvSNIAgaqGURQUbJBYIISGxQEiIBaz7j/64CYtP3/vcc+85t3JztYeZjDi4vGLn9IJ+lrPZs9D6LorZZ6NrUTcsOetT79lyZstdH9V2qBm23NnU5E3DdHjY6VH59MkeQRJyerokHBeE+RjN8WlYHm6SslrOJciYThAzmG4RjEuCSUHLixiVBWm5hZ1N6PgRL26e3QHuYvsO24sMMxgQpCma5aBIZGcQsiwnuHeAXkg4EcDRDH84pu0EpKMYN83op0Ki73Hx+JiKP3D4sKbwsaKyoTb5oLZBTeZm+26v8FF9g+rmJp9Ua2zUqyhN5X6vaSrV+ub9ulqv02g2qcm6ouhdapqG5UTk8YpFfIHv5kRRwSw6YpmshfUEpzjGmZ1hDHLUjo5uSp3lb7troLZatNstVCFSUUWAqqoSB9u8OPiSX2//5mLvhuXkjG8vf+C3r/9iuL1men7Lo29+IT16idJSaYkoqoAZMivy/8FGjSgQUTb1Hg8aTY6ma94++o4/373n9fU7Xu4/593zH/nnp/dM9x+zc/kV67e/Uzx7Q6ut0fMCTMfFMIShAKrNBrPM+h+wpmqS7pBlfsS6fMpWPmOelSyzY9ZbFyRS+OF0m3hxzny1TzEM2ZqO2J6NWBVDynTALO6TeQaVhgCq7Q56p02v26LbVuhqDQxNwVBrtJQqdreN0+vgdlVmqc/uNGVvlt2Pg/mY3UnM7jgkdSVlTezR0XWifEG2f407ERGSgtHOJdnqiuHiAksM7rgehtVnFIcUeUpZ5JSTTLJKWI1CYtug21CoJPMdojgimJ2Q7T0nO/mcyfozov0bdk+uOH79s6icY4rPWtIpoSepxQOyLCJLBpQyJoGNq7cYeiaVbL5kEImhy1NGB9fMX//B4skrYfeU4tEb9r//l2w4pC8idKS9XMfBD3yCWDonlDRl7ZkGPbFOEftUdEPHE+RpMSIKE+IwIxD1LKltkuQcHB6yGMeMIh9LbGJKedrtLrpuYkgPWxLEkLeG9LFv2VTsfo84dpiVGUkUYItpLa2JLq5PHIO9ImJbALPAwRThNLFIVwA8qacrZXD7PrHn8cXlkkjqXEkSj/F4wNbRGfnZK8ant5SrQ2xTl5QGLIqEXN44rjCR7vAMcYQh7GwPW/rZE9A7Zuc7YxbDAf8BWHvM/EONTKMAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/55f5d345ddd9a82c169bfcdb7592b0b3/f6386/image-1636010594701494.png"
+        srcset="/static/55f5d345ddd9a82c169bfcdb7592b0b3/e9ff0/image-1636010594701494.png 180w,
+/static/55f5d345ddd9a82c169bfcdb7592b0b3/f21e7/image-1636010594701494.png 360w,
+/static/55f5d345ddd9a82c169bfcdb7592b0b3/f6386/image-1636010594701494.png 686w"
+        sizes="(max-width: 686px) 100vw, 686px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>다시 게임으로 돌아왔는데 값의 변동이 없네요</p>
+<p>메모리상에서는 값이 변하였으나 아직 동기화가 되지 않아서 그럽니다.</p>
+<p>물건 하나를 사거나 팔아서 값의 변동이 생기면</p>
+<p>실제 메모리 값이 나타나게 됩니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 556px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 87.77777777777777%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEHklEQVQ4yyWUy28bVRTGvUaU0sSP8bzfM37NeGzHYztuXDtukyptmjZpQwlqpJaWIAqqqEBColSosIAu2LFArFiwgSVL/rcfZ4bF0blz59zvnnO+79xKe2vK3tEx0/UN8uUaxQ9puH5p9cIcn5rjyToQ75dWFVM8n6YflL6ILWKKfxW7N2B56x7zGzcZ7qyo2kVAERiW4O+bngAEsl8cCMr1pqy1MJI4r4wrLtuw/PJsZbXIODvZwWl3GU5zskmOGrZQgxZ1L+b8/gG57KfzJV46wkkGrG8fy3rIWCpS44TWcMTR3T2irRmVpB+zXg7Rg5hO1qfVT1GkBKUoUW5czXPavS5Bf4QR98Q6TFf7mHGXJJ9J2THttEen38VoJVTe2ahzqa5R1Q3e3azxbrVOQ1dLq2kql2o1NhoNrtTqvFf93zbqNWqKwpVqFUVtipd9OXtFYiuX6wqKYaFbLoruUNdtmoaJJlbsmZaHLmvVtKnJv4bpYDkudVUrTTd0mppWXlBXmgIo6Gm6zXr7lKPxOZ/e/IEoSljOj7k+vM/T3W85nJ0R5wvGh5+Q7D8huf0FupDRtF1UYbdpO2iydoKwyLBOv7XiweqM5/de8turv0i7E/amD3h0cMbbz3/n5eNvMLIFk8Nn3P7gCUdf/Yrb6aOYFk0B1CRjQ3wJWPRof3LEy5PnPDv8mr/f/stsvObi1lPOBfCXF3/w45c/4U32uH7/gvWJgL7+kzAb0yhaI+QZnphkqOl6kWGD9WTB6e4jHq4/49XHPzMejPhw75S7i3NeHH/Pw8NHpPmc3Tsf0V09ZPX4OybTCVkqUhtmDAcZ01Gf7VFKRVFVHNsm8D1Cz8ZQq9haE0v2XVPDaNbRVQXPNmiFHq6hkXUCpoMO18YpO1spC/H713L2FjkVTRjyRPFBEBGKFkOZDt8yCMRCU8cVJj3LJHRMOpGPK/tJO2Iu2RSAq+0hy+mA3dmQXfEVXQDT6Yr8zgXu1gGda6fCcgfXsfF9H7touKZjW/Idt8rmhzJ2eb8jpfaZTkaMtzLm44yFZFsxdY3O5AbZwTPiTsrk/I1MxgDLsrAl86LZrbhNGEV4UVvk4YsOPbJWQNJrk/ZapR+J35LMpeQmkWhusCeNXz7g5pt/SPvDUswFWJFVr9cjEu/J2GnyMNjCatIKSYSUJE3oyGgOxHIBrsSRTXZ1n3x9wvDWBTvnr6VXkZSpCVkOg6xHPkjIugVwF0fAbMnQcxy50MMSgbsyz67Ixy1em6wfMhrExJ6F29jE3ryMpwizMqe+ZL+cJFyfj4TNHuNeTCS9tZpNHMNAVQ1M3SKU1vRaUoErwh4OWiyWOWNpaifw6QmTocynKRMUC7PLSb+UxVUBTONAFGDSlMdCF/YtmWvPcpgJ4zuzsUjL5z8C5imeEOm1HQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/0e2ca64af52acb3f70617ede70fdc9c7/96638/image-1636010594701495.png"
+        srcset="/static/0e2ca64af52acb3f70617ede70fdc9c7/e9ff0/image-1636010594701495.png 180w,
+/static/0e2ca64af52acb3f70617ede70fdc9c7/f21e7/image-1636010594701495.png 360w,
+/static/0e2ca64af52acb3f70617ede70fdc9c7/96638/image-1636010594701495.png 556w"
+        sizes="(max-width: 556px) 100vw, 556px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>물건하나 팔았더니 돈이 늘어났죠?</p>
+<p>176380원에다가 방금 물건 판 값이 더해져서 176586원이 되었네요</p>
+<p>여기까지 하시고</p>
+<p>게임을 저장해주시면 됩니다.</p>
+<p>치트키 치는법 참 쉽죠???</p>
+<p>어떤 게임이든 이런 방식으로 데이터 수치 변경이 가능합니다.</p>
+<p>이를 에딧이라고도 부르죠</p>
+<p>제가 마법의 주문을 알려드린 것 같다고 생각하시는 분들도 있을겁니다.</p>
+<p>그러나 그렇지 않아요</p>
+<p>이 방법은 온라인 게임에는 통하지 않습니다.</p>
+<p>왜냐하면</p>
+<p>실제 중요한 데이터들은 </p>
+<p>게임사의 서버에 저장되어 있기 때문이죠</p>
+<p>우리가 그 서버로 진입할 수 있다면</p>
+<p>데이터 수정이 가능하겠지만, 그건 쉽지 않은 일이니까요</p>
+<p>우리 컴퓨터의 메모리상에</p>
+<p>데이터가 올라가게 되는 게임들은</p>
+<p>이렇게 메모리 추적해서 수정이 가능합니다.</p>
+<p>가끔 게임하다가 답답하다 막힌다 하시면</p>
+<p>이러한 방법도 활용해보시면 좋겠네요 ^^</p>
+<p>너무 과도하게 사용하면 재미를 급격히 반감시키니 적당히 이용해봅시다!</p>
+<p>과도한 노가다는 피로와 스트레스 이지만,</p>
+<p>적당히 노력하는 재미도 분명 있거든요</p>
+<p>오늘의 탐구생활~</p>
+<p>이상입니다 ^^</p>
+<p><a href="https://blog.naver.com/PostView.naver?blogId=kdi3939&#x26;logNo=222211495629&#x26;parentCategoryNo=&#x26;categoryNo=80&#x26;viewDate=&#x26;isShowPopularPosts=false&#x26;from=postList#"><img src="/7e33effcb13863d577c773a73d0fcc21/original_17.gif" alt="img"></a></p></div></div></div><div class="post-cards-adjacent-wrapper"><div class="post-cards-adjacent"><div class="post-card-adjacent-wrapper"><a class="post-card prev" href="/IT/My-Research/computer-clean/"><div class="direction">이전 글</div><div class="title">컴퓨터 용량확보, 필요없는 파일 싹 다 청소하는 법 (Feat.Windows Update Clean Tool)</div></a></div><div class="post-card-adjacent-wrapper"><a class="post-card next" href="/doyclopedia/location/모악산 정복기/"><div class="direction">다음 글</div><div class="title">모악산 정복기</div></a></div></div></div><div class="utterances"></div></main><footer class="page-footer-wrapper"><p class="page-footer">© <!-- -->2020-2021<!-- --> <a href="https://github.com/d0iloppa">권도일</a> powered by<a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog" target="_blank"> this-theme</a></p></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/IT/My-Research/cheat/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-384ea82b9c97dbd7ee60.js"],"app":["/app-7120720e1b7987843be2.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-241020a1cf7d0f317bbe.js"],"component---src-pages-404-js":["/component---src-pages-404-js-18966798326ae6e5a169.js"],"component---src-pages-about-js":["/component---src-pages-about-js-a575649ed883c535f849.js"],"component---src-pages-index-js":["/component---src-pages-index-js-890068578680d00baed6.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-825333aa83b70c9de647.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-90a4a03ad947015d0d87.js"]};/*]]>*/</script><script src="/polyfill-384ea82b9c97dbd7ee60.js" nomodule=""></script><script src="/component---src-templates-blog-template-js-825333aa83b70c9de647.js" async=""></script><script src="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-ad5201be576df14cf64e.js" async=""></script><script src="/styles-407fe62976dc5310c43e.js" async=""></script><script src="/app-7120720e1b7987843be2.js" async=""></script><script src="/framework-cd3e1e804d552fa282ef.js" async=""></script><script src="/webpack-runtime-9d73f6130ac819a0f784.js" async=""></script></body></html>

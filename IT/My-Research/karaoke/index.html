@@ -1,0 +1,646 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.e73d3783c36299ca50b3.css" id="gatsby-global-css">@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:url(/static/montserrat-cyrillic-ext-400-normal-225293d9cb4ab66bd8a76938051945f2.woff2) format("woff2"),url(/static/montserrat-all-400-normal-f559455a2bb877b795730a2d1167f125.woff) format("woff");unicode-range:U+0460-052f,U+1c80-1c88,U+20b4,U+2de0-2dff,U+a640-a69f,U+fe2e-fe2f}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:url(/static/montserrat-cyrillic-400-normal-298b48e6dfdf7ec4ef8907ff8a7182b1.woff2) format("woff2"),url(/static/montserrat-all-400-normal-f559455a2bb877b795730a2d1167f125.woff) format("woff");unicode-range:U+0400-045f,U+0490-0491,U+04b0-04b1,U+2116}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:url(data:font/woff2;base64,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) format("woff2"),url(/static/montserrat-all-400-normal-f559455a2bb877b795730a2d1167f125.woff) format("woff");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01a0-01a1,U+01af-01b0,U+1ea0-1ef9,U+20ab}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:url(/static/montserrat-latin-ext-400-normal-0eda11d2dde5c2256cdc991dc5d70c0c.woff2) format("woff2"),url(/static/montserrat-all-400-normal-f559455a2bb877b795730a2d1167f125.woff) format("woff");unicode-range:U+0100-024f,U+0259,U+1e??,U+2020,U+20a0-20ab,U+20ad-20cf,U+2113,U+2c60-2c7f,U+a720-a7ff}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:url(/static/montserrat-latin-400-normal-8037e9fc6d8fca40a9eb783c7510b12e.woff2) format("woff2"),url(/static/montserrat-all-400-normal-f559455a2bb877b795730a2d1167f125.woff) format("woff");unicode-range:U+00??,U+0131,U+0152-0153,U+02bb-02bc,U+02c6,U+02da,U+02dc,U+2000-206f,U+2074,U+20ac,U+2122,U+2191,U+2193,U+2212,U+2215,U+feff,U+fffd}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}table{border-collapse:collapse;border-spacing:0}a{text-decoration:none;outline:none}body{--background-color:#fff;--primary-text-color:#000;--secondary-text-color:#9e9e9e;--content-text-color:#37352f;--button-background-color:#f3f3f4;--tab-text-color:#6e6d7a;--tab-hover-text-color:#0d0c22;--tab-selected-background-color:rgba(13,12,34,0.05);--bio-link-icon-color:rgba(0,0,0,0.54);--chip-background-color:#f3f3f4;--link-text-color:rgb(55 53 47/70%);--post-card-border-color:rgba(0,0,0,0.12);--markdown-table-even-cell-background-color:#f6f8fa;--markdown-table-border-color:#dfe2e5;--markdown-blockquote-border-color:#dfe2e5;--markdown-border-color:#e1e4e8}body,body.dark{--button-text-color:#363f47;--about-link-icon-color:#a8a8a8}body.dark{--background-color:#232326;--primary-text-color:#e6e6e6;--secondary-text-color:#768390;--content-text-color:#e6e6e6;--button-background-color:#444c56;--tab-text-color:#768390;--tab-hover-text-color:#acbac7;--tab-selected-background-color:#373e47;--chip-background-color:#323a42;--bio-link-icon-color:#e6e6e6;--link-text-color:#90b0ec;--post-card-border-color:#363f47;--markdown-table-even-cell-background-color:#2d333b;--markdown-table-border-color:#444c56;--markdown-blockquote-border-color:#4f5864;--markdown-border-color:#e1e4e8}*{box-sizing:border-box;-webkit-appearance:none;appearance:none}html{width:100%;height:100%;overflow-y:scroll;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:14px;background:var(--background-color)}html.transition,html.transition *,html.transition :after,html.transition :before{transition:.42s cubic-bezier(.68,-.55,.27,1.55)!important;transition-delay:0!important}body{width:100%;height:100%;margin:0;background-color:var(--background-color);color:var(--primary-text-color);word-break:keep-all;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}ul{-webkit-margin-before:0;margin-block-start:0;-webkit-margin-after:0;margin-block-end:0;-webkit-margin-start:0;margin-inline-start:0;-webkit-margin-end:0;margin-inline-end:0;-webkit-padding-start:0;padding-inline-start:0}a{color:var(--link-text-color)}.markdown .octicon{display:inline-block;fill:currentColor;vertical-align:text-bottom}.markdown .anchor{float:left;line-height:1;margin-left:-20px;padding-right:4px}.markdown .anchor:focus{outline:none}.markdown h1 .octicon-link,.markdown h2 .octicon-link,.markdown h3 .octicon-link,.markdown h4 .octicon-link,.markdown h5 .octicon-link,.markdown h6 .octicon-link{color:#1b1f23;vertical-align:middle;visibility:hidden}.markdown h1:hover .anchor,.markdown h2:hover .anchor,.markdown h3:hover .anchor,.markdown h4:hover .anchor,.markdown h5:hover .anchor,.markdown h6:hover .anchor{text-decoration:none}.markdown h1:hover .anchor .octicon-link,.markdown h2:hover .anchor .octicon-link,.markdown h3:hover .anchor .octicon-link,.markdown h4:hover .anchor .octicon-link,.markdown h5:hover .anchor .octicon-link,.markdown h6:hover .anchor .octicon-link{visibility:visible}.markdown h1:hover .anchor .octicon-link:before,.markdown h2:hover .anchor .octicon-link:before,.markdown h3:hover .anchor .octicon-link:before,.markdown h4:hover .anchor .octicon-link:before,.markdown h5:hover .anchor .octicon-link:before,.markdown h6:hover .anchor .octicon-link:before{width:16px;height:16px;content:" ";display:inline-block;background-image:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' version='1.1' width='16' height='16' aria-hidden='true'%3E%3Cpath fill-rule='evenodd' d='M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z'/%3E%3C/svg%3E")}.markdown{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;color:var(--content-text-color);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;font-size:16px;font-weight:500;line-height:1.5;word-wrap:break-word}.markdown details{display:block}.markdown summary{display:list-item}.markdown a{background-color:initial}.markdown a:active,.markdown a:hover{outline-width:0}.markdown strong{font-weight:inherit;font-weight:bolder}.markdown h1{margin:.67em 0}.markdown img{border-style:none}.markdown code,.markdown kbd,.markdown pre{font-family:monospace,monospace;font-size:1em}.markdown hr{box-sizing:initial;overflow:visible}.markdown input{font:inherit;margin:0;overflow:visible}.markdown [type=checkbox]{box-sizing:border-box;padding:0}.markdown *{box-sizing:border-box}.markdown input{font-family:inherit;font-size:inherit;line-height:inherit}.markdown a{color:var(--link-text-color);text-decoration:none;border-left-color:var(--link-text-color);border-bottom:.05em solid;border-bottom-color:var(--link-text-color);border-right-color:var(--link-text-color);border-top-color:var(--link-text-color)}.markdown a.anchor{border-bottom:none}.markdown strong{font-weight:700}.markdown hr{height:0;margin:15px 0;overflow:hidden;background:transparent;border-bottom:1px solid var(--markdown-blockquote-border-color)}.markdown hr:after,.markdown hr:before{display:table;content:""}.markdown hr:after{clear:both}.markdown table{border-spacing:0;border-collapse:collapse}.markdown td,.markdown th{padding:0}.markdown details summary{cursor:pointer}.markdown h1,.markdown h2,.markdown h3,.markdown h4,.markdown h5,.markdown h6{margin-top:0;margin-bottom:0}.markdown h1{font-size:32px}.markdown h1,.markdown h2{font-weight:600}.markdown h2{font-size:24px}.markdown h3{font-size:20px}.markdown h3,.markdown h4{font-weight:600}.markdown h4{font-size:16px}.markdown h5{font-size:14px}.markdown h5,.markdown h6{font-weight:600}.markdown h6{font-size:12px}.markdown p{margin-top:0;margin-bottom:10px}.markdown blockquote{margin:0}.markdown ol,.markdown ul{padding-left:0;margin-top:0;margin-bottom:0}.markdown ol ol,.markdown ul ol{list-style-type:lower-roman}.markdown ol ol ol,.markdown ol ul ol,.markdown ul ol ol,.markdown ul ul ol{list-style-type:lower-alpha}.markdown dd{margin-left:0}.markdown code,.markdown pre{font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px}.markdown code.language-text{border-radius:3px;font-size:85%;padding:.2em .4em}.markdown :not(pre)>code.language-text{background:rgba(135,131,120,.15);color:#eb5757;overflow-wrap:break-word}.markdown pre{margin-top:0;margin-bottom:0}.markdown input::-webkit-inner-spin-button,.markdown input::-webkit-outer-spin-button{margin:0;-webkit-appearance:none;appearance:none}.markdown :checked+.radio-label{position:relative;z-index:1;border-color:#0366d6}.markdown .border{border:1px solid var(--markdown-border-color)!important}.markdown .border-0{border:0!important}.markdown .border-bottom{border-bottom:1px solid var(--markdown-border-color)!important}.markdown .rounded-1{border-radius:3px!important}.markdown .bg-white{background-color:transparent!important}.markdown .bg-gray-light{background-color:#fafbfc!important}.markdown .text-gray-light{color:#6a737d!important}.markdown .pl-3,.markdown .px-3{padding-left:16px!important}.markdown .px-3{padding-right:16px!important}.markdown .f6{font-size:12px!important}.markdown .lh-condensed{line-height:1.25!important}.markdown .text-bold{font-weight:600!important}.markdown .pl-c{color:#6a737d}.markdown .pl-c1,.markdown .pl-s .pl-v{color:#005cc5}.markdown .pl-e,.markdown .pl-en{color:#6f42c1}.markdown .pl-s .pl-s1,.markdown .pl-smi{color:#24292e}.markdown .pl-ent{color:#22863a}.markdown .pl-k{color:#d73a49}.markdown .pl-pds,.markdown .pl-s,.markdown .pl-s .pl-pse .pl-s1,.markdown .pl-sr,.markdown .pl-sr .pl-cce,.markdown .pl-sr .pl-sra,.markdown .pl-sr .pl-sre{color:#032f62}.markdown .pl-smw,.markdown .pl-v{color:#e36209}.markdown .pl-bu{color:#b31d28}.markdown .pl-ii{color:#fafbfc;background-color:#b31d28}.markdown .pl-c2{color:#fafbfc;background-color:#d73a49}.markdown .pl-c2:before{content:"^M"}.markdown .pl-sr .pl-cce{font-weight:700;color:#22863a}.markdown .pl-ml{color:#735c0f}.markdown .pl-mh,.markdown .pl-mh .pl-en,.markdown .pl-ms{font-weight:700;color:#005cc5}.markdown .pl-mi{font-style:italic;color:#24292e}.markdown .pl-mb{font-weight:700;color:#24292e}.markdown .pl-md{color:#b31d28;background-color:#ffeef0}.markdown .pl-mi1{color:#22863a;background-color:#f0fff4}.markdown .pl-mc{color:#e36209;background-color:#ffebda}.markdown .pl-mi2{color:#f6f8fa;background-color:#005cc5}.markdown .pl-mdr{font-weight:700;color:#6f42c1}.markdown .pl-ba{color:#586069}.markdown .pl-sg{color:#959da5}.markdown .pl-corl{text-decoration:underline;color:#032f62}.markdown .mb-0{margin-bottom:0!important}.markdown .my-2{margin-bottom:8px!important;margin-top:8px!important}.markdown .pl-0{padding-left:0!important}.markdown .py-0{padding-top:0!important;padding-bottom:0!important}.markdown .pl-1{padding-left:4px!important}.markdown .pl-2{padding-left:8px!important}.markdown .py-2{padding-top:8px!important;padding-bottom:8px!important}.markdown .pl-3{padding-left:16px!important}.markdown .pl-4{padding-left:24px!important}.markdown .pl-5{padding-left:32px!important}.markdown .pl-6{padding-left:40px!important}.markdown .pl-7{padding-left:48px!important}.markdown .pl-8{padding-left:64px!important}.markdown .pl-9{padding-left:80px!important}.markdown .pl-10{padding-left:96px!important}.markdown .pl-11{padding-left:112px!important}.markdown .pl-12{padding-left:128px!important}.markdown hr{border-bottom-color:#eee}.markdown kbd{display:inline-block;padding:3px 5px;font:11px SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;line-height:10px;color:#444d56;vertical-align:middle;background-color:#fafbfc;border:1px solid #d1d5da;border-radius:3px;box-shadow:inset 0 -1px 0 #d1d5da}.markdown:after,.markdown:before{display:table;content:""}.markdown:after{clear:both}.markdown>:first-child{margin-top:0!important}.markdown>:last-child{margin-bottom:0!important}.markdown a:not([href]){color:inherit;text-decoration:none}.markdown blockquote,.markdown details,.markdown dl,.markdown ol,.markdown p,.markdown pre,.markdown table,.markdown ul{margin-top:0;margin-bottom:16px}.markdown hr{height:.25em;padding:0;margin:24px 0;background-color:var(--markdown-border-color);border:0}.markdown blockquote{padding:0 1em;color:#6a737d;border-left:.25em solid var(--markdown-blockquote-border-color)}.markdown blockquote>:first-child{margin-top:0}.markdown blockquote>:last-child{margin-bottom:0}.markdown h1,.markdown h2,.markdown h3,.markdown h4,.markdown h5,.markdown h6{margin-top:24px;margin-bottom:16px;font-weight:600;line-height:1.25}.markdown h1{font-size:2em}.markdown h2{font-size:1.5em}.markdown h3{font-size:1.25em}.markdown h4{font-size:1em}.markdown h5{font-size:.875em}.markdown h6{font-size:.85em;color:#6a737d}.markdown ol,.markdown ul{padding-left:2em}.markdown ol ol,.markdown ol ul,.markdown ul ol,.markdown ul ul{margin-top:0;margin-bottom:0}.markdown ol{list-style-type:decimal}.markdown ul{list-style-type:disc}.markdown li{display:list-item;word-wrap:break-all;text-align:-webkit-match-parent}.markdown li>p{margin-top:16px}.markdown li+li{margin-top:.25em}.markdown dl{padding:0}.markdown dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:600}.markdown dl dd{padding:0 16px;margin-bottom:16px}.markdown table{display:block;width:100%;overflow:auto}.markdown table th{font-weight:600}.markdown table td,.markdown table th{padding:6px 13px;border:1px solid var(--markdown-table-border-color)}.markdown table tr{border-top:1px solid var(--markdown-table-border-color)}.markdown table tr:nth-child(2n){background-color:var(--markdown-table-even-cell-background-color)}.markdown img{display:block;margin:0 auto;max-width:100%;box-sizing:initial;background-color:transparent}.markdown img[align=right]{padding-left:20px}.markdown img[align=left]{padding-right:20px}.markdown code{padding:.2em .4em;margin:0;font-size:85%;background-color:rgba(27,31,35,.05);border-radius:3px}.markdown pre{word-wrap:normal}.markdown pre>code{padding:0;margin:0;font-size:100%;word-break:normal;white-space:pre;background:transparent;border:0}.markdown .highlight{margin-bottom:16px}.markdown .highlight pre{margin-bottom:0;word-break:normal}.markdown .highlight pre,.markdown pre{padding:16px;overflow:auto;font-size:85%;line-height:1.45;background-color:#f6f8fa;border-radius:3px}.markdown pre code{display:inline;max-width:auto;padding:0;margin:0;overflow:visible;line-height:inherit;word-wrap:normal;background-color:initial;border:0}.markdown .commit-tease-sha{display:inline-block;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:90%;color:#444d56}.markdown .full-commit .btn-outline:not(:disabled):hover{color:#005cc5;border-color:#005cc5}.markdown .blob-wrapper{overflow-x:auto;overflow-y:hidden}.markdown .blob-wrapper-embedded{max-height:240px;overflow-y:auto}.markdown .blob-num{width:1%;min-width:50px;padding-right:10px;padding-left:10px;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px;line-height:20px;color:rgba(27,31,35,.3);text-align:right;white-space:nowrap;vertical-align:top;cursor:pointer;-webkit-user-select:none;-ms-user-select:none;user-select:none}.markdown .blob-num:hover{color:rgba(27,31,35,.6)}.markdown .blob-num:before{content:attr(data-line-number)}.markdown .blob-code{position:relative;padding-right:10px;padding-left:10px;line-height:20px;vertical-align:top}.markdown .blob-code-inner{overflow:visible;font-family:SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;font-size:12px;color:#24292e;word-wrap:normal;white-space:pre}.markdown .pl-token.active,.markdown .pl-token:hover{cursor:pointer;background:#ffea7f}.markdown .tab-size[data-tab-size="1"]{-moz-tab-size:1;-o-tab-size:1;tab-size:1}.markdown .tab-size[data-tab-size="2"]{-moz-tab-size:2;-o-tab-size:2;tab-size:2}.markdown .tab-size[data-tab-size="3"]{-moz-tab-size:3;-o-tab-size:3;tab-size:3}.markdown .tab-size[data-tab-size="4"]{-moz-tab-size:4;-o-tab-size:4;tab-size:4}.markdown .tab-size[data-tab-size="5"]{-moz-tab-size:5;-o-tab-size:5;tab-size:5}.markdown .tab-size[data-tab-size="6"]{-moz-tab-size:6;-o-tab-size:6;tab-size:6}.markdown .tab-size[data-tab-size="7"]{-moz-tab-size:7;-o-tab-size:7;tab-size:7}.markdown .tab-size[data-tab-size="8"]{-moz-tab-size:8;-o-tab-size:8;tab-size:8}.markdown .tab-size[data-tab-size="9"]{-moz-tab-size:9;-o-tab-size:9;tab-size:9}.markdown .tab-size[data-tab-size="10"]{-moz-tab-size:10;-o-tab-size:10;tab-size:10}.markdown .tab-size[data-tab-size="11"]{-moz-tab-size:11;-o-tab-size:11;tab-size:11}.markdown .tab-size[data-tab-size="12"]{-moz-tab-size:12;-o-tab-size:12;tab-size:12}.markdown .task-list-item{list-style-type:none}.markdown .task-list-item+.task-list-item{margin-top:3px}.markdown .task-list-item input{margin:0 .2em .25em -1.6em;vertical-align:middle}.markdown .table-of-contents{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;width:340px;position:fixed;top:75px;right:0}@media(max-width:1300px){.markdown .table-of-contents{display:none}}.markdown .table-of-contents ul{cursor:pointer;list-style-type:none}.markdown .table-of-contents ul li a{width:100%;height:30px;padding:6px 2px;color:var(--secondary-text-color);font-size:14px;border-bottom:none}.markdown .table-of-contents ul p{margin:0}.markdown .gatsby-resp-image-wrapper{display:flex!important;justify-content:center!important;width:100%!important;max-height:560px!important}.markdown .gatsby-resp-image-wrapper img{max-width:100%!important;max-height:560px!important;width:auto!important;height:auto!important;position:relative!important}code[class*=language-],pre[class*=language-]{color:#ccc;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}.mjx-chtml{display:inline-block;line-height:0;text-indent:0;text-align:left;text-transform:none;font-style:normal;font-weight:400;font-size:100%;font-size-adjust:none;letter-spacing:normal;word-wrap:normal;word-spacing:normal;white-space:nowrap;float:none;direction:ltr;max-width:none;max-height:none;min-width:0;min-height:0;border:0;margin:0;padding:1px 0}.MJXc-display{display:block;text-align:center;margin:1em 0;padding:0}.mjx-chtml[tabindex]:focus,body :focus .mjx-chtml[tabindex]{display:inline-table}.mjx-full-width{text-align:center;display:table-cell!important;width:10000em}.mjx-math{display:inline-block;border-collapse:separate;border-spacing:0}.mjx-math *{display:inline-block;box-sizing:content-box!important;text-align:left}.mjx-denominator,.mjx-numerator{display:block;text-align:center}.MJXc-stacked{height:0;position:relative}.MJXc-stacked>*{position:absolute}.mjx-stack,.MJXc-bevelled>*{display:inline-block}.mjx-op{display:block}.mjx-under{display:table-cell}.mjx-over{display:block}.mjx-over>*,.mjx-under>*{padding-left:0!important;padding-right:0!important}.mjx-prestack>.mjx-presub,.mjx-prestack>.mjx-presup,.mjx-stack>.mjx-sub,.mjx-stack>.mjx-sup{display:block}.mjx-delim-h>.mjx-char{display:inline-block}.mjx-surd{vertical-align:top}.mjx-surd+.mjx-box{display:inline-flex}.mjx-mphantom *{visibility:hidden}.mjx-merror{background-color:#ff8;color:#c00;border:1px solid #c00;padding:2px 3px;font-style:normal;font-size:90%}.mjx-annotation-xml{line-height:normal}.mjx-menclose>svg{fill:none;stroke:currentColor;overflow:visible}.mjx-mlabeledtr,.mjx-mtr{display:table-row}.mjx-mtd{display:table-cell;text-align:center}.mjx-label{display:table-row}.mjx-box{display:inline-block}.mjx-block{display:block}.mjx-span{display:inline}.mjx-char{display:block;white-space:pre}.mjx-itable{display:inline-table;width:auto}.mjx-row{display:table-row}.mjx-cell{display:table-cell}.mjx-table{display:table;width:100%}.mjx-line{display:block;height:0}.mjx-strut{width:0;padding-top:1em}.mjx-vsize{width:0}.MJXc-space1{margin-left:.167em}.MJXc-space2{margin-left:.222em}.MJXc-space3{margin-left:.278em}.mjx-test.mjx-test-display{display:table!important}.mjx-test.mjx-test-inline{display:inline!important;margin-right:-1px}.mjx-test.mjx-test-default{display:block!important;clear:both}.mjx-ex-box{display:inline-block!important;position:absolute;overflow:hidden;min-height:0;max-height:none;padding:0;border:0;margin:0;width:1px;height:60ex}.mjx-test-inline .mjx-left-box{display:inline-block;width:0;float:left}.mjx-test-inline .mjx-right-box{display:inline-block;width:0;float:right}.mjx-test-display .mjx-right-box{display:table-cell!important;width:10000em!important;min-width:0;max-width:none;padding:0;border:0;margin:0}.MJXc-TeX-unknown-R{font-family:monospace;font-style:normal;font-weight:400}.MJXc-TeX-unknown-I{font-family:monospace;font-style:italic;font-weight:400}.MJXc-TeX-unknown-B{font-family:monospace;font-style:normal;font-weight:700}.MJXc-TeX-unknown-BI{font-family:monospace;font-style:italic;font-weight:700}.MJXc-TeX-ams-R{font-family:MJXc-TeX-ams-R,MJXc-TeX-ams-Rw}.MJXc-TeX-cal-B{font-family:MJXc-TeX-cal-B,MJXc-TeX-cal-Bx,MJXc-TeX-cal-Bw}.MJXc-TeX-frak-R{font-family:MJXc-TeX-frak-R,MJXc-TeX-frak-Rw}.MJXc-TeX-frak-B{font-family:MJXc-TeX-frak-B,MJXc-TeX-frak-Bx,MJXc-TeX-frak-Bw}.MJXc-TeX-math-BI{font-family:MJXc-TeX-math-BI,MJXc-TeX-math-BIx,MJXc-TeX-math-BIw}.MJXc-TeX-sans-R{font-family:MJXc-TeX-sans-R,MJXc-TeX-sans-Rw}.MJXc-TeX-sans-B{font-family:MJXc-TeX-sans-B,MJXc-TeX-sans-Bx,MJXc-TeX-sans-Bw}.MJXc-TeX-sans-I{font-family:MJXc-TeX-sans-I,MJXc-TeX-sans-Ix,MJXc-TeX-sans-Iw}.MJXc-TeX-script-R{font-family:MJXc-TeX-script-R,MJXc-TeX-script-Rw}.MJXc-TeX-type-R{font-family:MJXc-TeX-type-R,MJXc-TeX-type-Rw}.MJXc-TeX-cal-R{font-family:MJXc-TeX-cal-R,MJXc-TeX-cal-Rw}.MJXc-TeX-main-B{font-family:MJXc-TeX-main-B,MJXc-TeX-main-Bx,MJXc-TeX-main-Bw}.MJXc-TeX-main-I{font-family:MJXc-TeX-main-I,MJXc-TeX-main-Ix,MJXc-TeX-main-Iw}.MJXc-TeX-main-R{font-family:MJXc-TeX-main-R,MJXc-TeX-main-Rw}.MJXc-TeX-math-I{font-family:MJXc-TeX-math-I,MJXc-TeX-math-Ix,MJXc-TeX-math-Iw}.MJXc-TeX-size1-R{font-family:MJXc-TeX-size1-R,MJXc-TeX-size1-Rw}.MJXc-TeX-size2-R{font-family:MJXc-TeX-size2-R,MJXc-TeX-size2-Rw}.MJXc-TeX-size3-R{font-family:MJXc-TeX-size3-R,MJXc-TeX-size3-Rw}.MJXc-TeX-size4-R{font-family:MJXc-TeX-size4-R,MJXc-TeX-size4-Rw}.MJXc-TeX-vec-R{font-family:MJXc-TeX-vec-R,MJXc-TeX-vec-Rw}.MJXc-TeX-vec-B{font-family:MJXc-TeX-vec-B,MJXc-TeX-vec-Bx,MJXc-TeX-vec-Bw}@font-face{font-family:MJXc-TeX-ams-R;src:local("MathJax_AMS"),local("MathJax_AMS-Regular")}@font-face{font-family:MJXc-TeX-ams-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_AMS-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_AMS-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_AMS-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-cal-B;src:local("MathJax_Caligraphic Bold"),local("MathJax_Caligraphic-Bold")}@font-face{font-family:MJXc-TeX-cal-Bx;src:local("MathJax_Caligraphic");font-weight:700}@font-face{font-family:MJXc-TeX-cal-Bw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Caligraphic-Bold.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Bold.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Bold.otf) format("opentype")}@font-face{font-family:MJXc-TeX-frak-R;src:local("MathJax_Fraktur"),local("MathJax_Fraktur-Regular")}@font-face{font-family:MJXc-TeX-frak-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Fraktur-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Fraktur-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Fraktur-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-frak-B;src:local("MathJax_Fraktur Bold"),local("MathJax_Fraktur-Bold")}@font-face{font-family:MJXc-TeX-frak-Bx;src:local("MathJax_Fraktur");font-weight:700}@font-face{font-family:MJXc-TeX-frak-Bw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Fraktur-Bold.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Fraktur-Bold.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Fraktur-Bold.otf) format("opentype")}@font-face{font-family:MJXc-TeX-math-BI;src:local("MathJax_Math BoldItalic"),local("MathJax_Math-BoldItalic")}@font-face{font-family:MJXc-TeX-math-BIx;src:local("MathJax_Math");font-weight:700;font-style:italic}@font-face{font-family:MJXc-TeX-math-BIw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Math-BoldItalic.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Math-BoldItalic.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Math-BoldItalic.otf) format("opentype")}@font-face{font-family:MJXc-TeX-sans-R;src:local("MathJax_SansSerif"),local("MathJax_SansSerif-Regular")}@font-face{font-family:MJXc-TeX-sans-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-sans-B;src:local("MathJax_SansSerif Bold"),local("MathJax_SansSerif-Bold")}@font-face{font-family:MJXc-TeX-sans-Bx;src:local("MathJax_SansSerif");font-weight:700}@font-face{font-family:MJXc-TeX-sans-Bw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Bold.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Bold.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Bold.otf) format("opentype")}@font-face{font-family:MJXc-TeX-sans-I;src:local("MathJax_SansSerif Italic"),local("MathJax_SansSerif-Italic")}@font-face{font-family:MJXc-TeX-sans-Ix;src:local("MathJax_SansSerif");font-style:italic}@font-face{font-family:MJXc-TeX-sans-Iw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_SansSerif-Italic.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_SansSerif-Italic.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_SansSerif-Italic.otf) format("opentype")}@font-face{font-family:MJXc-TeX-script-R;src:local("MathJax_Script"),local("MathJax_Script-Regular")}@font-face{font-family:MJXc-TeX-script-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Script-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Script-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Script-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-type-R;src:local("MathJax_Typewriter"),local("MathJax_Typewriter-Regular")}@font-face{font-family:MJXc-TeX-type-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Typewriter-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Typewriter-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Typewriter-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-cal-R;src:local("MathJax_Caligraphic"),local("MathJax_Caligraphic-Regular")}@font-face{font-family:MJXc-TeX-cal-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Caligraphic-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Caligraphic-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Caligraphic-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-main-B;src:local("MathJax_Main Bold"),local("MathJax_Main-Bold")}@font-face{font-family:MJXc-TeX-main-Bx;src:local("MathJax_Main");font-weight:700}@font-face{font-family:MJXc-TeX-main-Bw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Main-Bold.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Main-Bold.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Main-Bold.otf) format("opentype")}@font-face{font-family:MJXc-TeX-main-I;src:local("MathJax_Main Italic"),local("MathJax_Main-Italic")}@font-face{font-family:MJXc-TeX-main-Ix;src:local("MathJax_Main");font-style:italic}@font-face{font-family:MJXc-TeX-main-Iw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Main-Italic.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Main-Italic.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Main-Italic.otf) format("opentype")}@font-face{font-family:MJXc-TeX-main-R;src:local("MathJax_Main"),local("MathJax_Main-Regular")}@font-face{font-family:MJXc-TeX-main-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Main-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Main-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Main-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-math-I;src:local("MathJax_Math Italic"),local("MathJax_Math-Italic")}@font-face{font-family:MJXc-TeX-math-Ix;src:local("MathJax_Math");font-style:italic}@font-face{font-family:MJXc-TeX-math-Iw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Math-Italic.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Math-Italic.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Math-Italic.otf) format("opentype")}@font-face{font-family:MJXc-TeX-size1-R;src:local("MathJax_Size1"),local("MathJax_Size1-Regular")}@font-face{font-family:MJXc-TeX-size1-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Size1-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Size1-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Size1-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-size2-R;src:local("MathJax_Size2"),local("MathJax_Size2-Regular")}@font-face{font-family:MJXc-TeX-size2-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Size2-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Size2-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Size2-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-size3-R;src:local("MathJax_Size3"),local("MathJax_Size3-Regular")}@font-face{font-family:MJXc-TeX-size3-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Size3-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Size3-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Size3-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-size4-R;src:local("MathJax_Size4"),local("MathJax_Size4-Regular")}@font-face{font-family:MJXc-TeX-size4-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Size4-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Size4-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Size4-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-vec-R;src:local("MathJax_Vector"),local("MathJax_Vector-Regular")}@font-face{font-family:MJXc-TeX-vec-Rw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Vector-Regular.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Vector-Regular.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Vector-Regular.otf) format("opentype")}@font-face{font-family:MJXc-TeX-vec-B;src:local("MathJax_Vector Bold"),local("MathJax_Vector-Bold")}@font-face{font-family:MJXc-TeX-vec-Bx;src:local("MathJax_Vector");font-weight:700}@font-face{font-family:MJXc-TeX-vec-Bw;src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/eot/MathJax_Vector-Bold.eot);src:url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/woff/MathJax_Vector-Bold.woff) format("woff"),url(https://cdn.jsdelivr.net/npm/mathjax@2.7.8/fonts/HTML-CSS/TeX/otf/MathJax_Vector-Bold.otf) format("opentype")}.page-header-wrapper{display:flex;justify-content:center;width:100%;height:62px;padding-left:15px;padding-right:15px}.page-header-wrapper .page-header{display:flex;align-items:center;justify-content:space-between;width:100%;max-width:720px}.page-header-wrapper .page-header .link{font-weight:700;font-size:17px;color:var(--primary-text-color)}@media(min-width:768px){.page-header-wrapper .page-header .link{font-weight:700;font-size:20px}}.page-header-wrapper .page-header .trailing-section{display:flex;align-items:center}.page-header-wrapper .page-header .trailing-section .link{margin-left:10px}@media(min-width:768px){.page-header-wrapper .page-header .trailing-section .link{margin-left:20px}}.page-header-wrapper .page-header .trailing-section .dark-mode-switch{margin-left:3px}@media(min-width:768px){.page-header-wrapper .page-header .trailing-section .dark-mode-switch{margin-left:13px}}.page-footer-wrapper{display:flex;justify-content:center;align-items:center;width:100%;height:62px;margin-top:auto;padding-left:15px;padding-right:15px}.page-footer-wrapper .page-footer{width:100%;max-width:720px;text-align:center}.page-footer-wrapper .page-footer .link{font-weight:700;font-size:20px;color:var(--primary-text-color);margin-right:20px}.page-footer-wrapper .page-footer a{color:#3a95ff}.icon{font-size:20px;color:var(--about-link-icon-color)}.social-links .icon{font-size:30px;color:var(--bio-link-icon-color)}@keyframes blinking-cursor{0%{opacity:0}50%{opacity:1}to{opacity:0}}strong{font-weight:600}.bio-wrapper{align-items:center;margin-top:120px;margin-bottom:120px;color:var(--primary-text-color);padding-left:15px;padding-right:15px}.bio-wrapper,.bio-wrapper .bio{display:flex;flex-direction:column;width:100%}.bio-wrapper .bio{justify-content:space-between;max-width:720px}@media(min-width:768px){.bio-wrapper .bio{flex-direction:row;align-items:center}}.bio-wrapper .bio .introduction{display:flex;flex-direction:column;word-break:keep-all}.bio-wrapper .bio .introduction .react-rotating-text-cursor{animation:blinking-cursor .8s cubic-bezier(.68,.01,.01,.99) 0s infinite}.bio-wrapper .bio .introduction strong{display:inline-block;font-weight:600}.bio-wrapper .bio .introduction.korean{font-weight:100;font-size:32px;line-height:1.2}.bio-wrapper .bio .introduction.korean .title .react-rotating-text-cursor{font-size:35px;line-height:35px}@media(min-width:768px){.bio-wrapper .bio .introduction.korean{font-size:40px}.bio-wrapper .bio .introduction.korean .title .react-rotating-text-cursor{font-size:45px;line-height:45px}}.bio-wrapper .bio .introduction.english{font-family:montserrat;font-size:25px;line-height:1.2}@media(min-width:768px){.bio-wrapper .bio .introduction.english{font-size:45px}}.bio-wrapper .bio .introduction.english .name{font-size:35px;font-weight:600}.bio-wrapper .bio .introduction.english .job{font-size:35px}.bio-wrapper .bio .introduction.english .description{font-weight:200;margin-top:8px;font-size:20px}.bio-wrapper .bio .introduction.english .social-links{margin-top:20px;display:flex}.bio-wrapper .bio .thumbnail{display:none;width:250px}@media(min-width:768px){.bio-wrapper .bio .thumbnail{display:block}}.section-header-wrapper{display:flex;justify-content:center;width:100%;margin-bottom:32px}.section-header-wrapper .section-header{padding-bottom:5px;border-bottom:4px solid var(--primary-text-color);font-weight:700;font-size:30px;color:var(--primary-text-color)}.timestamps-section-wrapper{display:flex;justify-content:center;width:100%;padding-left:15px;padding-right:15px}.timestamps-section-wrapper .timestamps-section{display:flex;flex-direction:column;align-items:center;width:100%;max-width:720px;margin-bottom:50px;word-break:keep-all}.timestamps-section-wrapper .timestamps-section .body{width:100%;padding:0 10px}.timestamps-section-wrapper .timestamps-section .body .timestamp{display:flex;justify-items:center;width:100%;margin-left:5px;padding:10px 0;border-left:2px solid #bdbdbd;font-size:18px;font-weight:400}.timestamps-section-wrapper .timestamps-section .body .timestamp:first-child{padding-top:7px}.timestamps-section-wrapper .timestamps-section .body .timestamp:last-child{padding-bottom:7px}.timestamps-section-wrapper .timestamps-section .body .timestamp:before{position:relative;left:-1px;content:"";align-self:center;width:10px;height:10px;background-color:var(--background-color);border-radius:10px;transform:translatex(-50%);border:2px solid #828282}.timestamps-section-wrapper .timestamps-section .body .timestamp .date{margin-left:5px;margin-right:5px;width:115px;min-width:115px;color:#828282;align-self:center}@media(min-width:768px){.timestamps-section-wrapper .timestamps-section .body .timestamp .date{width:200px;min-width:200px}}.timestamps-section-wrapper .timestamps-section .body .timestamp .activity{line-height:23px;width:100%}.projects-section-wrapper{display:flex;justify-content:center;width:100%;padding-left:15px;padding-right:15px}.projects-section-wrapper .projects-section{display:flex;flex-direction:column;align-items:center;width:100%;max-width:720px}.projects-section-wrapper .projects-section .project{width:100%;padding:15px;display:flex;flex-direction:column;margin-bottom:30px}.projects-section-wrapper .projects-section .project .head{margin-bottom:10px;line-height:30px;font-size:20px;font-weight:700}.projects-section-wrapper .projects-section .project .body{display:flex;flex-direction:column}.projects-section-wrapper .projects-section .project .body .thumbnail{width:auto;height:auto;max-width:100%;max-height:600px;margin-bottom:10px}.projects-section-wrapper .projects-section .project .body .thumbnail img{-o-object-fit:contain!important;object-fit:contain!important}.projects-section-wrapper .projects-section .project .body .tech-stack{display:flex;margin-bottom:10px}.projects-section-wrapper .projects-section .project .body .tech-stack .tech{background-color:var(--chip-background-color);border-radius:10px;font-size:15px;font-weight:500;margin-right:5px;padding:5px 7px}.projects-section-wrapper .projects-section .project .body .description{font-size:16px;font-weight:400;line-height:1.4}@media(min-width:768px){.projects-section-wrapper .projects-section .project .body{flex-direction:column}.projects-section-wrapper .projects-section .project .body .content{margin-top:0}}.certificates-section-wrapper{display:flex;justify-content:center;width:100%;padding-left:15px;padding-right:15px}.certificates-section-wrapper .certificates-section{display:flex;flex-direction:column;align-items:center;width:100%;max-width:720px;margin-bottom:50px;word-break:keep-all}.certificates-section-wrapper .certificates-section .body{width:100%;padding:0 10px}.certificates-section-wrapper .certificates-section .body .certificate{display:flex;justify-items:center;width:100%;margin-left:5px;padding:10px 0;border-left:2px solid #bdbdbd;font-size:18px;font-weight:400}.certificates-section-wrapper .certificates-section .body .certificate:first-child{padding-top:7px}.certificates-section-wrapper .certificates-section .body .certificate:last-child{padding-bottom:7px}.certificates-section-wrapper .certificates-section .body .certificate:before{position:relative;left:-1px;content:"";align-self:center;width:10px;height:10px;background-color:var(--background-color);border-radius:10px;transform:translatex(-50%);border:2px solid #828282}.certificates-section-wrapper .certificates-section .body .certificate .date{margin-left:5px;margin-right:5px;width:20%;min-width:115px;font-size:14px;color:#828282;align-self:center}@media(min-width:768px){.certificates-section-wrapper .certificates-section .body .certificate .date{width:200px;min-width:200px}}.certificates-section-wrapper .certificates-section .body .certificate .title{line-height:23px;width:50%}.certificates-section-wrapper .certificates-section .body .certificate .issuer{font-size:14px;width:30%}.tmi-section-wrapper{display:flex;justify-content:center;width:100%;padding-left:15px;padding-right:15px}.tmi-section-wrapper .tmi-section{display:flex;flex-direction:column;align-items:center;width:100%;max-width:720px}.tmi-section-wrapper .tmi-section .body{width:100%;display:flex;flex-direction:column;font-size:16px;font-weight:400;line-height:23px}.tmi-section-wrapper .tmi-section .body .bbomi,.tmi-section-wrapper .tmi-section .body .front{margin-top:20px}.tmi-section-wrapper .tmi-section .body .bbomi h1{font-size:20px;margin-bottom:10px}.tmi-section-wrapper .tmi-section .body .bbomi p{font-size:10px;color:#c4bebe}.tmi-section-wrapper .tmi-section .body .back{margin-top:20px;margin-bottom:20px}.tmi-section-wrapper .tmi-section .body .thumbnail{width:auto;height:auto;max-width:90%;max-height:600px;margin-bottom:10px}.tmi-section-wrapper .tmi-section .body .thumbnail img{-o-object-fit:contain!important;object-fit:contain!important}.post-card-wrapper{min-height:150px;width:100%;display:flex;justify-content:center}.post-card-wrapper .post-card{display:flex;flex-direction:column;height:100%;width:100%;max-width:720px;border:1px solid var(--post-card-border-color);border-radius:6px;padding:15px;margin-bottom:15px;color:var(--primary-text-color);cursor:pointer;transition:transform .2s}.post-card-wrapper .post-card:hover .title{text-decoration:underline}@media(min-width:768px){.post-card-wrapper .post-card{margin-bottom:0}}.post-card-wrapper .post-card .title{font-size:18px;font-weight:600;margin-bottom:7px;line-height:1.4}.post-card-wrapper .post-card .description{font-size:13px;margin-bottom:10px;line-height:20px;color:var(--primary-text-color);overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical}.post-card-wrapper .post-card .info{display:flex;justify-content:space-between;margin-top:auto;font-size:14px;color:var(--about-link-icon-color)}.post-card-wrapper .post-card .info .categories{display:flex}.post-card-wrapper .post-card .info .categories .category{margin-left:4px}.post-card-wrapper .post-card .info .categories .category:hover{text-decoration:underline}.post-cards-column-wrapper{display:flex;justify-content:center;width:100%;padding-left:15px;padding-right:15px}.post-cards-column-wrapper .post-cards-column{display:flex;flex-direction:column;align-items:center;width:100%;max-width:720px}.post-cards-column-wrapper .post-cards-column .post-card-wrapper{margin-bottom:10px}.post-cards-column-wrapper .post-cards-column .more-post-cards-button{height:40px;font-weight:500;font-size:15px;background-color:var(--button-background-color)}.tabs-wrapper{top:0;align-self:flex-start;margin-bottom:12px;padding-left:15px;padding-right:15px}.tabs-wrapper,.tabs-wrapper .tabs{display:flex;justify-content:center;width:100%}.tabs-wrapper .tabs{height:40px;max-width:760px}.tabs-wrapper .tabs .mui-tabs .MuiTab-root{height:40px;min-height:auto;min-width:auto;padding:10px 12px;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;color:var(--tab-text-color);font-weight:500;font-size:17px;transition:all .2s ease}.tabs-wrapper .tabs .mui-tabs .Mui-selected,.tabs-wrapper .tabs .mui-tabs .MuiTab-root :hover{color:var(--tab-hover-text-color);transition:all .2s ease}.tabs-wrapper .tabs .mui-tabs .Mui-selected{background-color:var(--tab-selected-background-color);border-radius:8px;font-weight:600}.tabs-wrapper .tabs .mui-tabs .MuiTabScrollButton-root{height:40px;width:20px}.tabs-wrapper .tabs .mui-tabs .MuiTabs-scrollable{height:40px}.tabs-wrapper .tabs .mui-tabs .MuiTabs-indicator{display:none}.post-header-wrapper{display:flex;justify-content:center;width:100%;padding-left:15px;padding-right:15px;margin-top:20px;margin-bottom:40px;word-break:keep-all}.post-header-wrapper .post-header{display:flex;flex-direction:column;width:100%;max-width:720px;padding-bottom:15px;border-bottom:1px solid var(--post-card-border-color)}.post-header-wrapper .post-header .emoji{font-size:78px;margin-bottom:20px}.post-header-wrapper .post-header .categories{margin-bottom:5px}.post-header-wrapper .post-header .categories .category{margin-right:4px;font-weight:600;color:var(--primary-text-color)}.post-header-wrapper .post-header .categories .category:hover{text-decoration:underline}.post-header-wrapper .post-header .title{font-weight:600;font-size:32px;color:var(--primary-text-color);margin-bottom:6px;line-height:1.3}.post-header-wrapper .post-header .info{display:flex;font-size:16px;font-weight:500;color:var(--secondary-text-color)}.post-header-wrapper .post-header .info strong{margin:0 4px;color:var(--primary-text-color);font-weight:600}.post-cards-adjacent-wrapper{display:flex;justify-content:center;width:100%;margin-bottom:20px;padding-left:15px;padding-right:15px}.post-cards-adjacent-wrapper .post-cards-adjacent{display:grid;grid-template-columns:49.3% 49.3%;column-gap:1.4%;width:100%;max-width:720px}.post-cards-adjacent-wrapper .post-cards-adjacent .post-card{display:flex;flex-direction:column;width:100%;border:1px solid var(--post-card-border-color);border-radius:6px;padding:15px;color:var(--primary-text-color);cursor:pointer;transition:transform .2s}.post-cards-adjacent-wrapper .post-cards-adjacent .post-card:hover .title{text-decoration:underline}.post-cards-adjacent-wrapper .post-cards-adjacent .post-card.prev{margin-right:auto}.post-cards-adjacent-wrapper .post-cards-adjacent .post-card.next{margin-left:auto}.post-cards-adjacent-wrapper .post-cards-adjacent .post-card .direction{font-size:14px;font-weight:500;color:grey;margin-bottom:5px}.post-cards-adjacent-wrapper .post-cards-adjacent .post-card .title{font-size:16px;font-weight:600;margin-bottom:7px;line-height:1.4}.post-content-wrapper{display:flex;justify-content:center;width:100%;padding-left:15px;padding-right:15px;margin-bottom:20px}.post-content-wrapper .post-content{display:flex;flex-direction:column;width:100%;max-width:720px}.posts-page-body-wrapper{margin-top:30px;display:flex;width:100%;justify-content:center}.posts-page-body-wrapper .posts-page-body{display:flex;flex-direction:column;width:100%}.posts-page-body-wrapper .posts-page-body .tabs-wrapper{display:flex}.posts-page-header-wrapper{display:flex;flex-direction:column;align-items:center;justify-content:center;margin-top:30px;padding-left:15px;padding-right:15px;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif}.posts-page-header-wrapper .posts-page-title{width:-webkit-fit-content;width:-moz-fit-content;width:fit-content;padding-bottom:7px;margin-bottom:15px;font-size:40px;font-weight:700;text-align:center;border-bottom:3px solid var(--primary-text-color)}.posts-page-header-wrapper .posts-page-sub-title{padding-bottom:10px;font-size:20px;font-weight:500;text-align:center}</style><meta name="generator" content="Gatsby 2.32.13"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><title data-react-helmet="true">아이폰으로 나만의 노래방 만들기</title><meta data-react-helmet="true" name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"/><meta data-react-helmet="true" property="og:title" content="아이폰으로 나만의 노래방 만들기"/><meta data-react-helmet="true" property="og:site_title" content="아이폰으로 나만의 노래방 만들기"/><meta data-react-helmet="true" name="description" content="코로나로 집콕생활이 시작된 요즘 저에게 가장 힘든건 아무래도 코인노래방에 가지 못하는게 크지 않을까 싶네요 음악만이 나라에서 허락한 유일한 마약이잖아요.. 밖으로 돌아다닐 수 없는 아쉬운 마음을 다잡고 언제 어디서든 아이폰과 이어폰만 있으면 나만의 노래방을 만들 수 있는 방법을 소개할까 합니다. img 주.의 이 방법으로 발생한 소음공해는 제가 책임질 수 없습니다. 준비물: 아이폰, 이어폰(마이크 달린) \1. 아이폰  GarageBand라는 아이폰 전용 어플을 이용할 것이기 때문에 아이폰이 반드시 필요합니다. 구형 아이폰도 가능합니다. 2.이어폰(마이크 달려있는)  통화가 가능한 이어폰이 필요합니다. 마이크 입력이 필요하기 때문이죠 이 두가지의 준비물이 마련되어진다면 언제 어디서든 노래방을 이용할 수 있습니다. 노래방 기능을 수행하는 방법을 제 핸드폰으로 따라하면서 차근차근 알려드릴게요 - GarageBand 어플을 설치합니다. \1. App Store에 들어간다. \2. “Ga…"/><meta data-react-helmet="true" property="og:description" content="코로나로 집콕생활이 시작된 요즘 저에게 가장 힘든건 아무래도 코인노래방에 가지 못하는게 크지 않을까 싶네요 음악만이 나라에서 허락한 유일한 마약이잖아요.. 밖으로 돌아다닐 수 없는 아쉬운 마음을 다잡고 언제 어디서든 아이폰과 이어폰만 있으면 나만의 노래방을 만들 수 있는 방법을 소개할까 합니다. img 주.의 이 방법으로 발생한 소음공해는 제가 책임질 수 없습니다. 준비물: 아이폰, 이어폰(마이크 달린) \1. 아이폰  GarageBand라는 아이폰 전용 어플을 이용할 것이기 때문에 아이폰이 반드시 필요합니다. 구형 아이폰도 가능합니다. 2.이어폰(마이크 달려있는)  통화가 가능한 이어폰이 필요합니다. 마이크 입력이 필요하기 때문이죠 이 두가지의 준비물이 마련되어진다면 언제 어디서든 노래방을 이용할 수 있습니다. 노래방 기능을 수행하는 방법을 제 핸드폰으로 따라하면서 차근차근 알려드릴게요 - GarageBand 어플을 설치합니다. \1. App Store에 들어간다. \2. “Ga…"/><meta data-react-helmet="true" property="og:author" content="권도일"/><meta data-react-helmet="true" property="og:image" content="/og-image.png"/><meta data-react-helmet="true" property="og:type" content="website"/><style id="jss-server-side">html{box-sizing:border-box;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}*,::after,::before{box-sizing:inherit}b,strong{font-weight:700}body{color:rgba(0,0,0,.87);margin:0;font-size:.875rem;font-family:Roboto,Helvetica,Arial,sans-serif;font-weight:400;line-height:1.43;letter-spacing:.01071em;background-color:#fafafa}@media print{body{background-color:#fff}}body::-webkit-backdrop{background-color:#fafafa}body::backdrop{background-color:#fafafa}</style><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxK.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc4.woff2"/><style>@font-face{font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2");font-display:swap}@font-face{font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2");font-display:swap}@font-face{font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2");font-display:swap}@font-face{font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format("woff");font-display:swap}@font-face{font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v29/KFOmCnqEu92Fr1Mu4mxM.woff) format("woff");font-display:swap}@font-face{font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v29/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format("woff");font-display:swap}</style><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><script>
+  
+  function gaOptout(){document.cookie=disableStr+'=true; expires=Thu, 31 Dec 2099 23:59:59 UTC;path=/',window[disableStr]=!0}var gaProperty='G-Z0BTXCLGCZ',disableStr='ga-disable-'+gaProperty;document.cookie.indexOf(disableStr+'=true')>-1&&(window[disableStr]=!0);
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'G-Z0BTXCLGCZ', 'auto', {});
+      ga('set', 'anonymizeIp', true);
+      
+      
+      
+      
+      }</script><link rel="icon" href="/favicon-32x32.png?v=bc9aff1f80280a774d48f76c2221fd24" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=bc9aff1f80280a774d48f76c2221fd24"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=bc9aff1f80280a774d48f76c2221fd24"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=bc9aff1f80280a774d48f76c2221fd24"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=bc9aff1f80280a774d48f76c2221fd24"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=bc9aff1f80280a774d48f76c2221fd24"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=bc9aff1f80280a774d48f76c2221fd24"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=bc9aff1f80280a774d48f76c2221fd24"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=bc9aff1f80280a774d48f76c2221fd24"/><style type="text/css">
+    .anchor.before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      padding-right: 4px;
+    }
+    .anchor.after {
+      display: inline-block;
+      padding-left: 4px;
+    }
+    h1 .anchor svg,
+    h2 .anchor svg,
+    h3 .anchor svg,
+    h4 .anchor svg,
+    h5 .anchor svg,
+    h6 .anchor svg {
+      visibility: hidden;
+    }
+    h1:hover .anchor svg,
+    h2:hover .anchor svg,
+    h3:hover .anchor svg,
+    h4:hover .anchor svg,
+    h5:hover .anchor svg,
+    h6:hover .anchor svg,
+    h1 .anchor:focus svg,
+    h2 .anchor:focus svg,
+    h3 .anchor:focus svg,
+    h4 .anchor:focus svg,
+    h5 .anchor:focus svg,
+    h6 .anchor:focus svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = window.decodeURI(location.hash.replace('#', ''))
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+          var clientTop = document.documentElement.clientTop || document.body.clientTop || 0
+          var offset = element.getBoundingClientRect().top + scrollTop - clientTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><link as="script" rel="preload" href="/webpack-runtime-9d73f6130ac819a0f784.js"/><link as="script" rel="preload" href="/framework-cd3e1e804d552fa282ef.js"/><link as="script" rel="preload" href="/app-7120720e1b7987843be2.js"/><link as="script" rel="preload" href="/styles-407fe62976dc5310c43e.js"/><link as="script" rel="preload" href="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-ad5201be576df14cf64e.js"/><link as="script" rel="preload" href="/component---src-templates-blog-template-js-825333aa83b70c9de647.js"/><link as="fetch" rel="preload" href="/page-data/IT/My-Research/karaoke/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1073350324.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2938748437.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><script>
+void function() {
+  window.__onThemeChange = function() {}
+
+  var preferredTheme
+  try {
+    preferredTheme = localStorage.getItem('theme')
+  } catch (err) { }
+
+  function setTheme(newTheme) {
+    if (preferredTheme && document.body.classList.contains(preferredTheme)) {
+      document.body.classList.replace(preferredTheme, newTheme)
+    } else {
+      document.body.classList.add(newTheme)
+    }
+
+    window.__theme = newTheme
+    preferredTheme = newTheme
+    window.__onThemeChange(newTheme)
+  }
+
+  window.__setPreferredTheme = function(newTheme) {
+    setTheme(newTheme)
+    try {
+      localStorage.setItem('theme', newTheme)
+    } catch (err) {}
+  }
+
+  var darkQuery = window.matchMedia('(prefers-color-scheme: dark)')
+  darkQuery.addListener(function(e) {
+    window.__setPreferredTheme(e.matches ? 'dark' : 'light')
+  })
+
+  setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'))
+}()
+    </script><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="display:flex;flex-direction:column;min-height:100vh"><main><header class="post-header-wrapper"><div class="post-header"><div class="emoji">🧐</div><div class="info"><div class="categories"><a class="category" href="/posts/IT">IT</a><a class="category" href="/posts/탐구생활">탐구생활</a></div></div><h1 class="title">아이폰으로 나만의 노래방 만들기</h1><div class="info">posted by <strong>도일</strong> · <!-- -->January 14, 2021</div></div></header><div class="post-content-wrapper"><div class="post-content"><div class="markdown"><p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 100%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAABcRAAAXEQHKJvM/AAAFR0lEQVQ4yz2Ua1CUZRTHF5ZdYIFd2RvvsleWvbIsy8pFLmGhO4GIlmAhBjpqoCYowiiXMSkabSqoNE1DxzLTtCm1UsOaLl5Gu03SdB3HJqcmm5qa+tSXmvl12Gb6cOZ53+eZ+T3//znnOSpTrhdTru//MBt9GAyF5Ft9FDrD6HMKmDXLj8UUlLMAuQav7Lkx6CWSq0dWl+x7MJu8qEzGQlJVVjRqm4RCinzHfSEe7b6HF0bWMrryXhS5NEWVT4bGgTU3gttWhsMax6XE5b+IfEtUzvIxzhKg2ehHm2YjM92OVmPHo7g4OLCCjyd38OXRvfx+6TRHHhtLXqjP8tK1dJjx4efZsek51tw1TOeiPta0DFKQX0GOKFWZTQE0AswQmC4jn9Z5lZx/fJgvjx/gx/MnufXJRX6fvkJT3Z2oVHmirpxYMMGc6ELCnrkE3bXJb8UYkZT5/wOmi1y1Op/iQIT1rQle2d7H1clxvn71CN+/fZrfrkyxd3QbsyNN9N43xv1LRuhfvZPqksXcWbOcB9fvYmzjswQ81QI0B0kXuympCqXRMtYsbeZQfxdfvbSXm28c5+eLU/xz4xpnDjxD2D+PxfVdVBY3U1feSjzUQKJmGW2NG+ho3oRdKRGgJYg23YFWa2d+ZS3LmhIc2rqBQ9sGOPHwMCdGtzK5fSvvv/wCJUU1YtvIvJo22hZspLF6JYnadkmVG3WqFYs5hMpiDZGmdaDXudlUX0XHHXMY7VzKoqoK+tta2N23nva5NXx0bD8jnSuSwIbbOuhpH6PvvkdpaVgr1RWGxobFEkZltYbRSEEM0mu9jQkeXJLg2FAvl/aMM/XkTm6cO8n1147y64UzdLcuR5XixGSU/tT7JXykZ7jQ6TySNgcWaxJYJJI9coOb7uZmHmpvYvDuRp5csYzJnnV8/spRDvWu47MX97GqbZUotEvYSE3JJzPTQ1ZWAVniLiPDyQxLgFE5KEST7iXkitE5v46uhtsZaGmmvb6OjkQ92zrb2L2ll9LieszmEtZ3b+HEide5f/XmJHiWwS997ESxRlDl5ZUK3UdOdhC1xoffEWSos4UdXSsYbF3CxIYe3pnczc4tW0WZm4aGDr754RbTX3/HE888T5rahTrNgy7TK8DoDDBOpi5AtgB1uhCKOUJzdTm7+x/g4FA/uwb6uHHhLfofmAF6iMQWcGnnBF9sGePa2fMcG5+genZC+tiNzRYXoFImwJAAJZe6sDzyKNUBHy3z5zK+uYfHNm/k3MtHqIwvIEUdpLSwlj8uvcvfV8/x7cQg08cPc/PyFOHgXIzGYlRKXpnIDYvlYrKzIuizS2iIRvArJnL1ORR7nOwd6OaOOTNPL8jdtYv55fo0t6bPcXnqTXExzKmxAdoXL0cnolQ2AWbpZoAlAiyVqhURddtpKQ9jytCycHaYNU31BMNR3N5KimxRdk08xakPv+HMe5c5MLKJt/c9QX11M3pD8UwOy6XKUZlxMSzGEDaLjLDUFKyGHKz6LBSTkewcA3ZHAbMrqomFIoyNjnDzz7/4/qdfObnnaba1NBHx3yaWJYduVwUuR4RIIIzXpWA1G+QZasSeKhnqNC1mq43CQBFl5VXEYqWM9m3k7Esvsv+R7QwtbeLZwT4KPTXSUgL0F/qwKRaJPJQ8BUVRZGIbpPMzpEhZmExWPN4AXn9R0rY3GKWxtopVtTHuCijs6V/L+NAQ6Vq/MCpQOV1u7HYXDqcbp9ODy+3FUyDj3xckLIBQUZRorIx4WVUyovFK5tXVcViG7gdHDvDpqeP0rF5Nnkxxp6OGfwHOc87M//eE+QAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/9d52a5a93c5f9630e41f1059483e0ef8/37523/%EB%85%B8%EB%9E%98%EB%B0%A9.png"
+        srcset="/static/9d52a5a93c5f9630e41f1059483e0ef8/e9ff0/%EB%85%B8%EB%9E%98%EB%B0%A9.png 180w,
+/static/9d52a5a93c5f9630e41f1059483e0ef8/f21e7/%EB%85%B8%EB%9E%98%EB%B0%A9.png 360w,
+/static/9d52a5a93c5f9630e41f1059483e0ef8/37523/%EB%85%B8%EB%9E%98%EB%B0%A9.png 720w,
+/static/9d52a5a93c5f9630e41f1059483e0ef8/27b7a/%EB%85%B8%EB%9E%98%EB%B0%A9.png 804w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>코로나로 집콕생활이 시작된 요즘</p>
+<p>저에게 가장 힘든건 아무래도</p>
+<p>코인노래방에 가지 못하는게 크지 않을까 싶네요</p>
+<p>음악만이 나라에서 허락한 유일한 마약이잖아요..</p>
+<p>밖으로 돌아다닐 수 없는 아쉬운 마음을 다잡고</p>
+<p>언제 어디서든</p>
+<p>아이폰과 이어폰만 있으면</p>
+<p>나만의 노래방을 만들 수 있는 방법을</p>
+<p>소개할까 합니다.</p>
+<p><a href="https://blog.naver.com/PostView.naver?blogId=kdi3939&#x26;logNo=222207222644&#x26;parentCategoryNo=&#x26;categoryNo=80&#x26;viewDate=&#x26;isShowPopularPosts=false&#x26;from=postList#"><img src="/9d127226401fe980b4093656478be2d6/original_12.gif" alt="img"></a></p>
+<p><strong>[주.의] 이 방법으로 발생한 소음공해는 제가 책임질 수 없습니다.</strong></p>
+<blockquote>
+<p>준비물: 아이폰, 이어폰(마이크 달린)</p>
+</blockquote>
+<p>\1. 아이폰</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 512px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 57.22222222222223%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC+klEQVQozz2SC0zNYRjG/2zMMMs6yUG5VkvH3azIdGOS4oyFtubSDjHFEsOKVrmsDCtya7pLNmtyKXJKkaIbxihb6aLVyOlyTs45XX6+/2nzbe++b/ve93mf53lfacigA2Mvfb86qNLmk3I5nqNhB7mRfJm3ZS8x/Olk+G8vZpE3JG7M/TBkGA35beyz/A0O9IjQIQ3q/8CgnrbmRuqK02mvf0TD+6f8bKymukLL744WRkSRXGDo7uR6QSEhp2PYG3GCyNtpfP7eACbxLzf8DzhipKbkBe9yojDW3aKrOpPm2gLyM5KoevIQQVEU9dPa9B2/e8UsT9PikpCP89VCcrQVgq0es8AZFk0lc383gjsJYRoqD7lDhoaR8lgGm/Ioyk2i5etHoWBUYk1xET6JKahzH7A5OR2F/3kOao5BT7uwow/ZPknwpOvbB7xc5lOrXgKHvTGd3ASVcZQ/TCDz0jksKkTT0rwcbL12sio6luh3aaivJLFghjM/3r8UKk2WPEnooSz7FirlFGq3LIVAV8ybBHBaKKVZp4hQ+/JX12UBzL2SwDgnP+btjiY4+yJRb7JRTJtD8snDyEdWKyGMjN+zjTWO06ndtgj2u2GO8IHHpyi6GY5moye6n00ifYiYfcFI9uuY6B7OksjzBGamM0Mw3LNBWKX/LcT2IvU0fWGHq4p1LnP4EL0arq3HlBGE4Xkk98/6kxJ1XGCJoWAiMSyUsapApm4/x8Izd3AIjMHaajHujrNp+1gpxBqRGsoKWes4Cw/VXKpue2Ao8KUtK4DWrC1ok3bxpUYkmvWWodS9KsZJcwO70FzsfOOxmhmOjdKbratX0t1YL4Y3gFSUehXbCWNQzZ5O3glnWjJW8On6ChrurqUkNRjdr9HFlnexu6sdB59jTF4Wi8IxDmv7CyiU6wlwW4a+9ZuYix7piNqH8ZKE9aQJLLe3IsjTmWeZibwuuMmnqkJBrMeytHLIpt/PySck6ABK67nY2CzCVjELNwclnZ8rLdb8A4MOgXctvroSAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/7fea265b28a9c6fd9c5761166a29dd67/01e7c/image-1636010423738265.png"
+        srcset="/static/7fea265b28a9c6fd9c5761166a29dd67/e9ff0/image-1636010423738265.png 180w,
+/static/7fea265b28a9c6fd9c5761166a29dd67/f21e7/image-1636010423738265.png 360w,
+/static/7fea265b28a9c6fd9c5761166a29dd67/01e7c/image-1636010423738265.png 512w"
+        sizes="(max-width: 512px) 100vw, 512px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>GarageBand라는 아이폰 전용 어플을 이용할 것이기 때문에</p>
+<p>아이폰이 반드시 필요합니다. 구형 아이폰도 가능합니다.</p>
+<p>2.이어폰(마이크 달려있는)</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 81.11111111111111%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEM0lEQVQ4yx2USU9bZxiFvcyiUpUo6qJRm0GVKlWJaNUMIBJmcByDmQyGQAjYGLANHjHGI/b1jO17PTJjNwmQNmkVVW0iNZESNdt2U3VRRVV/y9MvWbzSvdJ3H53znvNd1YFvhP21QaqufiquAarufnbXhmn4dBxub1JvbLM5307e1kd2oZP4TDMZYzOKtRPZ0kXVoWbHo6W+rqPh16GSbRryVjGW2xSsdyiI951VHdsuLbmIg+rBHpKxk9RiD/6JqyS8cyTWTQLehmzrYctzh701rRDRz/ZqPyplRUfRMYiyMkBhWYu8rPmgsuzQUIkusl1JkFkUQKsa98gVNjbWyVaqhCaayC/3sO3VotjVbFp7ic13oSq59BRdwyiOAeT3YxfKVjQC3stORaISWyC10EXE2EFkrhX/XBeZXJxyyi6cdZCzdpOx9iCZ2olbheXDuJn92Cx70Sl2QgZq/lH2w2M04lNUUza2AyMoXh2pldskbb0kl9oIG2+SiLlJB4wkzLdIC2BSuCj6JlE1sk7qaSuHyQX2pFm2Inc5iE1wVHJwmLOJZwOVoJ6Sf4icW0Pa3kfG3iv2ep2QRUs+MEPReRvZM0QtakT1w1aCk1KAesZOKWQkt3aX2sYs+6UQ9ewSe/FZin4DimhDeX2YnEuDZOkWitXEFzrYDJrYDU9R8k2jBAXwxZM6j6tiV9EV5MA8SniBfHKNugCeVHwc5BwooRly3jEBHKHkHRRQsWe3CNM7hBya47i8Lhxa2Ek5Ub199ZyjXYW9Qgw56ScetIu62Hl2XOXli8ec7KcoSxay3kmyIrxNEVxO9FVeHRVAPUpkkYflCEeKn0fVJKrfXv7KcaOGkvAStogDwsJxbYO3vz/n73d/CegR+7IXOXyPgm9UKBP18oiaCVhJhFBJrfK0XuDZwxovfn4qUpaDFN+ntTwqZoQtoeZROciPDwsCdsKDHYlidEkEY6LgniDnHGXTpSPjGCK/JpogS/zUKPLmzSv++OdfVFnPNGnXFGnnBHn3uBg9EXMvrrGrSPZh0h4TScs90VGDuBkCYtaQmdMSmOsj6DZRy67z/W6W169f8ee7/1AF53VsmAeQFgeI2vT4TP1YxttZ1Ldin+zBMz6Ie1aN5JkkKVRWq1GKOYmofYm0TzRApFuTnHy3leOXZ09QLQ02457swLNgwGLowmm4RUBA4+772Of1mIYG2IiFKT94QFzO4wu5cMyM4RbfReda2DB1EzRpSbqmkazDqKbbv8BpGsPYfw1T16UPP4KEuRv/VCt3Oy7S33Qaw7fn0Td9hv7rzxlvOsdMy3ksmkssqi8w33cBc99F5nsucP/WWVRm3Q1s03cYv3qG4L2bJMW99U62YNJcZqLtEtpvPkZz5RR9X52i68tTqC9/hP7GGQwtZxm9dobx5k+YbvuU2c5z6K+f5n/7EugKDLZDwAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/f8154d00d3aa7f0cfbc52da25f96ac91/37523/image-1636010423738266.png"
+        srcset="/static/f8154d00d3aa7f0cfbc52da25f96ac91/e9ff0/image-1636010423738266.png 180w,
+/static/f8154d00d3aa7f0cfbc52da25f96ac91/f21e7/image-1636010423738266.png 360w,
+/static/f8154d00d3aa7f0cfbc52da25f96ac91/37523/image-1636010423738266.png 720w,
+/static/f8154d00d3aa7f0cfbc52da25f96ac91/5205c/image-1636010423738266.png 833w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>통화가 가능한 이어폰이 필요합니다.</p>
+<p>마이크 입력이 필요하기 때문이죠</p>
+<p>이 두가지의 준비물이 마련되어진다면</p>
+<p>언제 어디서든 노래방을 이용할 수 있습니다.</p>
+<p>노래방 기능을 수행하는 방법을</p>
+<p>제 핸드폰으로 따라하면서</p>
+<p>차근차근 알려드릴게요</p>
+<p>- GarageBand 어플을 설치합니다.</p>
+<p>\1. App Store에 들어간다.</p>
+<p>\2. “GarageBand”를 검색하여 설치한다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 216.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,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'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/3b1239467a0458f797dbefda08876330/37523/image-1636010423738267.png"
+        srcset="/static/3b1239467a0458f797dbefda08876330/e9ff0/image-1636010423738267.png 180w,
+/static/3b1239467a0458f797dbefda08876330/f21e7/image-1636010423738267.png 360w,
+/static/3b1239467a0458f797dbefda08876330/37523/image-1636010423738267.png 720w,
+/static/3b1239467a0458f797dbefda08876330/5bf79/image-1636010423738267.png 966w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>저처럼 이미 설치되어져 있으신 분은 “열기”라고 뜹니다.</p>
+<p>- GarageBand 어플 실행</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 46.111111111111114%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAABbElEQVQoz62RW0+DQBCFAbkWCpar5c620JuphWpaa9XEv+KT/v/34+42tPrgg4kkX2bODMxyZgXf9zAej1HXDaqKoChKlGXFIyETdN0Wbdthvb5Du2lRNw3KosJm2uJpcUTbbDGftYiLBp47guA4DoIgwGQyRZ4XSNMMWZZzWB7HCSdJ0lNMU16vYoIqJ1xnWYbA98FmCfTBX1GuRIw897e+AFVVsVytuG2m3ZGFeR3i2tGpljBfzPD58Y4gvIGqyHjbP2N3v4MoigiiEJuHDkVJLgNFUUBeFNRSzIumZSGlNozBgGtC13E47KEoCgaGgeVth+HQ5j2PWmWr0nT9MpCh04KmaSdLigrbdiDL8rnX55IkwTJNPrzvmab10/K/wk5ip7AbsimaSrXlUzwoqsb/jL3DYLlBLdu2zffe13t0TYXgeh4qQvD88orHwxFpEiNMGwRxRS8hRBRFZ0KqkyShO8vh0e9c1+XxO1/BA9XmR/RDWAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/20bc9789105cc005866570cd987d36e5/37523/image-1636010423738268.png"
+        srcset="/static/20bc9789105cc005866570cd987d36e5/e9ff0/image-1636010423738268.png 180w,
+/static/20bc9789105cc005866570cd987d36e5/f21e7/image-1636010423738268.png 360w,
+/static/20bc9789105cc005866570cd987d36e5/37523/image-1636010423738268.png 720w,
+/static/20bc9789105cc005866570cd987d36e5/5bf79/image-1636010423738268.png 966w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>GarageBand를 실행시키면 다음과 같은 화면이 뜹니다.</p>
+<p>”+” 버튼을 눌러 프로젝트를 하나 만들겁니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 46.111111111111114%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAAByUlEQVQoz22S3XLTMBCF/QqtnTTxr6w/S7KdjBNCSpJJ4wbKdCgTmNJX4ALe//qwEkynF1yckTS7+rS7R1EcJ0imGaaZxGTGkMQTxMkE19cJZN1gM9xi2a5w3N3jy+cL9rd3mCQ3iCkvSaZhDaK9P0dScHBeo6oqZFkOqTWc7bFdfcCwWMOZHo22kEKjrkSQYg04kygYw3yeIqd7VVEERcZoaIJISQkE9ZBlN+D55QdO9yMa52BItmsxns84HI/4+PCA96sttDBI8xx1WdIDVVD07fGET+MeSkmqssbQrwlicTeO2Gy3AdYYi26xwO5wwG5/CNBuuYCRDmVegZU5VM1w6iWix/Mep8OGKvTtcPRuicbaAPHtG9dCGwPVNGE1FPN7xjnd0eCFoFZzOM7w1FLLvjIvDyxLht4uX9vU/6AeIJRCLUQAVTXNnOZuVYsiL0OFkpUQBI60VvASlFzQLJRo8P3pGcN6HWBfLxeY1oFRnPuxEMh1HX79/E2GdZinGQHfzNC76+VhPliSc7Zp4VQHoxzeDZvwiOT6r2oNK1t0bkEmMsyCyxlVmofWo9d/9Eb+D3rNpil4JYObvJRB6U0eYldXMf539w+EFgKNM70XPAAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/f1eb5dd5b09693675d48d5b294903be0/37523/image-1636010423738269.png"
+        srcset="/static/f1eb5dd5b09693675d48d5b294903be0/e9ff0/image-1636010423738269.png 180w,
+/static/f1eb5dd5b09693675d48d5b294903be0/f21e7/image-1636010423738269.png 360w,
+/static/f1eb5dd5b09693675d48d5b294903be0/37523/image-1636010423738269.png 720w,
+/static/f1eb5dd5b09693675d48d5b294903be0/5bf79/image-1636010423738269.png 966w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>여러 악기들이 나오게 되는데</p>
+<p>“오디오 레코더”라는 항목을 찾아주세요</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 46.111111111111114%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAABmUlEQVQoz01S2ZKbQBDjQ3zAYE6DwWBusLfAJrvZykve8/+fobSauCoPqmnTkqzuGcucPLgC47rwfB/XooQ5nWAbFwfbQRTHiC8XZJ6HyXWwCzLherAdI3DgRBXiJFMtdVbdNGjaFm3bCVqUtxuqqga/13WNrus29D0aOZu6QiM9cgjyt9/bd4tkGvUiGMfx3zlgut+xrF+Y5xnP56LQ+sc3Hh8zhmFQkP/W08sqyxJEURR63uQfeY7ThPXrF/qhx2tdsQrG6YGfv//g/ngIT7iSilxO8q6tLMtwkR0RrPM8x/V6VdLQb+POyxPLMov5oOk6SUQOudT8DyuWpUdRhMAPcD6fFWmaKplp36tg4kHSVtVNp2GAc7LxgyBQD3pZnufDD3wESQBf6nczSRI1XZ4v2VGDaf7E6/NbkuXa0xDC9QUuX4i8Al9u2uLVuycXYRTCGLM9H2mGYajCSkYvywJV0+otp5dUe+TQiBoasXaNA2u32+FwOMDIu9rv91rbtq1ECjlazn1JMtZMRjE55FLjSKjj8Qh6/QVVTxjyj/zLrgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/cc1608d8548c5fa3b791c5791ae03093/37523/image-1636010423738270.png"
+        srcset="/static/cc1608d8548c5fa3b791c5791ae03093/e9ff0/image-1636010423738270.png 180w,
+/static/cc1608d8548c5fa3b791c5791ae03093/f21e7/image-1636010423738270.png 360w,
+/static/cc1608d8548c5fa3b791c5791ae03093/37523/image-1636010423738270.png 720w,
+/static/cc1608d8548c5fa3b791c5791ae03093/5bf79/image-1636010423738270.png 966w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>그러면 이와 같은 화면이 나오게 됩니다.</p>
+<p>참고로 셋팅을 위해서 이어폰이 연결되어져 있어야 합니다.</p>
+<p>GarageBand 어플을 통하여</p>
+<p>우리는 이어폰으로 우리의 목소리를 들을 수 있도록 셋팅할 것입니다.</p>
+<p>노래방처럼 에코와 증폭을 넣어줄 수 있습니다.</p>
+<p>그러기 위해서는 우선 “모니터”를 켜야합니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 46.111111111111114%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAABrklEQVQoz01SS7KbQAzkIAbDDAx/g8H8wSRgk/fyKpvsc/9jdCRRqcqiC82oW7Q0spQfQBM8rREYg3tVQfk+XKXhuB7iJEFyu6EIAizawyUsoHQA11MED17cIMkK0bLOarsObd/hOaz4Pmx4PB5omgYd37cthmE4MY7o6Nu1Z65pWkFN/PN83ltM7qngMi3Ylg0jCed5wvJ8Yj8+sW0bXq9dIPGPL6zfNkzTJGB+3/fy5VpWXddgVNRqVVfikM/zsuD4/IVxGvE+DhyEeVnx8/cfPNeVeDUe5Iq53Mm/2CqKAjeaEaMoSpRlifv9LqRpPNvd9hf2ndyTI3Y3kCPmMJf1/8NKaOhxHCM0IdI0FeR5LmR2e45gFscTuW2ah3TDBtLs5JvQSI0kSWEFgZGLMAthKA7DUJJZlknR/fU+Z7x94P3xRc5KyYkJ4hp6XeMb0QYmgMVPr32NKI6glKKVoPWhFYmiSIQNtV7TbJuul1fOb7nkmKO0QuwnyKMcmclgNK3N5XKB4zhQtFe2bUvsuq4UZyG3VvK8yBnH7EzTT5ljOzb8q4+EikYqwtW+4i/fnBmgm2tBywAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/adc23f6aa4a1b45441b2aec1c77f5c49/37523/image-1636010423738271.png"
+        srcset="/static/adc23f6aa4a1b45441b2aec1c77f5c49/e9ff0/image-1636010423738271.png 180w,
+/static/adc23f6aa4a1b45441b2aec1c77f5c49/f21e7/image-1636010423738271.png 360w,
+/static/adc23f6aa4a1b45441b2aec1c77f5c49/37523/image-1636010423738271.png 720w,
+/static/adc23f6aa4a1b45441b2aec1c77f5c49/5bf79/image-1636010423738271.png 966w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>오른쪽에 “모니터”라고 적혀있는 부분을 누르셔서 “켬”으로 바꿔주세요</p>
+<p>아니면,</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 97px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 104.1237113402062%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAVCAYAAABG1c6oAAAACXBIWXMAAAsTAAALEwEAmpwYAAACdElEQVQ4y4WSy1ITQRSG52XyACGZkL5MLhYWEiQgO8QdYBkWspFgmQhYJSUu0MQASRCSAMGd+oi/3We6Q8/k4uLU9JzL1/85p70gkAiCYIrNik02jw4ygJRS2XSgtF+dIyXFZDxPxbwQpIPhNyx2ziY+/dLAwKUDDMyNVChHhe5FI7ACCCGQzWYhpHjMM6o9N/l/pmGMcxQKBay9WEOxWCS4NJ1oMSFQxIvFRBhXMC449vbe4s/f39h5vYNMJoOcMxovLBZK/mxlurBcLqPR/I5e/wanX0+xuroKxlhk1iFQKRRGpTBnYeen21RFGnbZvsD98A79QQ+lUgm+70dgBLTF1qSaCc1Fnbn6apgefqPZwMOvIW7vBqhU3jjKBMWtEC/8sQ4Hpuel7Oj4EPV6DVvbW7jpXWN3t0LKRkKEiJgXd2iYvt3Chg/31GZNQUulpVBxrCYC5Dzq0CDdyvGnI4Jd/eyqNvvoXnXouWigNMr4JGA8oAuKT4ponbdo+IPbPjoKtrxcQjqdRi6Xo0vH1XGjUIRvyzqyWYaFhac4+3aGm/41Ot02lkyrJyefaTl6w/Pz82YZ3FHLdcvh8IUyvbGUUvHxsI6D91UCLT5bJJh+f7X6B6ysPEc+nw/n7IjhBHWAtg0/7atH+wXbaquJRIJa/NFqonpQxdzcHD1wzg3MEWPB40D1JDZebqDduVQqD3BxeU6wVCoFWqAUcGvi5kUdjKT7fgbr6+vY33+HzVeb9M+MikjuLCBTCcwJaKXJZBJpo4xyzPvkLA58PHuMEq0x+uoEuz1hAORnfAQm448+e5FnIaMkfXaLnDinLpgT52M5/wANF/XHD1r3qQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/fcc96def417dfa9b8ea1f456850c6854/a32bb/image.png"
+        srcset="/static/fcc96def417dfa9b8ea1f456850c6854/a32bb/image.png 97w"
+        sizes="(max-width: 97px) 100vw, 97px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>이렇게 생긴 아이콘을 누르셔서</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 46.111111111111114%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAABj0lEQVQoz21Sy1LjMBB0+ZFkHUuWLMmyZMcGloSEcFj4GShumP//hkYjA0WKPXR1z9hqzYwmqesaUjbQWkMIAYp/gvMaw7DDOE4/chxVVQUtwBmDH66gjA95hsQ5j5ubv9jvDyDd98MvdJ2L6P0A7/tofjjcRd11HvP8jofzA6ztkAz9DrtphPMOtuv+C7rI+QXaGNyfz3h+foEKXfm+j9/JnDpJ0jRFVVbojEOrbGTXuu+YtBIakktoqdHUDUTQggk0QqEOXJUM63yNPM+R8LKGES1cMDCyRdvYyEaa71hxBbEVEFUwqhaWn5r48e4Jk7mK/ySjm3A9XeN2fxtL79wyLxeYWqS5mDYYt/YS1sa8sx5vrzP+HZ+wsyOSTbGBKCUU0zC1geYmaBVYow2Vk+YbfgG2ZhfgBUfzR2G72iKhm2iYx+MJp9N9rM6GXKzMtGGdTOQvUHVfr06g3Ns840hnrUFCg1yt1mBhn2jnaL+KokCaZnHfltVYDvswAiklsiyLD0DIshxlWQaPVYw/AD6n4dpzA0jLAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/c39b0120181b973fe0a2a50affbac368/37523/image-1636010423738273.png"
+        srcset="/static/c39b0120181b973fe0a2a50affbac368/e9ff0/image-1636010423738273.png 180w,
+/static/c39b0120181b973fe0a2a50affbac368/f21e7/image-1636010423738273.png 360w,
+/static/c39b0120181b973fe0a2a50affbac368/37523/image-1636010423738273.png 720w,
+/static/c39b0120181b973fe0a2a50affbac368/5bf79/image-1636010423738273.png 966w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 46.111111111111114%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAABbElEQVQoz2WSyW7CMBCGI8gKSuIsTljCIgqBQK9USFWpeqCIXlF76vu/xl//RgYVIn3KzHhmPIstKQtU1QiTyRRlWaIo7ikwn89R17U+J3kuEcexknuQMsfr2wemsyXyLIPFZLPZk2YwGGI4rB7o9wcaIy8WNfb7dy0z5nw+Y7N5VoWNYbGKste7BhknctNvNvovlyucTl9gdzxL0lTnGI8nsNSHVquFKIoVEYQQmjgWWk+SFL4fwLZteJ4Hx3G1P+Nc19V227KvupWq7LyVlQiRPJAkCejDxAbqWZZrORM5jr9HHA6fkGkBKwxDNeRczydTQ6XMPwOklCo405U+EiNkR6HA9rDF7mWHVKSwfN9Hp9PRlTBJGEbgJQxi25SDIPgHR2DwVPy0P9WJuXm9FG56tWrQNGtdKZ8K7XwevIR/AxfB52JgF98/P2jWG4yq6rIUs5h221a0YWys/tL2ZW4cR7fbvZ7f4zgO/gABF98omVtlpQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/d5c74383d2c9f63d4ae60034af12f9b4/37523/image-1636010423738274.png"
+        srcset="/static/d5c74383d2c9f63d4ae60034af12f9b4/e9ff0/image-1636010423738274.png 180w,
+/static/d5c74383d2c9f63d4ae60034af12f9b4/f21e7/image-1636010423738274.png 360w,
+/static/d5c74383d2c9f63d4ae60034af12f9b4/37523/image-1636010423738274.png 720w,
+/static/d5c74383d2c9f63d4ae60034af12f9b4/5bf79/image-1636010423738274.png 966w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>“모니터” 부분을 저처럼 초록색으로 활성화 시켜주시면 됩니다.</p>
+<p>이제 이어폰에서 우리들의 목소리가 들립니다.</p>
+<p>이것만으론 부족하죠</p>
+<p><a href="https://blog.naver.com/PostView.naver?blogId=kdi3939&#x26;logNo=222207222644&#x26;parentCategoryNo=&#x26;categoryNo=80&#x26;viewDate=&#x26;isShowPopularPosts=false&#x26;from=postList#"><img src="/7e33effcb13863d577c773a73d0fcc21/original_17.gif" alt="img"></a></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 46.111111111111114%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAABm0lEQVQoz01SybKbQAzkQ7yxDYvBYPbVToFN3lLvknv+/zM6arlclUPXiFG3aGlkOZ4PV+C4LjxjUBQVrmEJ40XYn06I4hjx5YLM9zG7NnZBJlwfJ9sR2LCjGnGSwRet43mwmrZF23Xoul7QoawqtI3cyX3TNOj7/oVhQCtn29Saq+tGoXz9ft1bJLPQIIJpmvQcxxHz7YZ1+8KyLHg8VoXGv79x/7UohyD/rWctqyxLEEVR6FnJH3lO84zt8wfDOOC5bdgE03zH15+/uN3vwhOuuCKXnbxjK8syXGRGBOM8z3G9XpU0Dq92l/WBdV2k+KjuenFEDrnU/A8rlqFHUYTABDifz4o0TZVMt+9R0PEobuu60m5o4Jy8+EEQaA3WsnzfwAQGQRLASPxOJkmiRdfHU2bUYl4+8Pz4Fme55tSEcI3AlQ3xZQuMvLTFp3c9F2EUwnEcXR8mwzBUYS2tl2WBuu30ldNLqjlyWIgaFmLsOjas3W6Hw+EAR/Zqv99rfJL9I5FCtpZzXuKMMZ1RTA651Nhi6ng8grX+AeEAGSU9mXOVAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/0809d59ee224b8b7f23514f790d2d110/37523/image-1636010423738276.png"
+        srcset="/static/0809d59ee224b8b7f23514f790d2d110/e9ff0/image-1636010423738276.png 180w,
+/static/0809d59ee224b8b7f23514f790d2d110/f21e7/image-1636010423738276.png 360w,
+/static/0809d59ee224b8b7f23514f790d2d110/37523/image-1636010423738276.png 720w,
+/static/0809d59ee224b8b7f23514f790d2d110/5bf79/image-1636010423738276.png 966w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>조절막대기같이 생긴 아이콘을 눌러주세요</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 46.111111111111114%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB20lEQVQoz0VS2ZKjMAzkR6aWcISQkAubw9yHOZNhsluz//8pvbI3VfPQJSPsVqslw7RtmJYFe7/H/hggjFN82Af8eudP5zPO9xAXx0HlWPjwbrBsV/8zdzvsjjH84ArX82DRHYOxGJzHCJkASyWhB+MpWBjhFoaIkwRJmkJkGXicIIoixHH8P0/IKC/eKMoSxmv6xrZ+Y+yeWMcvbPMLQzvjs3+hLGukikwI5HmukeX0kGLdtOjHBV3XQspeo21bGLKfMY4PVJWk+MQ4rKirFl0zIBU5QlLJOcf9fgdjDDzi9M3Qdj0RrqRQYF5WdH2HompgVFShJqRFjm6QdO4gygJFXVOrApfLBdfrFed3vN1umlwpV2RKtRwGUtfo9o2WlA2kUnYTnusXHssG2U6Q/YSaWjidTvB9Hx6Zrs5BEOgiijQiLxVhURTaP024Tb+pzQWDnLHMT8zTA5NcyM9PrdbbezRBF97Jw542wTsccDweNTGnAfXDSIPiaOm+HCcYf7a/qKn/vKo0sqpEWTfomxEZVbZoPRzXISIPO1oTm9bJdV0c/INWqqbNWIiE/BYigfEcNxoCGZrXKItGxyonX4uOLokfEsfVZ7V7pmnCdmxdRNmg/A3OASn38Q8JoydhmaorqgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/7fb5ca71dbb6539c7bf950ff910ac398/37523/image-1636010423738277.png"
+        srcset="/static/7fb5ca71dbb6539c7bf950ff910ac398/e9ff0/image-1636010423738277.png 180w,
+/static/7fb5ca71dbb6539c7bf950ff910ac398/f21e7/image-1636010423738277.png 360w,
+/static/7fb5ca71dbb6539c7bf950ff910ac398/37523/image-1636010423738277.png 720w,
+/static/7fb5ca71dbb6539c7bf950ff910ac398/5bf79/image-1636010423738277.png 966w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>그러면 다음과 같은 창이 왼쪽에 활성화가 되어집니다.</p>
+<p>컴프레서를 조절하여 음량의 크기를 조절할 수 있습니다.</p>
+<p>노래방처럼 에코를 넣으려면</p>
+<p>마스터 효과에서 “리버브”를 조절해주세요</p>
+<p>노래방에서 에코라 부르는 그 효과가 여기서는 “리버브”와 유사하더라구요</p>
+<p>에코를 조절하면 메아리 효과라고 보시면 됩니다.</p>
+<p>우리의 목소리가 약간의 딜레이 후 다시 그대로 들리는 효과가 “에코”더라구요</p>
+<p>모니터가 켜져있으므로 이어폰에서 노래방처럼</p>
+<p>증폭되어져서 우리들의 목소리가 들립니다.</p>
+<p>간단하게 귀로 들으시면서 맘에 드는 소리로 조절해주세요</p>
+<p>그리고 이제 GarageBand를 백그라운드에서도 활성화 시켜주는 셋팅을 해야합니다.</p>
+<p>그렇지 않으면 바탕화면으로 나가면 노래방 에코가 사라집니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 46.111111111111114%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAABoElEQVQoz01SSXLjMAzUQ7xIpLXZ2iyK2mWnJFtJJjWX3PP/Z/QAkFM1hy6giEazCcJRJx+aoLSGHwS4lgbqdIKrNA6uh/h8xjnLkPs+Ju1hF+bE9eF6iuDBiy3qYkAW5/BIw6mbBk3bom07QgtTVbC2Bp/XdY2u6zb0PRqKTW3RUI05DFMZtE0rOZ87TGahnhrGcXzFAdPthmX9xDzPeDwWgeTvX7i/zRiGQcD8rX+72DHGgFGWpcSKHHIcpwnr51/0Q4/numIljNMdf75/cLvfiUdca4XLL7Gv3MnzHBnNiMF5URS4Xq9CGl63zssDyzKT+CDuOnLEHOZyz/9wzjT0OI4RBiEul4sgTVMhs9vfUbDjgdxaW8lr2MAl2fhhGIoGazm+HyAIA4RJiIDy32KSJCK6PJ40owbT/IHnxxc5K6QmJogbEDRvCG1BQFvi8Nfrk0YUR1BKbetDxSiKpNHS040pYekn+ZfTLJUac1iIe1iIc608OLvdDofDAYr2ar/fS+66rhC5kZ9W8LzIGefsjJuZw1zu8cjU8XgEa/0Dz6oZIi+r7CEAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/6ad6eb53c9ce97e892356531be98c02c/37523/image-1636010423738278.png"
+        srcset="/static/6ad6eb53c9ce97e892356531be98c02c/e9ff0/image-1636010423738278.png 180w,
+/static/6ad6eb53c9ce97e892356531be98c02c/f21e7/image-1636010423738278.png 360w,
+/static/6ad6eb53c9ce97e892356531be98c02c/37523/image-1636010423738278.png 720w,
+/static/6ad6eb53c9ce97e892356531be98c02c/5bf79/image-1636010423738278.png 966w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>톱니바퀴 모양을 눌러주시고요</p>
+<p>설정창이 나오게 됩니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 46.111111111111114%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAABPElEQVQoz5WRyXKCQBRFewUIIjQCCoiATOKAmqokn5GqbLKx8v9/cdPvOcTERczi1Jtuj1csFiWapsXh8ITNZouiWKAsK1CfItWr1Rrr9eZuRrFS8e39A9v9M4o8h9B1HbpuwDRNGIaBU32LAU3TGMrv5zqklBgMBtBULoIgRJbl6LoVnxiGE0wm04eZTiMcj5+o6xa+H0AkyUwVDT8pTef/YjZLQeuXyw55XnAtojjmv+n7Hd80jhMWPcJ8nqGqGl5/2VxkaY6+3eFl/4qqqPlkEv4F6bKsYHPKsubLUE/Ylo1oHCHxEziWA8uyFENmODxjmWcsri9z0pKZpvndF57nKZdOUO554yvknuNKyCCFDFO40ofruj80t/j+GGI0ckA4zilectu22UEyrFr2ih3qplP/lKjZ6Kr9zRf1OOcz31XphwAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/a01dc1d395bcdce4aa94118a5d680f3b/37523/image-1636010423738279.png"
+        srcset="/static/a01dc1d395bcdce4aa94118a5d680f3b/e9ff0/image-1636010423738279.png 180w,
+/static/a01dc1d395bcdce4aa94118a5d680f3b/f21e7/image-1636010423738279.png 360w,
+/static/a01dc1d395bcdce4aa94118a5d680f3b/37523/image-1636010423738279.png 720w,
+/static/a01dc1d395bcdce4aa94118a5d680f3b/5bf79/image-1636010423738279.png 966w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>하단으로 메뉴를 내려보시면 “고급”이라고 나오게 됩니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 46.111111111111114%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAABjElEQVQoz32Sy1LjQAxFvRgcwHG62/3wK45DHhVnqsgkzAzs4CNgamBB+BK+/SIpOBQsWJySWlZfyVJHxmg4XyJUU3jv4ZyHZ8gPIYit6xpNMyE/SCz4QzzLLJRWaKoFmnIJTX7ESePxGF23wqrryHYIeU5FvAh4EnDOwRJeCoRjXApQ7v5lj/liAWsdojiOoYYawebwGV021JkNyN/PPYGw2iE9SzH8xBAq0UhOE8TxAFERSmyWv3C1+S382f7FbDJHSyOY1lO03zCtL1CFGs+vezw9PkGl+tBhlmYoXXmkIHJbiK18JbDPeaOzEdS5wohgm9I5lPQHLuDkxwkiHjIPfL1eEz9RlhUNPkeeF0Rvv/oH+rz//x4xm81lodJhkgxpoFbQ2hAaxhjxjclom9nxrJQ6xjmPYTHWYK2IV18UBW26wWTSom1bqcob4wJ88UM0k6fCnfDmezsYnMq3QC8jqmt+Mmvc3t7h+voGl5cbEeYCq1WH3e4K2+1OYJ/HwiPinN7e3z9InLXeAB9E6WWAgGhtAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/23ea1e8f51e356840f366783f99635fb/37523/image-1636010423738280.png"
+        srcset="/static/23ea1e8f51e356840f366783f99635fb/e9ff0/image-1636010423738280.png 180w,
+/static/23ea1e8f51e356840f366783f99635fb/f21e7/image-1636010423738280.png 360w,
+/static/23ea1e8f51e356840f366783f99635fb/37523/image-1636010423738280.png 720w,
+/static/23ea1e8f51e356840f366783f99635fb/5bf79/image-1636010423738280.png 966w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>여기에서 “백그라운드에서 실행” 메뉴를 찾아주셔서 활성화 해주시면 됩니다.</p>
+<p>그 다음 완료까지 눌러주시면 GarageBand에서 해야하는 설정은 끝납니다.</p>
+<p>이제 홈화면으로 이동해보세요</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 216.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,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'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/9324626c880f90104d76f2e3dc6a024e/37523/image-1636010423738281.png"
+        srcset="/static/9324626c880f90104d76f2e3dc6a024e/e9ff0/image-1636010423738281.png 180w,
+/static/9324626c880f90104d76f2e3dc6a024e/f21e7/image-1636010423738281.png 360w,
+/static/9324626c880f90104d76f2e3dc6a024e/37523/image-1636010423738281.png 720w,
+/static/9324626c880f90104d76f2e3dc6a024e/5bf79/image-1636010423738281.png 966w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 273px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 50%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsTAAALEwEAmpwYAAABqUlEQVQoz22RSy9DQRTH73eiNhZc6tmmaKPxJlLt7dx53Eo8IiJEiJWNnU03bNhqdWPfjTRKJSIk4oP8nXMf1YrFL+d25pzf/GdqFR0BxnFcv4rwt0+Rcbv529OeD7CiRkEUhMSGq+BQdbj+A/fkwh7x9zDCErThhoLNQgHXsyncp4ZRmxxALTFIdbDjewBV2ivPzUBzsnBWdGC5JJJ8ojS4mU2iORxDIzuBj+M9PK+k8equ4X1/Ey1nGR9Hu3icGsJzPEbSNPLKg2QpzUdYUpJQGXiuxAOdXh/vRz0zhvfzUzR1Dq8H2/i8vMDb2SG+b6/REKuo272opsdRpDkOI6VuY2mlwAhDCbMpNO0ePC1N4+v8BE9zCbysZynZDlr5Rb8+pmw0430oz2fgaA+KJCqU+QmNNjCaFo2HLVfgit6nMj2KSsJGdWqE3iyOStL2347rHe2VFzIo0Y2kCmSKk0YJA+GvVHglGEpr6Pt3L/j2aE1T5R6ufDPFsIzlqktI0IJHaIYHOojELC2xPFzTHMSXMvQvc0NEp9gnHOyC0pfaMya8TXBDDvIDS7zPyIWju2kAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/581551f71693a5ebab2a0431deb74fef/0217c/image-1636010423739282.png"
+        srcset="/static/581551f71693a5ebab2a0431deb74fef/e9ff0/image-1636010423739282.png 180w,
+/static/581551f71693a5ebab2a0431deb74fef/0217c/image-1636010423739282.png 273w"
+        sizes="(max-width: 273px) 100vw, 273px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>왼쪽 상단 시계표시 부분이 평소와 다르게</p>
+<p>빨간색으로 활성화 되어져 있습니다.</p>
+<p>이는 백그라운드에서 마이크를 사용하고 있다는 뜻이죠</p>
+<p>통화중에도 저렇게 변합니다.</p>
+<p>여기까지 해서 마이크는 준비되었으니</p>
+<p>이제 음악이 필요합니다.</p>
+<p>youtube에 들어갑니다.</p>
+<p>요즘 유튜브가 잘 되어져 있어서</p>
+<p>TJ노래방 KY노래방 등 채널들에</p>
+<p>노래방 mr들이 가사와 함께 잘 올라와 있습니다.</p>
+<p>유튜브에서 노래를 검색합니다. </p>
+<p>키워드는</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 216.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,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'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/7c60e0d065520708bac132d75aff41fa/37523/image-1636010423739283.png"
+        srcset="/static/7c60e0d065520708bac132d75aff41fa/e9ff0/image-1636010423739283.png 180w,
+/static/7c60e0d065520708bac132d75aff41fa/f21e7/image-1636010423739283.png 360w,
+/static/7c60e0d065520708bac132d75aff41fa/37523/image-1636010423739283.png 720w,
+/static/7c60e0d065520708bac132d75aff41fa/5bf79/image-1636010423739283.png 966w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>원하는 노래 제목을 입력하고 끝에 노래방</p>
+<p>이라고 붙이시면 됩니다.</p>
+<p>그러면 다양한 mr들이 나오게 되죠</p>
+<p>외국노래의 경우 노래방대신 inst, 혹은 kara(외국에선 노래방을 가라오케로 부르더라구요)라고 붙이시면 됩니다.</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 216.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,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'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/2ca53b5efc79ca75c616b5ba262e157e/37523/image-1636010423739284.png"
+        srcset="/static/2ca53b5efc79ca75c616b5ba262e157e/e9ff0/image-1636010423739284.png 180w,
+/static/2ca53b5efc79ca75c616b5ba262e157e/f21e7/image-1636010423739284.png 360w,
+/static/2ca53b5efc79ca75c616b5ba262e157e/37523/image-1636010423739284.png 720w,
+/static/2ca53b5efc79ca75c616b5ba262e157e/5bf79/image-1636010423739284.png 966w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>원하는 노래를 검색하시면서</p>
+<p>이제 노래방을 즐기시면 되세요</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 46.111111111111114%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAACcElEQVQoz03RW0iTARjG8U/ncWpJLI3yfJiH5dw+52FTp6iZh1wrNVTM0zwkJqVDQZpYFqGS5WyLpmZ4JFsXRWYkmCJ0ZSQG4V3RVV12E12U/FsQ6MX7PHc/HngFQRCIkAbgUGYyodLhUOuZUumZVOqxK7JYHbzLzpt1Pq5u8HzEwXBbD/1Lw5y92UzIyTTcvcOQ+MQiCN78s4R/Eel/BJumwIVl80jMZkaTx5RCx7trQ2zZJ1irM7PZPsLu8lu+ftnl8ewo9cUVpIVmEHRIjodPJIKb7z54zDeAAWUOjvQSHoqFrmV6ZnKNvJ+aY16bjyNKy3xpHRuLw3ze3WKi6TIdCXkY5dloTqg5HhiHRCI9AEoDsahLGcusxppRhj2piBeFF9n79ZNt5wo9ogFzUz2fPmzC7z84TV00hyk557qy8FRUQQn4e/kfAANkmFOr6BPLGdQUMZrqwtW5/Pj+je31HTqbe2m60Mjr2WVgD7u+BLM8heZokZrQZKqidch8D++DUi8/iuIKqFUU0xKnZ8C19o5YwPyVbuYWnVi6R+ks7cPWP8lcbTuDEXHciFfSGZNEa0wypmg1wd5++6CHxJdQWRIpISLG+DzOR2joKixh7N51rHYH4x0WbMZWrIYuHujOsJLawJq2j0V1EUOuT49rDYhHw/dBQfDEUxqDLDCRWFkiOboszDYzFpuVQfN9brWM4Ci/yoJpjOkqC0vaGl6JjbxMMbKQpOVpuhFdcBSCxO0/6OaFu08MHv5yghTJGG6buOTopbKsElNeBd0lDQwZ2xgvb2X6VDVPknNwqvJdrWNBVcgz1WmyZcHIFQn8BY1HYp2GUtgbAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="img"
+        title="img"
+        src="/static/6a5e98ca25a18854793a7fa3028bb609/37523/image-1636010423739285.png"
+        srcset="/static/6a5e98ca25a18854793a7fa3028bb609/e9ff0/image-1636010423739285.png 180w,
+/static/6a5e98ca25a18854793a7fa3028bb609/f21e7/image-1636010423739285.png 360w,
+/static/6a5e98ca25a18854793a7fa3028bb609/37523/image-1636010423739285.png 720w,
+/static/6a5e98ca25a18854793a7fa3028bb609/5bf79/image-1636010423739285.png 966w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+    </span></p>
+<p>쉽죠?</p>
+<p>코로나로</p>
+<p>노래방 자주 다니지 못하지만..</p>
+<p>이렇게라도 노래방 기분을 느껴보아요 ㅠ</p>
+<p><a href="https://blog.naver.com/PostView.naver?blogId=kdi3939&#x26;logNo=222207222644&#x26;parentCategoryNo=&#x26;categoryNo=80&#x26;viewDate=&#x26;isShowPopularPosts=false&#x26;from=postList#"><img src="/c36d825a5bd80eb74767ca51a7e52c95/original_21.gif" alt="img"></a></p></div></div></div><div class="post-cards-adjacent-wrapper"><div class="post-cards-adjacent"><div class="post-card-adjacent-wrapper"><a class="post-card prev" href="/IT/My-Research/remote/"><div class="direction">이전 글</div><div class="title">어린이도 쉽게 따라 할 수 있는 원격접속하는 법 (꿀팁 다량 방출)</div></a></div><div class="post-card-adjacent-wrapper"><a class="post-card next" href="/IT/My-Research/computer-clean/"><div class="direction">다음 글</div><div class="title">컴퓨터 용량확보, 필요없는 파일 싹 다 청소하는 법 (Feat.Windows Update Clean Tool)</div></a></div></div></div><div class="utterances"></div></main><footer class="page-footer-wrapper"><p class="page-footer">© <!-- -->2020-2021<!-- --> <a href="https://github.com/d0iloppa">권도일</a> powered by<a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog" target="_blank"> this-theme</a></p></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/IT/My-Research/karaoke/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-384ea82b9c97dbd7ee60.js"],"app":["/app-7120720e1b7987843be2.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-241020a1cf7d0f317bbe.js"],"component---src-pages-404-js":["/component---src-pages-404-js-18966798326ae6e5a169.js"],"component---src-pages-about-js":["/component---src-pages-about-js-a575649ed883c535f849.js"],"component---src-pages-index-js":["/component---src-pages-index-js-890068578680d00baed6.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-825333aa83b70c9de647.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-90a4a03ad947015d0d87.js"]};/*]]>*/</script><script src="/polyfill-384ea82b9c97dbd7ee60.js" nomodule=""></script><script src="/component---src-templates-blog-template-js-825333aa83b70c9de647.js" async=""></script><script src="/f9d3028dbef90a6e9b8db85387d63dd9f4edf538-ad5201be576df14cf64e.js" async=""></script><script src="/styles-407fe62976dc5310c43e.js" async=""></script><script src="/app-7120720e1b7987843be2.js" async=""></script><script src="/framework-cd3e1e804d552fa282ef.js" async=""></script><script src="/webpack-runtime-9d73f6130ac819a0f784.js" async=""></script></body></html>

@@ -109,6 +109,30 @@ module.exports = {
           demo: 'https://kwonkoolook.com/',
         },
       },
+      {
+        title: '[SI] 도서관리시스템 웹 어플리케이션 개발 참여',
+        description: `구현 및 담당 part
+        * UI
+       - 트리 형태의 폴더 형 메뉴 구조(윈도우 탐색기 형태) : jsTree 라이브러리 활용, contextMenu 기능 구현
+       - 탭(tab) 형태로 모든 페이지 작동할 수 있는 구조 : (java SpringFramework , javascript 이용 외부 라이브러리 없는 순수 개발)
+       - 엑셀 스타일 grid 구조 : tabulator 라이브러리 활용
+       
+       * back-end, 모듈 , agent
+       - 메뉴의 권한 system, 접근 IP 허용 기능
+        : 개인, 조직, 그룹 별 권한 기능 및 권한 레벨에 의한 우선순위 적용 (우선순위 : 개인 > 그룹 > 조직)
+        : 읽기, 쓰기, 삭제 권한
+        
+       - 대상 업무 프로세스에 맞는 전자결재 system (Document Review Note)
+        : 결재 process 구현 (검토line 설정, step별 처리현황 메일발송, 메일상에서 결재 처리 기능, 등...)
+        : 결재문서의 처리 내용에 따른 자동 작성 및 print
+       
+       - 엑셀 다운로드 모듈화
+        : java 엑셀 라이브러리 활용, 페이지 요청에 따른 자동 엑셀 생성 모듈화
+       
+       - mail agent ( DB의 내용 대로 메일 자동 발송 )`,
+        techStack: ['java','js','MSSQL'],
+        thumbnailUrl: 'profile/dcs.png',
+      },
 
 
     ],
